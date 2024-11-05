@@ -1,0 +1,39 @@
+/* Attribute Selector */
+
+a[href] {
+    color: red;
+}
+  a[href^="https"] {
+    color: green;  /* Links that start with https */
+}
+  a[href*="google"] {
+    color: blue;  /* Links that contain 'google' in the URL */
+}
+ 
+
+/*
+The first rule sets all links with an href attribute to red.
+The second rule overrides the first for links that start with https, setting them to green.
+The third rule further overrides for links that contain "google" in the URL, setting them to blue.
+The rules are applied based on specificity and which condition is met.
+
+
+Here’s a detailed breakdown of the CSS rules that target <a> (anchor) elements based on their href attributes:
+
+1. a[href] { color: red; }
+a[href] is an attribute selector that targets all <a> elements that have an href attribute.
+This rule sets the text color of any link with an href attribute to red.
+Example: This applies to all links like <a href="https://example.com">Example</a>.
+
+2. a[href^="https"] { color: green; }
+a[href^="https"] is an attribute selector that targets all <a> elements whose href attribute starts with "https".
+The ^= symbol means "starts with."
+This rule sets the text color of any link that begins with https to green.
+Example: Links like <a href="https://secure.com">Secure</a> will be green.
+
+3. a[href*="google"] { color: blue; }
+a[href*="google"] is an attribute selector that targets all <a> elements whose href attribute contains the word "google".
+The *= symbol means "contains."
+This rule sets the text color of any link that has "google" anywhere in the URL to blue.
+Example: Links like <a href="https://www.google.com">Google</a> or <a href="https://mail.google.com">Google Mail</a> will be blue.
+*/

@@ -1,0 +1,71 @@
+/*
+In CSS, the font-style property is used to specify the style of the font, such as making the text italic or oblique. 
+Here are the common values:
+
+normal: The default font style, with no italicization.
+
+italic: Italicizes the text, giving it a slanted, cursive look.
+
+oblique: Similar to italic but slants the text slightly without necessarily using a cursive style. 
+Some fonts may not have a true italic style and will use an oblique version instead.
+
+oblique [angle] (CSS3): You can specify an angle for the oblique slant. 
+For example, oblique 20deg would slant the text by 20 degrees. However, this feature isn't supported by all browsers.
+
+Note
+The italic style is more widely used and better supported across fonts compared to oblique.
+If a font doesn't have an italic or oblique variant, browsers will usually simulate it by slanting the text.
+*/
+
+
+#one {
+    font-style: italic;
+}
+
+#two {
+    font-style:  normal;
+}
+
+#three {
+    font-style: oblique;
+}
+
+#four {
+    font-style: oblique 20deg;
+}
+
+
+/*
+
+Here’s a breakdown of the CSS rules that set different font styles for various IDs (#one, #two, #three, and #four):
+
+1. #one { font-style: italic; }
+Selector: Targets the element with the ID one.
+Property: font-style: italic;
+This applies an italic style to the text, which is a slanted version of the text, often used for emphasis.
+
+2. #two { font-style: normal; }
+Selector: Targets the element with the ID two.
+Property: font-style: normal;
+This sets the font style to normal, which is the default, upright style of the text. This is used to remove any italic or oblique styling.
+
+3. #three { font-style: oblique; }
+Selector: Targets the element with the ID three.
+Property: font-style: oblique;
+This applies an oblique style, which is similar to italic, but typically the text is slanted more artificially. 
+The degree of slant may vary based on the font.
+
+4. #four { font-style: oblique 20deg; }
+Selector: Targets the element with the ID four.
+Property: font-style: oblique 20deg;
+This applies an oblique style with a custom slant of 20 degrees. 
+You can specify the angle of the slant (in degrees) to control how much the text is tilted.
+
+Summary:
+#one: Applies an italic style, making the text slanted.
+#two: Resets the text to the normal, upright style.
+#three: Applies an oblique style, slanting the text like italic but with a different visual effect.
+#four: Applies an oblique style with a slant of 20 degrees, giving you control over the tilt angle.
+These rules allow you to stylize text in different ways—italic for emphasis, oblique for a unique slanted effect, 
+or normal to reset the text to its default style. The custom angle for oblique provides additional flexibility in design.
+*/

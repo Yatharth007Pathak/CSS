@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: right;
+}
+
+h3 {
+    text-align: left;
+}
+
+h4 {
+    text-align: justify;
+}
+
+
+/*
+Here’s a breakdown of the CSS rules that apply different text alignments to various heading elements (h1, h2, h3, and h4):
+
+1. h1 { text-align: center; }
+Selector: Targets all <h1> elements.
+Property: text-align: center;
+This centers the text within <h1> elements, meaning the text will be equally spaced from the left and right margins of its container.
+
+2. h2 { text-align: right; }
+Selector: Targets all <h2> elements.
+Property: text-align: right;
+This aligns the text within <h2> elements to the right, causing the text to start from the right margin and flow leftward.
+
+3. h3 { text-align: left; }
+Selector: Targets all <h3> elements.
+Property: text-align: left;
+This aligns the text within <h3> elements to the left, which is the default alignment for most block elements. 
+The text will start from the left margin and flow rightward.
+
+4. h4 { text-align: justify; }
+Selector: Targets all <h4> elements.
+Property: text-align: justify;
+This justifies the text within <h4> elements, which means the text will be aligned along both the left and right margins. 
+It does this by adjusting the spacing between words to create a clean edge on both sides.
+*/

@@ -1,0 +1,20 @@
+p {
+    line-height: 2px;
+}
+
+/*
+Breakdown:
+
+p {
+This selector targets all <p> (paragraph) elements in the HTML document.
+
+line-height: 2px;
+line-height: This property sets the height of each line of text within the paragraph.
+2px: This sets the line height to a fixed value of 2 pixels.
+
+Implications:
+Setting the line height to 2 pixels is quite low and may result in very cramped text. 
+In most cases, such a small line height can lead to overlapping text, making it difficult to read.
+It's generally recommended to use line height values that are larger than the font size to ensure readability. 
+Common values are often between 1.2 and 1.5 times the font size, but fixed pixel values can also be used when designing specific layouts.
+*/

@@ -1,0 +1,36 @@
+/*
+You can also combine text-decoration with additional properties like text-decoration-color, text-decoration-style, 
+and text-decoration-thickness for more customization:
+*/
+
+.text {
+    text-decoration: underline; /* Underline the text */
+    text-decoration-color: red; /* Change the color of the underline */
+    text-decoration-style: dashed; /* Change the style of the underline */
+    text-decoration-thickness: 2px; /* Change the thickness of the underline */
+}
+
+/*
+Breakdown:
+
+.text {
+This selector targets all elements that have the class text. It will apply the following styles to any HTML element with this class.
+
+text-decoration: underline;
+This property applies an underline to the text. It indicates that the text will be underlined.
+
+text-decoration-color: red;
+This property changes the color of the underline to red. 
+This is a specific style that allows you to customize the color of the text decoration independently from the text color itself.
+
+text-decoration-style: dashed;
+This property changes the style of the underline to dashed. The possible values for this property include solid, dotted, dashed, and wavy. 
+This allows for different visual effects for the underline.
+
+text-decoration-thickness: 2px;
+This property sets the thickness of the underline to 2 pixels. This allows for customization of how thick or thin the underline appears, 
+giving more control over the visual presentation of the text decoration.
+
+}
+This closing curly brace ends the rule for the .text class.
+*/

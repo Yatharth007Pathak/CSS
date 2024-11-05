@@ -1,0 +1,63 @@
+/*
+In CSS, the text-shadow property is used to add shadow effects to text. 
+This can enhance the visual appearance of text, making it stand out against the background.
+Basic Syntax
+text-shadow: h-shadow v-shadow blur-radius color;
+
+Values for text-shadow
+h-shadow: The horizontal shadow offset. A positive value will move the shadow to the right, while a negative value will move it to the left.
+v-shadow: The vertical shadow offset. A positive value will move the shadow down, while a negative value will move it up.
+blur-radius (optional): The blur radius. A larger value will create a more blurred shadow, while a value of 0 will create a sharp shadow.
+color (optional): The color of the shadow. This can be specified using color names, HEX codes, RGB, RGBA, or HSL values.
+
+Notes
+You can add multiple shadows by separating each text-shadow declaration with a comma.
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), -1px -1px 1px #fff;
+The text-shadow property is not inherited, so you need to apply it to each element individually.
+Text shadows can be combined with other CSS properties (like background-color and font-size) to create visually striking effects.
+*/
+
+h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow offset by 2px right and down, with a blur of 4px */
+}
+
+h2 {
+    text-shadow: -1px -1px 1px #fff; /* Shadow offset by 1px left and up, with a blur of 1px, white shadow */
+}
+
+p {
+    text-shadow: 0 0 5px #ff0000; /* Red shadow with no offset and a blur of 5px */
+}
+
+/*
+Here’s a breakdown of the CSS rules that apply different text shadow effects to headings and paragraphs (h1, h2, and p):
+
+1. h1 { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
+Selector: Targets all <h1> elements.
+Property: text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+Offset: 2px to the right and 2px down from the text.
+Blur Radius: 4px, which means the shadow will be soft and diffuse.
+Color: rgba(0, 0, 0, 0.5) represents a semi-transparent black shadow. 
+The result is a shadow that gives depth to the text, making it stand out against the background.
+
+2. h2 { text-shadow: -1px -1px 1px #fff; }
+Selector: Targets all <h2> elements.
+Property: text-shadow: -1px -1px 1px #fff;
+Offset: -1px to the left and -1px up from the text.
+Blur Radius: 1px, resulting in a very subtle blur.
+Color: #fff (white), creating a light shadow effect that can enhance readability against dark backgrounds. 
+This effect gives the text a lifted appearance.
+
+3. p { text-shadow: 0 0 5px #ff0000; }
+Selector: Targets all <p> (paragraph) elements.
+Property: text-shadow: 0 0 5px #ff0000;
+Offset: 0 for both the x and y directions, meaning the shadow is directly behind the text without any offset.
+Blur Radius: 5px, creating a significant blur that makes the shadow appear soft.
+Color: #ff0000 (red), giving the text a striking and eye-catching shadow effect. This can be used for emphasis or to create a vibrant look.
+
+
+Summary:
+h1: Has a 2px shadow offset down and right with a 4px blur, creating a soft, semi-transparent black shadow for depth.
+h2: Features a 1px shadow offset up and left with a 1px blur, using a white shadow to lift the text against dark backgrounds.
+p: Displays a 0px offset with a 5px blur, giving a soft red shadow directly behind the text for emphasis.
+*/

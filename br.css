@@ -1,0 +1,84 @@
+/*
+In CSS, the white-space property is used to control how white space inside an element is handled. 
+This property can affect the way text is displayed, including line breaks, spaces, and wrapping.
+
+Values for white-space
+
+normal: The default value. White space is collapsed, and lines will wrap as needed. 
+This means that sequences of white space are treated as a single space, and text will wrap at the end of the line.
+
+nowrap: Collapses white space as in normal, but prevents line breaks within the text. 
+This causes the text to continue on a single line until a <br> element is encountered.
+
+pre: Preserves both white space and line breaks. 
+Text will be displayed exactly as it is written in the HTML, including multiple spaces and new lines.
+
+pre-wrap: Preserves white space and line breaks, but also allows text to wrap to the next line as needed. 
+This is useful for maintaining formatting while still allowing responsive design.
+
+pre-line: Collapses white space (like normal) but preserves line breaks. 
+This means that sequences of white space are collapsed, but new lines in the HTML are maintained.
+*/
+
+.normal {
+    white-space: normal; /* Default behavior */
+}
+
+.nowrap {
+    white-space: nowrap; /* No line breaks */
+}
+
+.pre {
+    white-space: pre; /* Preserves spaces and line breaks */
+}
+
+.pre-wrap {
+    white-space: pre-wrap; /* Preserves spaces and line breaks, allows wrapping */
+}
+
+.pre-line {
+    white-space: pre-line; /* Preserves line breaks, collapses spaces */
+}
+
+/*
+Here’s a breakdown of the CSS rules that manage the white-space property for different classes 
+(.normal, .nowrap, .pre, .pre-wrap, and .pre-line):
+
+1. .normal
+Selector: Targets elements with the class normal.
+Property: white-space: normal;
+This sets the default behavior for whitespace. 
+Text will wrap onto the next line when it reaches the end of its container, and multiple spaces will be collapsed into a single space.
+
+2. .nowrap
+Selector: Targets elements with the class nowrap.
+Property: white-space: nowrap;
+This prevents line breaks in the text. The content will be displayed on a single line, 
+and it will overflow its container if it exceeds the width. This can be useful for keeping elements like navigation menus in a single line.
+
+3. .pre
+Selector: Targets elements with the class pre.
+Property: white-space: pre;
+This preserves both spaces and line breaks exactly as they are in the HTML code. 
+This is similar to behavior of the <pre> HTML tag, making it useful for displaying code snippets or formatted text where spacing is important.
+
+4. .pre-wrap
+Selector: Targets elements with the class pre-wrap.
+Property: white-space: pre-wrap;
+This preserves spaces and line breaks while allowing the text to wrap to the next line when it reaches the end of the container. 
+This is ideal for formatted text that needs to maintain its structure but still be readable.
+
+5. .pre-line
+Selector: Targets elements with the class pre-line.
+Property: white-space: pre-line;
+This preserves line breaks in the text while collapsing multiple spaces into a single space. 
+This can be useful for displaying text where the structure of paragraphs is important, but excessive spacing should be avoided.
+
+
+Summary:
+.normal: Uses default whitespace behavior, allowing text to wrap and collapsing spaces.
+.nowrap: Prevents line breaks, keeping text in a single line.
+.pre: Preserves all spaces and line breaks, maintaining the original formatting.
+.pre-wrap: Preserves spaces and line breaks but allows text wrapping to fit the container.
+.pre-line: Preserves line breaks while collapsing multiple spaces into one.
+*/

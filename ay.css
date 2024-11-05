@@ -1,0 +1,34 @@
+/*
+In CSS, you can align text using the text-align property. Here are the common values:
+
+Left: Aligns the text to the left.
+Right: Aligns the text to the right.
+Center: Centers the text.
+Justify: Stretches the text so that each line has equal width (except the last line).
+
+This property is usually applied to block-level elements like <p>, <div>, <h1>, etc.
+*/
+
+p {
+    text-align: right;
+}
+
+
+/*
+This CSS rule applies a right text alignment to all <p> elements in the document, 
+meaning that the text within each paragraph will start from the right side and flow leftward. 
+This can be useful for creating specific layout styles, such as for right-to-left languages or particular design aesthetics.
+
+
+Here’s a breakdown of the CSS rule that applies to <p> (paragraph) elements:
+
+p {
+This selector targets all <p> elements in the HTML document.
+
+text-align: right;
+This property sets the horizontal alignment of the text within the <p> elements to the right.
+As a result, all text in paragraphs will be aligned to the right margin of their containing element (like a <div>, <section>, etc.).
+
+}
+This closing curly brace ends the rule for the <p> selector.
+*/

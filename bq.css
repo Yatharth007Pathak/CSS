@@ -1,0 +1,62 @@
+/*
+In CSS, the text-indent property is used to specify the indentation of the first line of a text block. 
+This is commonly used in paragraphs to create a visual separation or to enhance the overall layout of the text.
+Basic Syntax
+text-indent: value;
+
+Values for text-indent
+
+Length: You can specify the indentation using a fixed length, such as px, em, or rem. For example, 20px will indent the first line by 20 pixels.
+
+Negative Length: You can also use negative values to pull the first line to the left of the surrounding text.
+
+Percentage: The value can also be specified as a percentage of the width of the containing block.
+
+Notes
+The text-indent property only affects the first line of the block element where it is applied. 
+Subsequent lines will follow the normal flow without any indentation.
+This property can be particularly useful in improving readability in long paragraphs 
+or in creating a more structured layout in your text elements.
+*/
+
+#h1 {
+    text-indent: 30px; /* Indents the first line by 30 pixels */
+}
+
+#h2 {
+    text-indent: 2em; /* Indents the first line by 2 ems */
+}
+
+#h3 {
+    text-indent: -5px; /* Pulls the first line to the left by 5 pixels */
+}
+
+
+/*
+Here’s a breakdown of the CSS rules that set different text indentation styles for various IDs (#h1, #h2, and #h3):
+
+1. #h1 { text-indent: 30px; }
+Selector: Targets the element with the ID h1.
+Property: text-indent: 30px;
+This indents the first line of the text by 30 pixels from the left margin. 
+This can help visually separate the first line from the rest of the text and is commonly used in paragraphs and headings.
+
+2. #h2 { text-indent: 2em; }
+Selector: Targets the element with the ID h2.
+Property: text-indent: 2em;
+This indents the first line of the text by 2 ems. An em is a relative unit that is based on the font size of the element. 
+For example, if the font size is 16 pixels, then 2 em would equal 32 pixels. 
+This method of indentation is flexible and adjusts according to the font size.
+
+3. #h3 { text-indent: -5px; }
+Selector: Targets the element with the ID h3.
+Property: text-indent: -5px;
+This pulls the first line of the text 5 pixels to the left of the normal position. 
+Negative indentation can create interesting visual effects or align text in a specific way, but it may also impact readability if overused.
+
+
+Summary:
+#h1: Indents the first line by 30 pixels, providing a clear visual separation for the heading.
+#h2: Indents the first line by 2 ems, making the indentation relative to the font size, which is useful for responsive design.
+#h3: Uses negative indentation to pull the first line 5 pixels to the left, which can create a unique design effect.
+*/

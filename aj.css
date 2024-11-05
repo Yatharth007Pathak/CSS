@@ -1,0 +1,40 @@
+/* Type Selector */
+
+* {
+    color: darkred;
+}
+
+h1 {
+    color: blue;
+}
+
+/*
+Here’s a breakdown of the CSS rules using the universal selector (*) and a specific selector for the <h1> element:
+
+1. Universal Selector: * { color: darkred; }
+
+* {
+The asterisk (*) is the universal selector. It selects all elements in the HTML document.
+
+color: darkred;
+This sets the text color of all elements to dark red.
+
+}
+This closing curly brace ends the rule for all elements.
+
+2. Specific Selector: h1 { color: blue; }
+
+h1 {
+The selector h1 specifically targets all <h1> elements in the document.
+
+color: blue;
+This sets the text color of <h1> elements to blue.
+
+}
+This closing curly brace ends the rule for the <h1> element.
+
+Summary:
+The universal selector (*) applies a dark red color to all text in the document.
+The specific rule for <h1> elements overrides the universal rule, changing the text color of <h1> elements to blue. 
+Thus, any <h1> element will display its text in blue, while all other text will be in dark red.
+*/

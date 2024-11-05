@@ -1,0 +1,35 @@
+h1 {
+    text-decoration: blue wavy underline;
+}
+
+h2 {
+    text-decoration: red double underline;
+}
+
+/*
+Breakdown:
+
+h1 {
+This selector targets all <h1> elements in the HTML document.
+
+text-decoration: blue wavy underline;
+This shorthand property sets multiple text decoration properties in one line:
+blue: This specifies the color of the underline as blue.
+wavy: This sets the style of the underline to wavy.
+underline: This indicates that the text should be underlined.
+
+}
+This closing curly brace ends the rule for the <h1> selector.
+
+h2 {
+This selector targets all <h2> elements in the HTML document.
+
+text-decoration: red double underline;
+This shorthand property sets multiple text decoration properties in a single line:
+red: This specifies the color of the underline as red.
+double: This sets the style of the underline to double, meaning two parallel lines will appear underneath the text.
+underline: This indicates that the text should be underlined.
+
+}
+This closing curly brace ends the rule for the <h2> selector.
+*/

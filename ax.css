@@ -1,0 +1,39 @@
+/*
+CSS provides a variety of text properties that allow you to control the appearance and layout of text in your HTML elements. 
+These properties let you style the font, alignment, spacing, decoration, and transformation of text. Here are some key text properties in CSS:
+
+1. color: Defines the color of the text.
+
+2. font-family: Specifies the font type for the text. You can provide a list of fonts as fallback options.
+
+3. font-size: Sets the size of the text. It can be in various units like pixels (px), ems (em), rems (rem), percentages (%), or points (pt).
+
+4. font-weight: Defines the boldness of the text. You can specify values like normal, bold, or numeric values (100 to 900).
+
+5. font-style: Sets the style of the font, such as normal, italic, or oblique.
+
+6. text-align: Aligns the text horizontally within its containing element. Values include left, right, center, or justify.
+
+7. text-decoration: Adds decorative features like underlines, overlines, line-throughs, or no decoration.
+
+8. text-transform: Controls the capitalization of text. It can be set to uppercase, lowercase, 
+or capitalize (capitalizes the first letter of each word).
+
+9. letter-spacing: Sets the spacing between individual letters (characters). The value is usually in pixels (px) or em units (em).
+
+10. word-spacing: Controls the space between words. The value is typically in pixels (px).
+
+11. line-height: Defines the space between lines of text. It can be set using a number, percentage, or unit.
+
+12. text-indent: Indents the first line of text within an element. It’s typically used in paragraphs.
+
+13. white-space: Controls how white space inside an element is handled. Common values are normal, nowrap, pre, and pre-wrap.
+normal: Collapses consecutive white spaces (default).
+nowrap: Prevents text wrapping.
+pre: Preserves white spaces and line breaks.
+pre-wrap: Preserves white spaces but allows wrapping.
+
+14. text-shadow: Adds a shadow effect to the text. The values are typically horizontal offset, vertical offset, blur radius, and color.
+
+15. direction: Specifies the direction of the text. It can be ltr (left-to-right) or rtl (right-to-left).
+*/

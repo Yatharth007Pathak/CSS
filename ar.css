@@ -1,0 +1,31 @@
+/* Pseudo-Class Selector*/
+
+a:hover {
+    color: orange;  /* When the user hovers over a link */
+}
+
+p:first-child {
+    font-weight: bold;
+}
+  
+
+/*
+Here’s a breakdown of the CSS rules for styling links when hovered over and paragraphs based on their position:
+
+1. a:hover { color: orange; }
+a:hover is a pseudo-class selector that targets <a> (anchor/link) elements when the user hovers their cursor over them.
+The :hover pseudo-class applies the style when the user interacts with the link by hovering over it with a pointer device (like a mouse).
+This rule changes the text color of the link to orange when hovered over.
+Example: Any link, like <a href="#">Link</a>, will turn orange when hovered over.
+
+2. p:first-child { font-weight: bold; }
+p:first-child is another pseudo-class selector. It targets the first <p> element that is the first child of its parent.
+The :first-child pseudo-class applies to an element that is the first child within its parent container (e.g., within a <div> or <section>).
+This rule sets the font weight of the first child <p> to bold.
+
+
+Summary:
+The a:hover rule changes the color of links to orange when the user hovers over them.
+The p:first-child rule makes the first paragraph inside any container bold. 
+It applies only to the first <p> child within a parent, not subsequent <p> elements.
+*/

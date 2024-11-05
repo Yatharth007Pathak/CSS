@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+button {
+    background-color: cyan;
+}
+
+/*
+Here's a breakdown of the CSS rules for the <body> and <button> elements:
+
+1. body { background-color: black; }
+The selector body targets the entire <body> element of the HTML document, which contains all the visible content on the page.
+background-color: black; sets the background color of the entire page to black.
+Example: The entire page will have a solid black background.
+
+2. button { background-color: cyan; }
+The selector button targets all <button> elements on the page.
+background-color: cyan; sets the background color of all buttons to cyan (a light blue-green color).
+Example: All buttons on the page will have a cyan background.
+*/

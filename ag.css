@@ -1,0 +1,38 @@
+/*
+You can use background-color along with other background properties like 
+background-image, background-position, background-size, etc., for more complex background styling.
+*/
+
+div {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid black;
+}
+
+
+/*
+This rule styles all <div> elements with:
+A light blue background. 20px of padding, which adds space between the content and the border. A 2px solid black border around the <div>.
+
+
+Here’s a detailed breakdown of the CSS rule for the <div> element:
+
+div {
+The selector div targets all <div> elements in the HTML document. The styles inside the curly braces {} apply to these elements.
+
+background-color: lightblue;
+This sets the background color of the <div> element to light blue.
+
+padding: 20px;
+This adds 20 pixels of padding inside the <div> element, creating space between the content and the edges of the <div>. 
+Padding increases the internal spacing, making the content more visually separated from the border.
+
+border: 2px solid black;
+This creates a border around the <div>. The border property consists of three values:
+2px: The thickness of the border is 2 pixels.
+solid: The border style is a solid line (as opposed to dashed or dotted).
+black: The border color is black.
+
+}
+The closing curly brace ends the rule for the <div> element.
+*/

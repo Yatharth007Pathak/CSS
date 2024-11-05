@@ -1,0 +1,24 @@
+/* Child Selector */
+
+div > p {
+    color: red;
+}
+
+/*
+This rule applies a red text color to all <p> elements that are directly inside <div> elements. 
+If a <p> element is nested within another element inside a <div> (such as another <div>), it will not be affected by this rule.
+
+
+Here’s a breakdown of the CSS rule that targets <p> elements that are direct children of <div> elements:
+
+div > p {
+The selector div > p is a child combinator selector. It specifically targets all <p> elements that are direct children of <div> elements. 
+This means that only <p> elements that are immediately inside a <div> will be affected by this rule, 
+not <p> elements that are nested further down in the hierarchy.
+
+color: red;
+This sets the text color of the targeted <p> elements to red.
+
+}
+The closing curly brace ends the rule for the div > p selector.
+*/

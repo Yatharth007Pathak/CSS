@@ -1,0 +1,24 @@
+/* Descendant Selector */
+
+div p {
+    color: green;
+}
+
+
+/*
+This rule applies a green text color to all <p> elements that are within <div> elements. 
+If a <p> element is not contained within a <div>, it will not be affected by this rule
+
+
+Here’s a breakdown of the CSS rule targeting <p> elements that are inside <div> elements:
+
+div p {
+The selector div p is a descendant selector. It targets all <p> elements that are descendants (children, grandchildren, etc.) of <div> elements. 
+This means that only paragraphs inside a <div> will be affected by this rule.
+
+color: green;
+This sets the text color of the targeted <p> elements to green.
+
+}
+The closing curly brace ends the rule for the div p selector.
+*/  

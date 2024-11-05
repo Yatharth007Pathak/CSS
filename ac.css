@@ -1,0 +1,42 @@
+/*
+If needed, external or internal CSS can override inline styles by using the !important rule
+In this case, even if there's an inline style, the text will be blue because !important takes precedence over inline styles.
+*/
+
+
+p {
+    color: blue !important;
+}
+
+/*
+Here’s a breakdown of the CSS rule for the <p> element with the !important declaration:
+
+p {
+This is the selector that targets all <p> (paragraph) elements in the HTML document. 
+Any styles between the curly braces {} will be applied to those elements.
+
+color: blue !important;
+The color property sets the text color of the <p> elements to blue.
+!important is a declaration that gives this style the highest priority. 
+It overrides any other conflicting styles, even inline styles or other CSS rules with higher specificity. 
+It ensures that the color: blue style is applied no matter what other styles might be applied to the <p> element.
+
+}
+This marks the end of the CSS rule for the <p> element.
+
+In summary, this CSS rule ensures that all <p> elements will have blue text, 
+and the !important makes it difficult for other rules to override this style.
+*/
+
+
+/*
+In CSS, comments are added to describe parts of the code, making it easier for you or others to understand the styling decisions. 
+Comments do not affect the rendering of the style and are ignored by the browser.
+*/
+
+/* This is a single-line comment */
+
+/* 
+This is a 
+multi-line comment 
+*/

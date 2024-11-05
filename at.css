@@ -1,0 +1,30 @@
+/* Grouping Selector */
+
+h1, h2, h3 {
+    color: navy;
+    font-family: Arial, sans-serif;
+}
+
+/*
+This CSS rule applies the following styles to all <h1>, <h2>, and <h3> elements:
+Text color will be navy.
+Font family will be Arial, with a fallback to other sans-serif fonts if Arial is not available.
+Grouping selectors like this is an efficient way to apply the same styles to multiple elements at once.
+
+
+Here’s a breakdown of the CSS rule that applies to multiple heading elements (h1, h2, and h3):
+
+h1, h2, h3 {
+This is a group selector. It targets all <h1>, <h2>, and <h3> elements. 
+Grouping selectors like this allows you to apply the same styles to multiple elements at once.
+
+color: navy;
+This sets the text color of all <h1>, <h2>, and <h3> elements to navy (a dark blue color).
+
+font-family: Arial, sans-serif;
+This sets the font family of all <h1>, <h2>, and <h3> elements to Arial, with sans-serif as a fallback font.
+If Arial is unavailable, the browser will use the next available sans-serif font.
+
+}
+This closing curly brace ends the rule for the group selector.
+*/

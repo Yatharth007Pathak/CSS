@@ -1,0 +1,31 @@
+/* Pseudo-Element Selector */
+
+p::first-letter {
+    font-size: 2em;
+    color: red;
+}
+
+  p::before {
+    content: "Note: ";
+    font-weight: bold;
+}  
+
+/*
+The p::first-letter rule styles the first letter of a paragraph, making it larger and red.
+The p::before rule inserts "Note: " before the content of a paragraph, making the inserted text bold.
+
+
+Here’s a detailed breakdown of the CSS rules that target specific parts of <p> elements using pseudo-elements:
+
+1. p::first-letter { font-size: 2em; color: red; }
+p::first-letter is a pseudo-element selector that targets the first letter of a <p> element.
+font-size: 2em; This increases the size of the first letter to 2 times the current font size of the paragraph.
+color: red; This changes the color of the first letter to red.
+
+2. p::before { content: "Note: "; font-weight: bold; }
+p::before is another pseudo-element selector. It inserts content before the actual content of a <p> element.
+content: "Note: "; 
+This specifies the text ("Note: ") that will be inserted before the paragraph content. 
+It does not modify the actual HTML, but adds the content visually.
+font-weight: bold; This makes the inserted text bold.
+*/

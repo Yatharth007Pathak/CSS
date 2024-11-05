@@ -1,0 +1,78 @@
+/*
+In CSS, the line-height property is used to control the amount of space between lines of text (also known as "leading"). 
+Adjusting this can improve readability or create visual effects.
+Basic Syntax
+line-height: value;
+
+
+Values for line-height
+
+Normal: The default spacing between lines (typically around 1.2 times the font size).
+line-height: normal;
+
+Number: Defines a unitless multiplier of the element's font size. For example, 1.5 means 1.5 times the current font size.
+line-height: 1.5;
+
+Length: Specifies an exact value using units like px, em, or rem. For example, 20px means the space between lines is fixed at 20 pixels.
+line-height: 20px;
+
+Percentage: Specifies line height as a percentage of the current font size. For example, 150% means the line height is 1.5 times the font size.
+line-height: 150%;
+
+
+Best Practices
+Use unitless values (e.g., 1.5) because they scale better when font size changes, maintaining proportional line spacing.
+Avoid using absolute units like px unless you need a fixed height, as it might not respond well to different screen sizes or font changes.
+Consider larger line heights for smaller text or body copy to improve readability, while headings typically need tighter line spacing.
+*/
+
+#one {
+    line-height: normal;
+}
+
+#two {
+    line-height: 1.8;
+}
+
+#three {
+    line-height: 40px;
+}
+
+#four {
+    line-height: 200%;
+}
+
+/*
+Here’s a breakdown of the CSS rules that set different line heights for various IDs (#one, #two, #three, and #four):
+
+1. #one { line-height: normal; }
+Selector: Targets the element with the ID one.
+Property: line-height: normal;
+This sets the line height to the default value defined by the browser, 
+which typically provides a comfortable amount of spacing between lines of text, depending on the font size and type.
+
+2. #two { line-height: 1.8; }
+Selector: Targets the element with the ID two.
+Property: line-height: 1.8;
+This sets the line height to 1.8 times the font size. A value greater than 1 (like 1.8) increases the space between lines,
+which can enhance readability, especially in blocks of text.
+
+3. #three { line-height: 40px; }
+Selector: Targets the element with the ID three.
+Property: line-height: 40px;
+This sets the line height to a fixed 40 pixels. This value does not depend on the font size, 
+meaning regardless of the size of the text, the space between lines will always be 40 pixels.
+
+4. #four { line-height: 200%; }
+Selector: Targets the element with the ID four.
+Property: line-height: 200%;
+This sets the line height to 200% of the font size, effectively doubling the space between lines. 
+This percentage-based value is similar to the 1.8 value in #two, but it explicitly expresses the height as a percentage of the font size.
+
+
+Summary:
+#one: Uses the browser's default line height, set to normal.
+#two: Increases line height to 1.8 times the font size, enhancing readability.
+#three: Sets a fixed line height of 40 pixels, which remains constant regardless of font size.
+#four: Doubles the line height to 200%, creating significant space between lines.
+*/

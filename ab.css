@@ -1,0 +1,56 @@
+/*
+inline CSS has higher specificity than external CSS or other types of styles, meaning it will override external or internal styles when 
+applied to the same element. This happens because of the CSS specificity hierarchy. Here’s a breakdown of how specificity works:
+
+CSS Specificity Hierarchy (from lowest to highest):
+External CSS (or styles in an external .css file).
+Internal/Embedded CSS (styles within the <style> tag in the HTML document).
+Inline CSS (styles directly within an element’s style attribute).
+Important Rule (!important declarations override everything except another !important with higher specificity).
+
+Key Points:
+Inline CSS is more specific because it’s applied directly to the element.
+While inline styles can be useful for quick overrides or one-off changes, they reduce the maintainability of the code, 
+as they override external or internal styles and make it harder to manage styles across a large site.
+*/
+
+
+p {
+    color: blue;
+}
+
+/*
+Here’s a breakdown of the CSS rule for the <p> element:
+
+p {
+The selector p selects all <p> (paragraph) elements in the HTML document. 
+Any styling rules within the curly braces {} will apply to these <p> elements.
+
+color: blue;
+The color property sets the text color of the <p> elements to blue.
+
+}
+The closing curly brace marks the end of the CSS rule for the <p> element.
+
+In summary, this CSS rule applies to all <p> elements, changing their text color to blue.
+*/
+
+
+
+/*
+To run a CSS file, you'll typically include it in an HTML file, as CSS is used for styling HTML content. Here’s how you can do it:
+
+1. Create an HTML File: First, create an HTML file where you will link your CSS file e.g index.html
+
+2. Create a CSS File: Now, create a CSS file that you want to link to your HTML e.g styles.css
+
+3. Open the HTML File in a Web Browser:
+Open the HTML file (e.g. index.html) in a web browser by double-clicking it or right-clicking and selecting "Open with." 
+or simply click Go Live on your HTML file to run live server.
+You should see the styled content as defined by your CSS file.
+
+4. Using Online Editors: You can also run CSS code using online platforms like:
+CodePen (https://codepen.io/)          JSFiddle (https://jsfiddle.net/)          JSBin (https://jsbin.com/)
+Simply create a new project, paste your HTML and CSS code, and see the results immediately.
+This method will allow you to see how your CSS styles are applied to HTML elements.
+*/

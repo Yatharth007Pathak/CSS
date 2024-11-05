@@ -1,0 +1,24 @@
+/* General Sibling Selector */
+
+h1 ~ p {
+    color: purple;
+}
+
+
+/*
+This rule applies a purple text color to all <p> elements that are siblings of an <h1> element, no matter how many other elements are
+ between them, as long as they share the same parent. It targets all <p> siblings that appear after the <h1>.
+
+
+Here’s a breakdown of the CSS rule that targets all <p> elements that are siblings of an <h1> element:
+
+h1 ~ p {
+The selector h1 ~ p is a general sibling combinator. It targets all <p> elements that are siblings of an <h1> element, 
+meaning any <p> that comes after an <h1> element in the same parent container, regardless of how many elements are between them.
+
+color: purple;
+This sets the text color of the targeted <p> elements to purple.
+
+}
+The closing curly brace ends the rule for the h1 ~ p selector.
+*/

@@ -1,0 +1,71 @@
+/*
+In CSS, the font-weight property is used to set the thickness or boldness of text. 
+It accepts various values, which can be either numeric or keyword-based. Here are the common options:
+
+Numeric Values
+400: Normal (regular) weight. This is the default value for most text.
+700: Bold weight. Commonly used for headings and emphasized text.
+
+You can also use values from 100 to 900, where lower numbers indicate lighter weights and higher numbers indicate bolder weights. 
+Note that not all fonts support all weights.
+Keyword Values
+normal: Equivalent to 400.
+bold: Equivalent to 700.
+bolder: Renders the text bolder than the parent element's font weight.
+lighter: Renders the text lighter than the parent element's font weight.
+*/
+
+#h1 {
+    font-weight: 100; 
+}
+
+#h2 {
+    font-weight: normal; 
+}
+
+#h3 {
+    font-weight: bold; 
+}
+
+#h4 {
+    font-weight: bolder; 
+}
+
+#h5 {
+    font-weight: 900;
+}
+
+/*
+Here’s a breakdown of the CSS rules that set different font weights for various IDs representing headings (#h1, #h2, #h3, #h4, and #h5):
+
+1. #h1 { font-weight: 100; }
+Selector: Targets the element with the ID h1.
+Property: font-weight: 100;
+This sets the font weight to 100, which is very thin (light). This will render the text as quite light in appearance.
+
+2. #h2 { font-weight: normal; }
+Selector: Targets the element with the ID h2.
+Property: font-weight: normal;
+This sets the font weight to normal (typically equivalent to 400). This is the default font weight and renders the text at a standard thickness.
+
+3. #h3 { font-weight: bold; }
+Selector: Targets the element with the ID h3.
+Property: font-weight: bold;
+This sets the font weight to bold (typically equivalent to 700), making the text appear thicker and more prominent.
+
+4. #h4 { font-weight: bolder; }
+Selector: Targets the element with the ID h4.
+Property: font-weight: bolder;
+This sets the font weight to bolder than the parent element’s weight. The exact appearance depends on the inherited font weight.
+
+5. #h5 { font-weight: 900; }
+Selector: Targets the element with the ID h5.
+Property: font-weight: 900;
+This sets the font weight to 900, which is the thickest (ultra-bold) style. The text will appear very bold and heavy.
+
+#h1: Very light text with a weight of 100.
+#h2: Normal text with a weight of normal (usually 400).
+#h3: Bold text with a weight of bold (usually 700).
+#h4: Bolder than the parent element's weight.
+#h5: Extremely bold text with a weight of 900.
+*/

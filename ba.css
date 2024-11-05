@@ -1,0 +1,60 @@
+/*
+In CSS, the text-decoration property is used to set decorations on text, such as underlines, overlines, line-throughs, and more. 
+Here are the common values you can use with this property:
+
+Basic Values
+
+None: No decoration.
+
+Underline: Adds a line below the text.
+
+Overline: Adds a line above the text.
+
+Line-through: Adds a line through the text.
+
+*/
+
+h1 {
+    text-decoration: none;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+h3 {
+    text-decoration: overline;
+}
+
+h4 {
+    text-decoration: line-through;
+}
+
+
+/*
+Here’s a breakdown of the CSS rules that apply different text decorations to various heading elements (h1, h2, h3, and h4):
+
+1. h1 { text-decoration: none; }
+
+Selector: Targets all <h1> elements.
+Property: text-decoration: none;
+This removes any text decoration from the text within <h1> elements. By default, headings do not have text decorations, 
+so this rule explicitly states that no decoration (like underlining) should be applied.
+
+2. h2 { text-decoration: underline; }
+Selector: Targets all <h2> elements.
+Property: text-decoration: underline;
+This applies an underline to the text within <h2> elements. This can help emphasize the heading and distinguish it visually.
+
+3. h3 { text-decoration: overline; }
+Selector: Targets all <h3> elements.
+Property: text-decoration: overline;
+This applies an overline to the text within <h3> elements. 
+An overline appears above the text and can be used for stylistic purposes or to indicate a heading.
+
+4. h4 { text-decoration: line-through; }
+Selector: Targets all <h4> elements.
+Property: text-decoration: line-through;
+This applies a line-through (strikethrough) effect to the text within <h4> elements. 
+This style can indicate that the text is crossed out or no longer relevant.
+*/

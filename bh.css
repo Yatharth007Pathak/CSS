@@ -1,0 +1,63 @@
+/*
+In CSS, the font-family property is used to specify the typeface that should be applied to an element's text. 
+You can list multiple fonts as a fallback mechanism in case the preferred font isn't available on the user's system. 
+Here's how to use it effectively:
+Basic Syntax
+font-family: "Font Name", fallback-font, generic-font;
+
+Font Families
+
+Specific Fonts: You can specify a specific font name. If the font name contains spaces, it should be enclosed in quotes (either single or double).
+font-family: "Times New Roman", Arial, sans-serif;
+
+Fallback Fonts: It's a good practice to include fallback fonts. If the first font is not available, the browser will try the next one.
+font-family: "Open Sans", "Helvetica Neue", Arial, sans-serif;
+
+Generic Font Families: CSS provides five generic font families that you can use:
+serif: Fonts with small lines or decorative strokes at the ends of letters (e.g., Times, Georgia).
+sans-serif: Fonts without the decorative strokes (e.g., Arial, Verdana).
+monospace: Fonts where each character takes up the same amount of space (e.g., Courier New, Consolas).
+cursive: Fonts that resemble handwriting (e.g., Comic Sans MS).
+fantasy: Decorative fonts (e.g., Impact, Papyrus).
+*/
+
+#h1 {
+    font-family: "Arial", sans-serif; /* Preferred font is Arial, with sans-serif as a fallback */
+}
+
+#h2 {
+    font-family: "Times New Roman", serif; /* Preferred font is Times New Roman, with serif as a fallback */
+}
+
+#h3 {
+    font-family: "Courier New", monospace; /* Preferred font is Courier New, with monospace as a fallback */
+}
+
+
+/*
+Here’s a breakdown of the CSS rules that set different font families for various IDs representing headings (#h1, #h2, and #h3):
+
+1. #h1 { font-family: "Arial", sans-serif; }
+Selector: Targets the element with the ID h1.
+Property: font-family: "Arial", sans-serif;
+This specifies Arial as the preferred font. If Arial is not available, the browser will fall back to any available sans-serif font.
+sans-serif is a generic font family that does not have the small projecting features (serifs) at the ends of strokes.
+
+2. #h2 { font-family: "Times New Roman", serif; }
+Selector: Targets the element with the ID h2.
+Property: font-family: "Times New Roman", serif;
+This specifies Times New Roman as preferred font. If Times New Roman is not available, the browser will fall back to any available serif font.
+serif is a generic font family characterized by the presence of small lines or embellishments at the end of the strokes of the letters.
+
+3. #h3 { font-family: "Courier New", monospace; }
+Selector: Targets the element with the ID h3.
+Property: font-family: "Courier New", monospace;
+This specifies Courier New as the preferred font. If Courier New is not available, the browser will fall back to any available monospace font.
+monospace is a generic font family where each character occupies the same amount of horizontal space, 
+making it ideal for displaying code or tabular data.
+
+Summary:
+#h1: Uses Arial as the primary font, falling back to any sans-serif font if Arial is unavailable.
+#h2: Uses Times New Roman as the primary font, falling back to any serif font if Times New Roman is unavailable.
+#h3: Uses Courier New as the primary font, falling back to any monospace font if Courier New is unavailable.
+*/

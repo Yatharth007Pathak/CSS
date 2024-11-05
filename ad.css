@@ -1,0 +1,108 @@
+/*
+The color property in CSS is used to set the text color of an HTML element. 
+It applies to the foreground color of text and can be defined using various color formats.
+Syntax:
+selector {
+  color: value;
+}
+
+
+Common Color Value Formats:
+
+Named Colors: CSS provides a set of predefined color names, like red, blue, green, etc.
+
+Hexadecimal Colors: Colors can be defined using a hex code, which represents the red, green, and blue components of the color. 
+The format is #RRGGBB. Example: #FF0000 is red, #00FF00 is green, #0000FF is blue.
+
+RGB (Red, Green, Blue): Colors can be defined using the rgb() function, where the values range from 0 to 255.
+
+RGBA (Red, Green, Blue, Alpha): Similar to rgb(), but the fourth value (alpha) specifies the transparency 
+(0 is fully transparent, 1 is fully opaque).
+
+HSL (Hue, Saturation, Lightness): Colors can be specified using hsl(), which represents hue (0-360 degrees on the color wheel), 
+saturation (percentage), and lightness (percentage).
+
+HSLA (Hue, Saturation, Lightness, Alpha): Similar to hsl(), but includes an alpha channel for transparency.
+
+
+Important Notes:
+The color property only affects the text of the element. To style the background, you use the background-color property.
+The color property is inherited, meaning child elements can inherit the text color from their parent unless specified otherwise.
+*/
+
+
+h1 {
+    color: blue;                                     /* Named color */
+}
+  
+h2 {
+    color: #3498db;                                  /* Hexadecimal color */
+}
+  
+h3 {
+    color: rgb(52, 152, 219);                        /* RGB color */
+}
+  
+h4 {
+    color: rgba(52, 152, 219, 0.5);                  /* RGBA color */
+}
+  
+h5 {
+    color: hsl(120, 100%, 50%);                      /* HSL color */
+}
+
+h6 {
+    color: hsla(120, 100%, 50%, 0.5);                /* HSLA color */
+}
+
+button {
+    color: darkmagenta;                              /* Named color */
+}
+
+
+/*
+Here’s a detailed breakdown of the CSS rules for each heading (h1 to h6) with different color formats:
+
+1. h1 { color: blue; } (Named color)
+The selector h1 targets all <h1> elements.
+color: blue; sets the text color to blue using a named color. Named colors are predefined color names recognized by CSS.
+Example: The text color will be a simple blue.
+
+2. h2 { color: #3498db; } (Hexadecimal color)
+The selector h2 targets all <h2> elements.
+color: #3498db; uses a hexadecimal color code to define a specific shade of blue. The code is in the format #RRGGBB, where:
+34 is the red value, 98 is the green value, db is the blue value.
+Example: The text color will be a shade of light blue.
+
+3. h3 { color: rgb(52, 152, 219); } (RGB color)
+The selector h3 targets all <h3> elements.
+color: rgb(52, 152, 219); uses the RGB color model, where each color value (Red, Green, Blue) is specified as a number between 0 and 255.
+Red: 52, Green: 152, Blue: 219
+Example: The text color will be a similar shade of blue as in h2, but this time defined using RGB values.
+
+4. h4 { color: rgba(52, 152, 219, 0.5); } (RGBA color)
+The selector h4 targets all <h4> elements.
+color: rgba(52, 152, 219, 0.5); is similar to the RGB color but adds an alpha (transparency) channel.
+52 is the red value, 152 is the green value, 219 is the blue value, 
+0.5 is the alpha value (transparency) on a scale of 0 (fully transparent) to 1 (fully opaque).
+Example: The text color will be the same shade of blue but with 50% transparency.
+
+5. h5 { color: hsl(120, 100%, 50%); } (HSL color)
+The selector h5 targets all <h5> elements.
+color: hsl(120, 100%, 50%); uses the HSL color model:
+120 is the hue (the color itself) on a scale of 0–360. 120 represents green. 
+100% is the saturation (the intensity of the color). 100% is fully saturated.
+50% is the lightness (how light or dark the color is). 50% is normal lightness.
+Example: The text color will be pure green.
+
+6. h6 { color: hsla(120, 100%, 50%, 0.5); } (HSLA color)
+The selector h6 targets all <h6> elements.
+color: hsla(120, 100%, 50%, 0.5); is the same as HSL but adds an alpha (transparency) channel.
+120 is the hue (green), 100% is the saturation, 50% is the lightness, 0.5 is the alpha (transparency) value, meaning 50% transparency.
+Example: The text color will be transparent green (50% opacity).
+
+7. button { color: darkmagenta } (Named color)
+The selector button targets all <button> elements.
+color: darkmagenta; sets the text color to darkmagenta using a named color. Named colors are predefined color names recognized by CSS.
+Example: The text color will be a simple darkmagenta.
+*/ 

@@ -1,0 +1,23 @@
+/* Universal Selector */
+
+* {
+    color: pink;
+}
+
+/*
+This rule applies to all elements on the page, changing their text color to pink. 
+Any text within the document will appear in pink unless it is overridden by more specific CSS rules.
+
+
+Here’s a breakdown of the CSS rule using the universal selector (*):
+
+* {
+The asterisk (*) is the universal selector in CSS. It selects all elements in the HTML document, 
+meaning the rule inside the curly braces will apply to every element on the page.
+
+color: pink;
+This sets the text color of all elements to pink. The color property affects the text color of an element, not its background.
+
+}
+The closing curly brace ends the rule for all elements.
+*/

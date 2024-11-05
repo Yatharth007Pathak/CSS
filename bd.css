@@ -1,0 +1,23 @@
+a {
+    text-decoration: none;
+}
+
+
+/*
+This CSS rule sets the text decoration of all <a> elements to none, which effectively removes any underlining. 
+This can be useful for achieving a cleaner design, especially when you want links to blend seamlessly with the surrounding text 
+or have custom styling applied through other means (like hover effects or background changes).
+
+
+Breakdown:
+
+a {
+This selector targets all <a> elements in the HTML document.
+
+text-decoration: none;
+This property removes any default text decoration from the anchor elements. 
+By default, anchor elements often come with an underline to indicate that they are links. This rule eliminates that underline.
+
+}
+This closing curly brace ends the rule for the <a> selector.
+*/

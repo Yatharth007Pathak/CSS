@@ -1,0 +1,44 @@
+/*
+CSS selectors are used to target and select HTML elements for styling. They determine which HTML elements the styles will be applied to. 
+There are different types of selectors in CSS, ranging from simple to complex, allowing for precise styling.
+
+Here’s a breakdown of the main types of CSS selectors:
+
+1. Universal Selector (*): Targets all elements on the page.
+
+2. Type Selector (Element Selector): Targets elements based on their HTML tag.
+
+3. ID Selector (#myId): Targets a single element with a specific id attribute. IDs must be unique on the page.
+
+4. Class Selector (.myClass): Targets elements with a specific class attribute. The class can be reused for multiple elements.
+
+5. Descendant Selector (space): Targets elements that are descendants (children or nested elements) of a specified element.
+
+6. Child Selector (>): Targets elements that are direct children of a specified element.
+
+7. Sibling Selectors:
+Adjacent Sibling Selector (+): Selects the next immediate sibling.
+General Sibling Selector (~): Selects all siblings of a specified element.
+
+8. Attribute Selector: Targets elements based on their attributes or attribute values.
+
+9. Pseudo-Class Selector: Targets elements in a specific state (e.g., when hovered, focused, or first-child).
+
+10. Pseudo-Element Selector: Targets specific parts of an element (e.g., the first letter or first line of a text).
+
+11. Grouping Selector (,): Targets multiple elements with the same style rules.
+
+12. Combinator Selectors: Combine two or more selectors for more complex targeting.
+Descendant (space): Selects elements inside another element.
+Child (>): Selects direct children.
+Adjacent Sibling (+): Selects the next sibling.
+General Sibling (~): Selects all siblings.
+
+
+Specificity:
+When multiple selectors apply to the same element, CSS uses specificity to determine which rule is applied. In general:
+ID selectors (#) have the highest specificity.
+Class selectors (.) have medium specificity.
+Type selectors (element names like p, h1) have the lowest specificity.
+By combining different selectors, you can target elements precisely and control their styling effectively.
+*/

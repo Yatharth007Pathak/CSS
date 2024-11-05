@@ -1,0 +1,26 @@
+/* Adjacent Sibling Selector */
+
+h1 + p {
+    color: red;
+}
+  
+
+/*
+This rule applies a red text color to the <p> element that is immediately following an <h1> element. 
+If there are any other elements (like <div>, <span>, etc.) between the <h1> and the <p>, 
+or if the <p> is not the first sibling following the <h1>, it will not be affected by this rule.
+
+
+Here’s a breakdown of the CSS rule that targets <p> elements that are immediately following an <h1> element:
+
+h1 + p {
+The selector h1 + p is an adjacent sibling combinator. 
+It specifically targets the first <p> element that comes immediately after an <h1> element.
+This means that only the <p> directly following an <h1> will be affected by this rule.
+
+color: red;
+This sets the text color of the targeted <p> element to red.
+
+}
+The closing curly brace ends the rule for the h1 + p selector.
+*/

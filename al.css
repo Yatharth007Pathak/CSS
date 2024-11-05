@@ -1,0 +1,41 @@
+/* Class Selector */
+
+.classOne {
+    color: cornflowerblue;
+}
+
+.classTwo {
+    color: crimson;
+}
+
+
+/*
+The rule for .classOne applies a cornflower blue color to the text of all elements that have the class classOne.
+The rule for ** .classTwo** applies a crimson color to the text of all elements that have the class classTwo.
+These rules allow for consistent styling of elements based on their assigned classes in the HTML.
+
+
+Here’s a breakdown of the CSS rules for the elements with the specified classes (.classOne and .classTwo):
+
+1. .classOne { color: cornflowerblue; }
+
+.classOne {
+The . (dot) indicates a class selector. This targets all elements that have the class classOne applied to them in the HTML.
+
+color: cornflowerblue;
+This sets the text color of elements with the class classOne to cornflower blue, a medium blue color with a slight violet tint.
+
+}
+This closing curly brace ends the rule for .classOne.
+
+2. .classTwo { color: crimson; }
+
+.classTwo {
+This class selector targets all elements that have the class classTwo applied to them.
+
+color: crimson;
+This sets the text color of elements with the class classTwo to crimson, a bright red color with a hint of blue.
+
+}
+This closing curly brace ends the rule for .classTwo.
+*/

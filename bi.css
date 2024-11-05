@@ -1,0 +1,92 @@
+/*
+In CSS, the font-size property is used to control the size of the text. 
+You can set it using different units such as pixels, em, rem, percentages, and more. Here’s a breakdown of how to use it:
+
+Basic Syntax
+font-size: value;
+
+
+Units for Font Size
+Pixels (px): Defines a fixed size for the text. This is precise and commonly used unit, but it does not scale with the browser's zoom settings.
+Ems (em): Relative to the font size of the element’s parent. If the parent font size is 16px, 1em equals 16px. It's useful for scalable designs.
+Rems (rem): Relative to root element (usually <html> element) font size, typically 16px by default. This unit makes scaling more predictable.
+Percentages (%): Relative to the parent element's font size. For example, 100% means the same size as the parent element.
+Viewport Width (vw): Relative to the width of the viewport (browser window). This unit can be useful for responsive design.
+Keywords: CSS provides predefined keywords for common font sizes.
+xx-small
+x-small
+small
+medium (default)
+large
+x-large
+xx-large
+larger (relative to the parent font size)
+smaller (relative to the parent font size)
+
+
+A pixel (short for "picture element") is the smallest unit of a digital image or display that can be individually controlled and represented 
+on a screen. Each pixel represents a single point in a graphic or an image and is usually a square of color.
+On standard displays with a pixel density of 96 PPI (pixels per inch), 96 pixels (px) = 1 inch.
+This means that on such a screen, there are 96 pixels packed into each inch of the display. 
+Therefore, 1px would be equivalent to 1/96th of an inch.
+*/
+
+#one {
+    font-size: 1px;
+}
+
+#two {
+    font-size: 16px;
+}
+
+#three {
+    font-size: 32px;
+}
+
+#four {
+    font-size: 55px;
+}
+
+#five {
+    font-size: 78px;
+}
+
+#six {
+    font-size: 96px;
+}
+
+
+/*
+Here’s a breakdown of the CSS rules that set different font sizes for various IDs representing elements 
+(#one, #two, #three, #four, #five, and #six):
+
+1. #one { font-size: 1px; }
+Selector: Targets the element with the ID one.
+Property: font-size: 1px;
+This sets the font size to 1 pixel, making the text extremely small, nearly invisible.
+
+2. #two { font-size: 16px; }
+Selector: Targets the element with the ID two.
+Property: font-size: 16px;
+This sets the font size to 16 pixels, which is the default size for text in most browsers.
+
+3. #three { font-size: 32px; }
+Selector: Targets the element with the ID three.
+Property: font-size: 32px;
+This sets the font size to 32 pixels, making the text significantly larger than normal.
+
+4. #four { font-size: 55px; }
+Selector: Targets the element with the ID four.
+Property: font-size: 55px;
+This sets the font size to 55 pixels, making the text large and bold in appearance.
+
+5. #five { font-size: 78px; }
+Selector: Targets the element with the ID five.
+Property: font-size: 78px;
+This sets the font size to 78 pixels, making the text very large.
+
+6. #six { font-size: 96px; }
+Selector: Targets the element with the ID six.
+Property: font-size: 96px;
+This sets the font size to 96 pixels, creating extremely large text, typically used for main headings or titles.
+*/

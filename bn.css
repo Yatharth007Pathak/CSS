@@ -1,0 +1,68 @@
+/*
+In CSS, the text-transform property is used to control the capitalization of text. 
+It can be applied to any text-containing element and has several values:
+
+
+Values of text-transform
+
+none: No transformation. Text appears as it is.
+
+capitalize: Capitalizes the first letter of each word in the text.
+
+uppercase: Converts all characters in the text to uppercase.
+
+lowercase: Converts all characters in the text to lowercase.
+
+
+The text-transform property is purely a visual change and does not alter the underlying HTML content. 
+For example, if you have text that is originally "Hello World", using text-transform: uppercase; will display it as "HELLO WORLD", 
+but the actual HTML remains "Hello World".
+This property is useful for creating consistent styling for headings and other text elements without needing to change the actual content.
+*/
+
+#h1 {
+    text-transform: none;
+}
+
+#h2 {
+    text-transform: capitalize;
+}
+
+#h3 {
+    text-transform: uppercase;
+}
+
+#h4 {
+    text-transform: lowercase;
+}
+
+/*
+Here’s a breakdown of the CSS rules that set different text transformation styles for various IDs (#h1, #h2, #h3, and #h4):
+
+1. #h1 { text-transform: none; }
+Selector: Targets the element with the ID h1.
+Property: text-transform: none;
+This keeps the text as it is, without any transformation. The original casing of the text will be displayed.
+
+2. #h2 { text-transform: capitalize; }
+Selector: Targets the element with the ID h2.
+Property: text-transform: capitalize;
+This capitalizes the first letter of each word in the text. For example, "hello world" would be transformed to "Hello World".
+
+3. #h3 { text-transform: uppercase; }
+Selector: Targets the element with the ID h3.
+Property: text-transform: uppercase;
+This transforms all letters in the text to uppercase. For example, "hello world" would be transformed to "HELLO WORLD".
+
+4. #h4 { text-transform: lowercase; }
+Selector: Targets the element with the ID h4.
+Property: text-transform: lowercase;
+This transforms all letters in the text to lowercase. For example, "HELLO WORLD" would be transformed to "hello world".
+
+
+Summary:
+#h1: Keeps the original text casing with no transformation.
+#h2: Capitalizes the first letter of each word, enhancing the visual appeal of titles or headings.
+#h3: Converts all text to uppercase, making it stand out and giving a bold look.
+#h4: Converts all text to lowercase, providing a softer appearance compared to uppercase.
+*/

@@ -1,0 +1,36 @@
+/*
+CSS (Cascading Style Sheets) is a language used to style and format the layout of web pages. 
+While HTML provides the structure and content (like headings, paragraphs, images, etc.), 
+CSS is responsible for controlling how those elements are displayed to the user.
+CSS is a language that is used to describe the style of a document.
+
+Key features of CSS:
+Styling: CSS can change the color, font, spacing, size, and positioning of HTML elements.
+Layout Control: CSS allows you to create complex layouts, including grid and flexbox layouts, for responsive design.
+Responsive Design: It helps websites adapt to different screen sizes (mobile, tablet, desktop) using media queries.
+Separation of Concerns: CSS separates content (HTML) from presentation, making it easier to maintain and update.
+
+
+HTML, CSS, and JavaScript are the three core technologies of web development, each serving a distinct purpose:
+
+1. HTML (HyperText Markup Language):
+Purpose: Structure the content of a webpage.
+What it does: Defines the elements (like headings, paragraphs, images, forms) and organizes the page layout.
+Role: It provides the skeleton or foundation of a webpage.
+
+2. CSS (Cascading Style Sheets):
+Purpose: Style the webpage and control the visual presentation.
+What it does: Manages the layout, colors, fonts, spacing, and overall appearance of HTML elements.
+Role: Enhances the look and feel of a webpage.
+
+3. JavaScript:
+Purpose: Add interactivity and dynamic behavior to the webpage.
+What it does: Allows you to create dynamic features like form validation, animations, user interactions (like clicks), 
+and content updates without reloading the page.
+Role: It brings the webpage to life by enabling user interaction.
+
+Key Differences:
+HTML: Defines the structure of the content.
+CSS: Styles and formats how that content looks.
+JavaScript: Adds functionality and makes the webpage interactive.
+*/

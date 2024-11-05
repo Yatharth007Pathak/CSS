@@ -1,0 +1,56 @@
+/* ID Selector */
+
+#headingOne {
+    color: chartreuse;
+}
+
+#headingTwo {
+    color: aqua;
+}
+
+#headingThree {
+    color: deeppink;
+}
+
+/*
+The rule for #headingOne applies a chartreuse color to the text of the element with ID headingOne.
+The rule for #headingTwo applies an aqua color to the text of the element with ID headingTwo.
+The rule for #headingThree applies a deeppink color to the text of the element with ID headingThree.
+Each rule specifically targets the corresponding element based on its ID, allowing for precise styling.
+Here’s a breakdown of the CSS rules for the elements with the specified IDs (#headingOne, #headingTwo, and #headingThree):
+
+
+1. #headingOne { color: chartreuse; }
+
+#headingOne {
+The # symbol denotes an ID selector, which targets an element with the specific ID of headingOne. 
+This rule will apply only to the element that has id="headingOne" in the HTML.
+
+color: chartreuse;
+This sets the text color of the element with ID headingOne to chartreuse, a bright greenish-yellow color.
+
+}
+This closing curly brace ends the rule for #headingOne.
+
+2. #headingTwo { color: aqua; }
+
+#headingTwo {
+This targets the element with the ID headingTwo.
+
+color: aqua;
+This sets the text color of the element with ID headingTwo to aqua, a bright cyan color.
+
+}
+This closing curly brace ends the rule for #headingTwo.
+
+3. #headingThree { color: deeppink; }
+
+#headingThree {
+This targets the element with the ID headingThree.
+
+color: deeppink;
+This sets the text color of the element with ID headingThree to deeppink, a bright pink color.
+
+}
+This closing curly brace ends the rule for #headingThree.
+*/

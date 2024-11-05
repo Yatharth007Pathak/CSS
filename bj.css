@@ -1,0 +1,31 @@
+/*
+Responsive Font Size
+To make your font sizes responsive, consider using units like em, rem, or vw
+*/
+
+h1 {
+    font-size: 2vw; /* Font size adjusts based on viewport width */
+}
+
+
+/*
+This rule makes the font size of the <h1> element responsive. It adjusts dynamically based on the viewport width, 
+ensuring the text scales well on different screen sizes, from small mobile devices to larger desktop displays. 
+The use of vw units helps create adaptable layouts that enhance the user experience on various devices.
+
+
+Breakdown:
+
+h1 {
+This selector targets all <h1> elements in the HTML document.
+
+font-size: 2vw;
+font-size: This property sets the size of the font for the <h1> element.
+2vw: This unit stands for 2% of the viewport width.
+Viewport width (vw) refers to the width of the browser window or screen.
+In this case, the font size of the <h1> element will be 2% of the current width of the viewport. 
+As the viewport (window) resizes, the font size will dynamically adjust to maintain a proportionate size relative to the width of the screen.
+
+}
+This closing curly brace ends the rule for the <h1> selector.
+*/

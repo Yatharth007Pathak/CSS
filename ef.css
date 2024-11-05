@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#container {
+    width: 800px;                      /* Sets container width to 800px */
+    height: 200px;                     /* Sets container height to 200px */
+    display: flex;                     /* Enables flexbox layout for direct children */
+    flex-direction: row;               /* Aligns flex items in a row (horizontal layout) */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+}
+
+#box3 {
+    background-color: darkkhaki;
+}
+
+#box4 {
+    background-color: indianred;
+}
+
+#box5 {
+    background-color: slateblue;
+}
+
+/*
+Key Points:
+
+body Styles: The text alignment to the center affects any inline content. 
+However, the main alignment for the boxes is managed by flex properties in the container.
+
+div Styles: Sets each box to be 100x100px with a 2px black border and keeps them inline but individually block-like.
+
+#container:
+Acts as a flex container with display: flex, which aligns its child boxes in a row.
+The specified width (800px) allows enough space to fit several boxes in a single row.
+Each box div is 100px wide, and with five boxes, this setup will neatly fit inside the container width.
+
+Flex Layout Effect:
+The flexbox container organizes #box1 to #box5 in a single horizontal line. 
+This structure ensures that the layout remains orderly and is visually centered within the container.
+*/

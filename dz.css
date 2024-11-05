@@ -1,0 +1,80 @@
+/*
+The background-image property in CSS is used to set an image as the background of an element. This image is placed behind the content of the 
+element and can be styled in various ways, such as repeated, sized, or positioned according to your design requirements.
+Syntax:
+element {
+  background-image: url('image-path');
+}
+
+Values for background-image:
+url(): Specifies the path to the image. It can be a relative or absolute URL.
+none: Removes the background image.
+
+
+Additional Properties to Use with background-image:
+
+1. background-repeat: Specifies whether and how the background image repeats.
+Values:
+repeat: The image repeats both horizontally and vertically (default).
+repeat-x: The image repeats horizontally.
+repeat-y: The image repeats vertically.
+no-repeat: The image doesn't repeat.
+
+2. background-size: Controls the size of the background image.
+Values:
+cover: Scales the image to cover the entire element (image may be cropped).
+contain: Scales the image to be contained within the element (image will not be cropped).
+auto: Maintains the original size of the image.
+You can also specify dimensions, like background-size: 100px 50px;.
+
+3. background-position: Defines the starting position of the background image.
+Values:
+top, bottom, left, right, center or a combination like top right.
+You can also specify exact positions, like background-position: 10px 20px;.
+
+4. background-attachment: Controls whether the background image scrolls with the page or is fixed.
+Values:
+scroll: The background image scrolls with the content (default).
+fixed: The background image stays fixed in the viewport, even when the page is scrolled.
+local: The background image scrolls with the element's content.
+
+5. background-color: You can also set a background color to be displayed underneath the background image.
+
+
+Multiple Background Images:
+You can also add multiple background images by separating each image URL with a comma. The first image listed will be on top.
+*/
+
+
+
+
+
+/*
+The background-size property in CSS is used to control the size of the background image of an element. 
+It allows you to specify how the background image is scaled or sized within its container.
+Syntax:
+element {
+  background-size: value;
+}
+
+Values of background-size:
+
+auto (default):
+The background image retains its original size.
+If only one size is specified (like width), the height is automatically adjusted to maintain the aspect ratio.
+
+cover:
+Scales the background image to cover the entire element, ensuring that no empty space is left.
+The image may be cropped to maintain its aspect ratio.
+
+contain:
+Scales the background image to fit completely within the element without cropping.
+The entire image will be visible, but there might be empty space if the aspect ratio of the element and the image are different.
+
+Specific Width and Height:
+You can explicitly set the size of the background image using specific width and height values, such as in pixels, percentages, or other units.
+If you specify only one value, the other dimension will automatically adjust to maintain the aspect ratio.
+
+Percentage Values:
+You can use percentages to scale the image relative to the size of the element.
+*/

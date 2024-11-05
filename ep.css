@@ -1,0 +1,71 @@
+body {
+    text-align: center;                 /* Centers inline content within the body */
+}
+
+div {
+    height: 100px;                      /* Default height for all divs */
+    width: 200px;                       /* Width for each box */
+    display: inline-block;              /* Allows divs to sit inline with defined dimensions */
+    border: 2px solid black;          /* Adds a border around each box */
+}
+
+#container {
+    width: 600px;                       /* Defines container width */
+    height: 300px;                      /* Defines container height */
+    display: flex;                      /* Enables flexbox layout for direct children */
+    flex-direction: row;                /* Arranges items in a horizontal row */
+    justify-content: center;            /* Centers items horizontally in the container */
+    align-items: flex-start;            /* Aligns items at the top of the container */
+}
+
+#box1 {
+    background-color: aqua;
+    flex-shrink: 0.5;                   /* Allows this box to shrink but less than the default */
+}
+
+#box2 {
+    background-color: pink;
+    height: 200px;                      /* Sets a specific height for this box */
+}
+
+#box3 {
+    background-color: darkkhaki;
+    height: 75px;                       /* Sets a specific height for this box */
+}
+
+#box4 {
+    background-color: indianred;
+    flex-shrink: 2;                      /* This box will shrink more compared to the default */
+}
+
+#box5 {
+    background-color: slateblue;
+}
+
+/*
+Key Properties:
+
+Container (#container):
+display: flex: Activates flexbox layout for its child elements, allowing for more control over their alignment and spacing.
+flex-direction: row: Positions the child items horizontally.
+justify-content: center: Centers the items along the main axis (horizontally).
+align-items: flex-start: Aligns all items to the top of the container vertically.
+
+Box Properties:
+#box1: flex-shrink: 0.5: This means that if the container becomes too small to fit all items, 
+#box1 will shrink, but only half as much as a default flex-shrink value (which is usually 1).
+#box2: This box has a specified height of 200px, making it significantly taller than the others.
+#box3: This box is shorter with a height of 75px.
+#box4: flex-shrink: 2: This box will shrink more than #box1 if space is tight, allowing more flexibility in the layout.
+#box5: While no specific flex property is applied, it will inherit the default flex properties.
+
+Layout Behavior
+As the container is sized to 600px wide and 300px high, and with the defined flex-shrink properties, 
+boxes will adjust their widths when the container's width changes.
+If the total width of the boxes exceeds 600px, #box1 will shrink less than #box4, 
+which will shrink more aggressively, resulting in varying widths as needed.
+The different heights of the boxes will make the layout visually interesting, with all boxes aligned at the top due to align-items: flex-start.
+
+This approach is effective for creating responsive designs that adapt to varying amounts of content and container sizes, 
+allowing for a clean and organized layout.
+*/

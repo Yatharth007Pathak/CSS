@@ -1,0 +1,51 @@
+div {
+    height: 50px;
+    width: 50px;
+    background-color: pink;  /* Default color for the div */
+}
+
+@media (width: 500px) {
+    div {
+        background-color: red; /* Applied only when the viewport width is exactly 500px */
+    }
+}
+
+@media (min-width: 700px) {
+    div {
+        background-color: aqua; /* Applied when the viewport width is 700px or wider */
+    }
+}
+
+@media (max-width: 300px) {
+    div {
+        background-color: indigo; /* Applied when the viewport width is 300px or narrower */
+    }
+}
+
+/*
+Explanation of Media Queries
+
+Default Styles:
+The div element has a default height and width of 50px, with a pink background color.
+
+@media (width: 500px):
+This rule targets a very specific case where the viewport width is exactly 500px.
+If this condition is met, the background color of the div changes to red.
+
+@media (min-width: 700px):
+This rule applies when the viewport width is 700px or greater.
+Under this condition, the background color changes to aqua.
+
+@media (max-width: 300px):
+This rule targets narrow screens with a maximum width of 300px or less.
+If this condition is satisfied, the background color changes to indigo.
+
+Summary
+In a responsive environment:
+The default color is pink.
+At exactly 500px width, the color becomes red.
+If the viewport width is 700px or wider, the color turns aqua.
+For narrower screens (300px or less), the color becomes indigo.
+
+These conditions create a flexible layout that adjusts the element’s appearance based on screen size, enhancing user experience across devices.
+*/

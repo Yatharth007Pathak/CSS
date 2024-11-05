@@ -1,0 +1,38 @@
+/* Container styling for flexbox layout */
+.container {
+    display: flex;
+    flex-direction: row; /* Items are displayed in a row by default */
+    gap: 10px;
+    padding: 20px;
+}
+
+.item {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+}
+
+/* Orientation Media Query */
+
+/* Apply styles for portrait orientation */
+@media screen and (orientation: portrait) {
+    .container {
+        flex-direction: column; /* Changes layout to column in portrait mode */
+    }
+}
+
+/*
+Explanation
+
+.container:
+Uses flexbox to arrange .item elements in a row by default.
+gap and padding provide spacing and padding around the items and container.
+
+Media Query (@media screen and (orientation: portrait)):
+Activates when the device is in portrait orientation (height greater than width).
+Changes the flex-direction of .container to column to stack items vertically.
+
+Summary
+This orientation-based media query is helpful for creating a responsive layout that adjusts for portrait orientation, 
+especially on devices like tablets and mobile phones where screen orientation can vary.
+*/

@@ -1,0 +1,54 @@
+.color-box {
+    height: 200px;
+    width: 200px;
+    background-color: chocolate;
+    color: white;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Color change for viewport width less than 300px */
+@media screen and (max-width: 300px) {
+    .color-box {
+        background-color: green;
+    }
+}
+
+/* Color change for viewport width between 300px and 400px */
+@media screen and (min-width: 300px) and (max-width: 400px) {
+    .color-box {
+        background-color: pink;
+    }
+}
+
+/* Color change for viewport width between 400px and 600px */
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .color-box {
+        background-color: red;
+    }
+}
+
+/* Color change for viewport width above 600px */
+@media screen and (min-width: 600px) {
+    .color-box {
+        background-color: blue;
+    }
+}
+
+/*
+Explanation
+
+Default Styles:
+Sets the default background-color to chocolate and centers text with white color, using Flexbox for easy alignment.
+
+Media Queries:
+Below 300px: Changes the background to green for very small screens.
+300px - 400px: Sets the background color to pink for small screens.
+400px - 600px: Switches to red for medium-sized screens.
+Above 600px: Changes the background color to blue for large screens, typically desktops.
+
+Summary
+This CSS example demonstrates how media queries can be used to apply different styles (like color) based on viewport width. 
+This approach improves user experience by making visual adjustments suitable for each device's screen size.
+*/

@@ -1,0 +1,56 @@
+body {
+    text-align: center;                 /* Centers inline content within the body */
+}
+
+div {
+    height: 100px;                      /* Default height for all divs */
+    width: 150px;                       /* Sets width of each box */
+    display: inline-block;              /* Allows divs to sit inline and respect set dimensions */
+    border: 2px solid black;          /* Adds a border around each box */
+}
+
+#container {
+    width: 600px;                       /* Defines container width */
+    height: 600px;                      /* Defines container height */
+    display: flex;                      /* Enables flexbox layout for children */
+    flex-direction: row;                /* Positions items in a horizontal row */
+    justify-content: center;            /* Centers items horizontally in each row */
+    flex-wrap: wrap;                    /* Allows items to wrap to new lines as needed */
+    align-items: flex-start;            /* Aligns items at the top within each row */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+    height: 200px;                      /* Adjusts height specifically for #box2 */
+}
+
+#box3 {
+    background-color: darkkhaki;
+    height: 75px;                       /* Sets a different height for #box3 */
+}
+
+#box4 {
+    background-color: indianred;
+}
+
+#box5 {
+    background-color: slateblue;
+    align-self: flex-end;               /* Aligns this box to the bottom of the container row */
+}
+
+/*
+Key Properties:
+
+Container (#container):
+flex-wrap: wrap: Allows items to move to the next line once the row is full.
+align-items: flex-start: Aligns items at the top of each row.
+justify-content: center: Centers items horizontally across the container.
+
+Unique Box Properties:
+#box5 uses align-self: flex-end, aligning it to the bottom of its row, which overrides the default alignment set by align-items in #container.
+Different heights in #box2 and #box3 demonstrate how each box is treated individually within the flex layout.
+*/

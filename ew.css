@@ -1,0 +1,20 @@
+/* Basic Media Query for Screen Size */
+
+/* Apply styles for devices with a max width of 400px */
+@media screen and (max-width: 400px) {
+    body {
+        background-color: lightcoral; /* Sets background color to lightcoral for screens 400px or smaller */
+    }
+}
+
+/*
+Explanation of Media Query
+Media Query (@media screen and (max-width: 400px)):
+This query is applied only to screen devices (as opposed to print or other media types).
+It activates when the screen width is 400px or less, typically affecting smaller mobile devices.
+The body background color changes to lightcoral within this width range, giving the page a different look on small screens.
+
+Summary
+This media query is an efficient way to make subtle design adjustments for small screens, 
+enhancing the user experience by improving contrast, readability, or visual appeal based on screen size.
+*/

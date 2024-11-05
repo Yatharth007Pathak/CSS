@@ -1,0 +1,73 @@
+body {
+    text-align: center;                 /* Centers text and inline elements within the body */
+}
+
+div {
+    height: 100px;                      /* Default height for all div elements */
+    width: 200px;                       /* Fixed width for each box */
+    display: inline-block;              /* Allows boxes to sit inline with their defined width and height */
+    border: 2px solid black;          /* Adds a black border around each box */
+}
+
+#container {
+    width: 600px;                       /* Sets the container width to 600 pixels */
+    height: 300px;                      /* Sets the container height to 300 pixels */
+    display: flex;                      /* Enables flexbox layout for child elements */
+    flex-direction: row;                /* Aligns child elements in a horizontal row */
+    justify-content: center;            /* Centers child elements horizontally within the container */
+    align-items: flex-start;            /* Aligns child elements at the top of the container */
+}
+
+#box1 {
+    background-color: aqua;           /* Sets background color for box 1 */
+}
+
+#box2 {
+    background-color: pink;           /* Sets background color for box 2 */
+    height: 200px;                      /* Sets height for box 2 to 200 pixels */
+    flex-shrink: 0;                     /* Prevents box 2 from shrinking; maintains its width even if the container is smaller */
+}
+
+#box3 {
+    background-color: darkkhaki;      /* Sets background color for box 3 */
+    height: 75px;                       /* Sets height for box 3 to 75 pixels */
+}
+
+#box4 {
+    background-color: indianred;      /* Sets background color for box 4 */
+}
+
+#box5 {
+    background-color: slateblue;      /* Sets background color for box 5 */
+}
+
+/*
+Key Features of This Layout
+
+Container Settings:
+Flexbox: The #container uses display: flex to enable a flexible layout for its children (#box1, #box2, #box3, #box4, and #box5).
+Horizontal Alignment: The flex-direction: row property arranges the boxes in a row.
+Centering: justify-content: center centers the boxes horizontally within the container, while align-items: 
+flex-start ensures they all align at the top of the container.
+
+Box Properties:
+Box 1: Has a default height of 100px and a width of 200px with an aqua background.
+Box 2: This box has a specified height of 200px and flex-shrink: 
+0, meaning it won't shrink when the container width is less than the total width of all boxes. 
+This property allows it to maintain its height while the others may adjust.
+Box 3: Set at a height of 75px, this box will adjust based on the available space but will still be aligned to the top.
+Box 4 and Box 5: These boxes have their heights default to 100px (like Box 1) and have different background colors.
+
+Layout Behavior
+When the browser window is resized or when the container's width is limited, 
+Box 2 will remain at its full height of 200px while the other boxes (if allowed) may adjust their sizes. 
+This can lead to a visually interesting layout, especially if the width of the viewport is less than the combined widths of the boxes.
+If the total width of the boxes exceeds 600px, Box 2 will keep its width, causing potential overflow of the container if the parent allows it.
+If additional boxes are added or if existing boxes change size, 
+the flex properties will allow for a responsive design that adapts to changes in content or screen size.
+
+Visual Outcome
+This layout will render with boxes arranged horizontally in a neat, centered fashion, 
+and will be visually appealing due to the different colors and heights of the boxes. 
+The arrangement emphasizes the pink box (#box2) due to its taller height.
+*/

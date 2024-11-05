@@ -1,0 +1,30 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: green; /* Default background color */
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    div {
+        background-color: red; /* Changes background color to red for screen widths between 300px and 700px */
+    }
+}
+
+/*
+Explanation of Media Query
+
+Default Styles:
+The div element has a default height and width of 100px, with a green background color.
+
+Media Query (@media (min-width: 300px) and (max-width: 700px)):
+This query applies when the viewport width is between 300px and 700px.
+Under this condition, the background color changes to red.
+
+Summary
+In this responsive layout:
+The div will appear with a green background on screens smaller than 300px and larger than 700px.
+For screen widths between 300px and 700px, the div background color becomes red.
+
+This approach ensures that the element’s appearance adapts based on the device’s screen width, 
+improving visual consistency across different screen sizes.
+*/

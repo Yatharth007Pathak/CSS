@@ -1,0 +1,61 @@
+/*
+Flexbox (Flexible Box Layout) in CSS is a layout model designed to distribute space along a container's main axis 
+(horizontally or vertically) and align items flexibly, even when their size is unknown or dynamic. 
+It's ideal for responsive design, offering easy alignment, space distribution, and control over items inside a container.
+Flexbox is a one-dimensional layout method for arranging items in rows or columns.
+
+Here’s a breakdown of key concepts and properties:
+
+1. Flex Container:
+To use Flexbox, you define a container as a flex container by setting its display property to flex (or inline-flex for inline elements).
+.container {
+  display: flex;
+}
+
+
+2. Main Axis and Cross Axis:
+Main Axis: The primary axis along which flex items are laid out. By default, this is horizontal (left to right).
+Cross Axis: The perpendicular axis (vertical, by default).
+You can change the main axis direction using the flex-direction property.
+
+
+3. Flex Container Properties:
+
+flex-direction: Defines the direction of the main axis (row by default).
+It sets how flex items are placed in the flex container, along which axis and directon.
+flex-direction: row | row-reverse | column | column-reverse;
+
+justify-content: Aligns items along the main axis (horizontally for row).
+justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;
+
+align-items: Aligns items along the cross axis (vertically for row).
+align-items: flex-start | flex-end | center | baseline | stretch;
+
+align-content: Aligns multiple lines of flex items when there is extra space along the cross axis.
+It does alignment of space between and aroun the content along the cross-axis.
+align-content: flex-start | flex-end | center | space-between | space-around | stretch;
+
+flex-wrap: Determines if flex items should wrap when they exceed the container's size.
+flex-wrap: nowrap | wrap | wrap-reverse;
+
+gap: Adds space between flex items.
+gap: 10px;
+
+
+4. Flex Item Properties
+
+flex-grow: Defines how much an item will grow relative to the rest of the flex items if space is available.
+flex-grow: 1;         (Will take up any available space)
+
+flex-shrink: Defines how much an item will shrink relative to the rest of the flex items if space is available.
+flex-shrink: 1;       (Will shrink if needed)
+
+flex-basis: Defines the initial size of the flex item before any extra space is distributed.
+flex-basis: 200px;    (Item's base size)
+
+align-self: Overrides align-items for individual flex items. It does alignment of individual along the cross axis.
+align-self: flex-start | flex-end | center | baseline | stretch;
+
+order: Controls the order in which flex items appear.
+order: 1;             (Higher numbers appear later)
+*/

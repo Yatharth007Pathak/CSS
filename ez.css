@@ -1,0 +1,26 @@
+body {
+    font-size: 16px;                                 /* Default font size for mobile */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+
+/* Base styles for mobile */
+body {
+    font-size: 16px;
+  }
+  
+  /* Styles for tablets */
+  @media screen and (min-width: 600px) {
+    body {
+      font-size: 18px;                               /* Increase font size for tablets */
+    }
+  }
+  
+  /* Styles for desktops */
+  @media screen and (min-width: 900px) {
+    body {
+      font-size: 20px;                               /* Larger font size for desktops */
+    }
+  }
+

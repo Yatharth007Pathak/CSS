@@ -1,0 +1,59 @@
+div {
+    height: 100px;               /* Sets the height of each div to 100px */
+    width: 100px;                /* Sets the width of each div to 100px */
+    background-color: aqua;      /* Sets the background color to aqua */
+    border: 2px solid black;     /* Adds a black border with 2px thickness */
+    display: inline-block;       /* Allows the divs to be placed inline, respecting width and height */
+}
+
+#box1 {
+    position: static;            /* Default positioning; box will follow the normal document flow */
+}
+
+#box2 {
+    position: relative;          /* Positioned relative to its normal position in the document */
+    top: 20px;                   /* Moves 20px down from its normal position */
+    left: 10px;                  /* Moves 10px to the right from its normal position */
+}
+
+#box3 {
+    position: absolute;          /* Positioned absolutely relative to the nearest positioned ancestor */
+    top: 500px;                  /* Moves 500px from the top of the containing block */
+    left: 10px;                  /* Moves 10px from the left of the containing block */
+}
+
+#box4 {
+    position: fixed;             /* Stays fixed relative to the viewport, not affected by scrolling */
+    top: 0;                      /* Sticks to the top of the viewport */
+}
+
+
+/*
+Positioning Breakdown
+
+#box1 (Static Positioning)
+Position: static is the default behavior of elements, meaning it follows the normal flow of the document.
+Outcome: The element is displayed in its natural order within the page.
+
+#box2 (Relative Positioning)
+Position: relative means the element is positioned relative to its normal position in the document flow.
+Top and Left: The element is offset by 20px down and 10px to the right.
+Outcome: It visually shifts but remains in the normal document flow.
+
+#box3 (Absolute Positioning)
+Position: absolute removes the element from the normal document flow and positions it relative to its nearest positioned ancestor 
+(or the document if none exist).
+Top and Left: It is positioned 500px down from the top and 10px from the left.
+Outcome: The element is fixed at this absolute position in the layout, floating over other elements.
+
+#box4 (Fixed Positioning)
+Position: fixed locks the element to the viewport, so it remains in place even when scrolling.
+Top: It sticks to the top of the viewport.
+Outcome: The element stays at the top of the page and doesn't move when you scroll.
+
+Visual Impact
+#box1 will remain in the normal document flow.
+#box2 will be offset 20px down and 10px right from its original position.
+#box3 will be placed 500px down and 10px from the left edge of the container.
+#box4 will be stuck to the top of the screen, even when the user scrolls.
+*/

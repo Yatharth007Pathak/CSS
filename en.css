@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#container {
+    width: 600px;                      /* Sets container width to 600px */
+    height: 600px;                     /* Sets container height to 600px */
+    display: flex;                     /* Enables flexbox layout for direct children */
+    flex-direction: row;               /* Aligns flex items in a row (horizontal layout) */
+    justify-content: center;           /* Centers items horizontally within the container */
+    flex-wrap: wrap;                   /* Allows items to wrap to the next line if needed */
+    align-items: flex-start;           /* Aligns items to the start of the container vertically */
+    align-content: flex-start;         /* Aligns rows to the start of the container */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+    height: 200px;
+}
+
+#box3 {
+    background-color: darkkhaki;
+    height: 75px;
+}
+
+#box4 {
+    background-color: indianred;
+}
+
+#box5 {
+    background-color: slateblue;
+}
+
+/*
+Key Properties:
+
+Container (#container):
+justify-content: center: Horizontally centers the items in each row.
+flex-wrap: wrap: Allows items to move to the next line if the row is full.
+align-items: flex-start: Aligns items to the top of the row within each row.
+align-content: flex-start: Aligns rows to the top of the container when wrapped.
+
+Individual Boxes (#box1 to #box5):
+Varying heights (height property) demonstrate the wrapping effect as the boxes fill rows.
+Different background colors for easy visual differentiation.
+*/

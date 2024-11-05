@@ -1,0 +1,32 @@
+#box1 {
+    height: 100px;             /* Box 1 has a height of 100 pixels */
+    width: 200px;              /* Box 1 has a width of 200 pixels */
+    background-color: pink;    /* Box 1 has a pink background */
+    font-size: 10px;           /* Text inside Box 1 has a font size of 10 pixels */
+}
+
+#box2 {
+    height: 50px;              /* Box 2 has a height of 50 pixels */
+    background-color: yellow;  /* Box 2 has a yellow background */
+    margin-left: 10%;          /* Box 2 has a left margin of 10% of its parent container's width */
+    font-size: 2em;            /* Text inside Box 2 is 2 times the default font size */
+    width: 5em;                /* Box 2's width is 5 times the current font size */
+}
+
+
+/*
+Explanation
+
+Box 1 (#box1):
+The height is set to 100px and the width to 200px, creating a rectangular shape.
+The background is pink.
+The text inside has a font size of 10px, which is a small text size.
+
+Box 2 (#box2):
+The height is 50px.
+The background is yellow.
+The left margin is set to 10%, which moves the box 10% of the width of its parent container from the left.
+The text inside the box has a font size of 2em, meaning it is 2 times the default size of the parent element. i.e, 20px.
+The width is set to 5em, meaning it is 5 times the element's font size. 
+Since the font-size is 2em, this results in a total width of 5 times the element's font size. i.e, 100px.
+*/

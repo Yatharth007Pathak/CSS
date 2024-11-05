@@ -1,0 +1,56 @@
+body {
+    text-align: center;                  /* Centers any inline content within the body */
+}
+
+div {
+    height: 100px;                       /* Default height of 100px for each box */
+    width: 150px;                        /* Sets each box width to 150px */
+    display: inline-block;               /* Displays divs inline but maintains width and height */
+    border: 2px solid black;           /* Adds a 2px black border around each box */
+}
+
+#container {
+    width: 600px;                        /* Sets container width */
+    height: 600px;                       /* Sets container height */
+    display: flex;                       /* Enables flexbox layout */
+    flex-direction: row;                 /* Aligns items in a row */
+    justify-content: center;             /* Centers items horizontally */
+    flex-wrap: wrap;                     /* Allows items to wrap to a new row if needed */
+    align-items: center;                 /* Vertically centers items within their row */
+    align-content: center;               /* Centers the rows of items within the container */
+}
+
+#box1 {
+    background-color: aqua;            /* Background color for box1 */
+}
+
+#box2 {
+    background-color: pink;            /* Background color for box2 */
+    height: 200px;                       /* Unique height for box2 */
+}
+
+#box3 {
+    background-color: darkkhaki;       /* Background color for box3 */
+    height: 75px;                        /* Unique height for box3 */
+}
+
+#box4 {
+    background-color: indianred;       /* Background color for box4 */
+}
+
+#box5 {
+    background-color: slateblue;       /* Background color for box5 */
+}
+
+/*
+Key Points
+
+Flexible Layout (#container):
+justify-content: center centers items horizontally in each row.
+align-items: center vertically centers each item within its row.
+align-content: center centers all rows within the container.
+flex-wrap: wrap allows boxes to shift to new rows when they reach the container’s width limit, creating a flexible and responsive layout.
+
+Unique Box Styles:
+Each box has distinct colors, with #box2 and #box3 having unique heights, creating visual interest in the layout.
+*/

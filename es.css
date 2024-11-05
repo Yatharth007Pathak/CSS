@@ -1,0 +1,63 @@
+.navbar {
+    background-color: pink;             /* Sets the background color of the navigation bar to pink */
+    display: flex;                        /* Enables flexbox layout for the navbar */
+    justify-content: space-evenly;        /* Distributes navigation items evenly with equal space between them */
+}
+
+a {
+    text-decoration: none;                /* Removes the underline from anchor links */
+    color: black;                       /* Sets the text color of links to black */
+}
+
+li {
+    list-style-type: none;                /* Removes bullet points from list items */
+    background-color: aqua;             /* Sets the background color of list items to aqua */
+}
+
+.outer {
+    height: 400px;                        /* Sets the outer div height to 400 pixels */
+    width: 400px;                         /* Sets the outer div width to 400 pixels */
+    background-color: cornflowerblue;   /* Sets the background color of the outer div to cornflower blue */
+    display: flex;                        /* Enables flexbox layout for the outer div */
+    justify-content: center;              /* Centers child elements horizontally within the outer div */
+    align-items: center;                  /* Centers child elements vertically within the outer div */
+}
+
+.inner {
+    height: 100px;                        /* Sets the inner div height to 100 pixels */
+    width: 100px;                         /* Sets the inner div width to 100 pixels */
+    background-color: darkorchid;       /* Sets the background color of the inner div to dark orchid */
+}
+
+/*
+Explanation of Styles
+
+Navigation Bar (.navbar):
+Flexbox Layout: Using display: flex, the .navbar creates a flexible layout for its child elements (typically <a> or <li> elements).
+Even Distribution: justify-content: space-evenly ensures that all items in the navbar are evenly spaced, 
+with equal space on both sides of each item.
+
+Anchor Links (a):
+No Underline: The text-decoration: none property removes the default underline from links.
+Black Text: The text color is set to black, providing a clear contrast against the navbar’s pink background.
+
+List Items (li):
+No Bullets: The list-style-type: none property removes bullet points from the list items.
+Aqua Background: Each list item has a light aqua background, making it visually distinct.
+
+Outer Container (.outer):
+Fixed Size: The .outer div has a fixed height and width of 400 pixels, creating a square container.
+Centered Layout: Using display: flex, justify-content: center, and align-items: center, 
+any child elements (like the .inner div) will be perfectly centered within this container.
+Background Color: The cornflower blue color provides a visually appealing backdrop.
+
+Inner Container (.inner):
+Smaller Square: The .inner div has a height and width of 100 pixels, making it smaller than the outer div.
+Distinct Color: The dark orchid background color adds contrast to the outer div.
+
+Visual Outcome
+In a typical HTML structure, this CSS will create a navigation bar at the top with evenly spaced links or list items. 
+Below the navigation bar, there will be a square container (the outer div) with another smaller square (the inner div) centered within it. 
+The colors will provide a vibrant aesthetic, with a pink navbar, aqua list items, 
+and a cornflower blue outer div surrounding a dark orchid inner div.
+*/

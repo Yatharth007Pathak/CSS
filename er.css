@@ -1,0 +1,78 @@
+body {
+    text-align: center;                 /* Centers text and inline elements within the body */
+}
+
+div {
+    height: 100px;                      /* Default height for all div elements */
+    width: 50px;                        /* Fixed width for each box */
+    display: inline-block;              /* Allows boxes to sit inline with their defined width and height */
+    border: 2px solid black;          /* Adds a black border around each box */
+}
+
+#container {
+    width: 700px;                       /* Sets the container width to 700 pixels */
+    height: 300px;                      /* Sets the container height to 300 pixels */
+    display: flex;                      /* Enables flexbox layout for child elements */
+    flex-direction: row;                /* Aligns child elements in a horizontal row */
+    justify-content: center;            /* Centers child elements horizontally within the container */
+    align-items: flex-start;            /* Aligns child elements at the top of the container */
+}
+
+#box1 {
+    background-color: aqua;           /* Sets background color for box 1 */
+    flex-grow: 1;                       /* Allows box 1 to grow and take up available space in proportion to other boxes */
+}
+
+#box2 {
+    background-color: pink;           /* Sets background color for box 2 */
+    height: 200px;                      /* Sets height for box 2 to 200 pixels */
+    flex-grow: 2;                       /* Allows box 2 to grow twice as much as box 1 when additional space is available */
+}
+
+#box3 {
+    background-color: darkkhaki;      /* Sets background color for box 3 */
+    height: 75px;                       /* Sets height for box 3 to 75 pixels */
+}
+
+#box4 {
+    background-color: indianred;       /* Sets background color for box 4 */
+}
+
+#box5 {
+    background-color: slateblue;       /* Sets background color for box 5 */
+}
+
+/*
+Key Features of This Layout
+
+Container Settings:
+Flexbox: The #container uses display: flex to create a flexible layout for its child elements (#box1, #box2, #box3, #box4, and #box5).
+Horizontal Alignment: The flex-direction: row property arranges the boxes in a horizontal row.
+Centering: justify-content: center centers the boxes horizontally within the container, while align-items: 
+flex-start ensures they align at the top of the container.
+
+Box Properties:
+Box 1: This box has a fixed width of 50px, a height of 100px, and a background color of aqua. The flex-grow: 
+1 property allows it to grow proportionally based on the available space.
+Box 2: This box has a height of 200px, a background color of pink, and a flex-grow: 
+2 property, meaning it will take up more space than Box 1 when there is available space in the container. 
+Specifically, Box 2 will grow twice as much as Box 1 when space allows.
+Box 3: Set at a height of 75px and has a darkkhaki background color. 
+Its flex-grow property is not specified, so it will default to 0, meaning it won’t grow to fill space.
+Box 4 and Box 5: Both of these boxes are set with their respective background colors but have no height specified, 
+which will default to 100px (as inherited from the div styles).
+
+Layout Behavior
+Flexibility: When the browser window is resized or the container’s width changes, 
+Box 1 and Box 2 will adjust their sizes based on their flex-grow properties. 
+Box 2 will always be larger than Box 1 due to its flex-grow: 2 setting.
+Alignment: All boxes will align to the top of the container because of the align-items: 
+flex-start property. This creates a visually organized layout.
+Overflow Handling: If the total width of the boxes exceeds 700px, Box 2 will maintain its height and width, 
+and the boxes may overflow or wrap based on the flex-wrap property (not set here, so it defaults to nowrap).
+
+Visual Outcome
+This layout will render with boxes arranged horizontally, with Box 2 being the tallest and taking up more space due to its flex-grow property. 
+The colors will provide a vibrant visual distinction between the boxes, 
+and the centered alignment will create an appealing aesthetic for the layout.
+*/

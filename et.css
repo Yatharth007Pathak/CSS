@@ -1,0 +1,33 @@
+/*
+Media queries in CSS are a powerful feature used to apply styles based on the conditions of the user's device, 
+such as its screen size, resolution, orientation, and more. 
+They enable responsive design, allowing web pages to adapt to various devices, ensuring optimal viewing experiences.
+Media queries help create a responsive website.
+
+Basic Syntax
+A media query consists of a media type and at least one expression that evaluates to true or false. Here’s the basic syntax:
+
+@media media_type and (condition) {
+   CSS rules here 
+}
+
+Common Media Types
+all: Suitable for all devices.
+screen: Used for computer screens, tablets, smartphones, etc.
+print: Used for printed documents.
+speech: Used for screen readers.
+
+Media Features
+Here are some common media features used in queries:
+width: Width of the viewport.
+height: Height of the viewport.
+max-width: Maximum width of the viewport.
+min-width: Minimum width of the viewport.
+orientation: Device orientation (portrait or landscape).
+resolution: Resolution of the output device (e.g., dpi, dppx).
+
+Key Points:
+Media queries are essential for creating responsive web designs that look good on different devices.
+You can target specific screen sizes, orientations, and device types using media features.
+Combining multiple media queries can help create a seamless user experience across various platforms.
+*/

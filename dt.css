@@ -1,0 +1,53 @@
+/*
+The position property in CSS is used to control positioning of an element within its containing block or relative to other elements on the page.
+It allows you to move elements in different ways, whether it's relative to their normal position or to the entire viewport.
+The top, right, bottom, and left properties are used in conjunction with the position property to define the final position of the element.
+Syntax:
+element {
+  position: value;
+  top: value;
+  right: value;
+  bottom: value;
+  left: value;
+}
+
+In CSS, the properties top, right, bottom, and left are used to control the precise positioning of elements. 
+These properties work in conjunction with the position property to determine where an element will be placed on the page. 
+These properties are used to adjust the position of an element from its containing block or relative to the viewport, 
+depending on the position value applied to the element.
+
+
+Common position Values:
+
+static (default):
+Elements are positioned according to the normal document flow.
+The top, right, bottom, and left properties have no effect.
+
+relative:
+The element is positioned relative to its normal position. 
+You can use the top, right, bottom, and left properties to adjust its position relative to where it would normally appear.
+Other elements will not be affected, and space is reserved for the element in its original position.
+
+absolute:
+The element is positioned relative to its nearest positioned ancestor (i.e., the nearest ancestor that has a position value other than static), 
+or if none, it is positioned relative to the initial containing block (often the browser window).
+It is removed from the normal document flow, so it does not affect the position of other elements.
+
+fixed:
+The element is positioned relative to the viewport, meaning it stays in the same place even when the page is scrolled.
+It is positioned relative to browser. It is also removed from the document flow, similar to absolute.
+
+sticky:
+The element is positioned based on the user's scroll position. 
+It behaves like relative until a certain scroll point is reached, after which it behaves like fixed and sticks in place.
+You must define at least one of the top, right, bottom, or left properties for sticky to work.
+
+
+Summary of the position Property:
+static: Default. Elements follow the normal document flow.
+relative: Position relative to its normal position.
+absolute: Position relative to the nearest positioned ancestor or the initial containing block.
+fixed: Position relative to the viewport, stays in place when scrolling.
+sticky: Toggles between relative and fixed based on scroll position.
+The position property is vital for creating dynamic layouts and controlling how elements are placed and interact within the page.
+*/

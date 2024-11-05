@@ -1,0 +1,44 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 150px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#container {
+    width: 600px;                       /* Fixed width of the container */
+    height: 600px;                      /* Fixed height of the container */
+    display: flex;                      /* Enables flexbox layout for direct children */
+    flex-direction: row;                /* Positions items in a horizontal row */
+    justify-content: center;            /* Centers items horizontally in the container */
+    flex-wrap: wrap;                    /* Wraps items to the next line if necessary */
+    align-items: center;                /* Aligns items vertically within each row */
+    align-content: flex-end;            /* Aligns wrapped content towards the bottom */
+}
+
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+    height: 200px;
+}
+
+#box3 {
+    background-color: darkkhaki;
+    height: 75px;
+}
+
+#box4 {
+    background-color: indianred;
+
+}
+#box5 {
+    background-color: slateblue;
+}

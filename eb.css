@@ -1,0 +1,25 @@
+div {
+    width: 300px;                             /* Sets the width of the div to 300px */
+    height: 200px;                            /* Sets the height of the div to 200px */
+    background-image: url(images/camel.avif); /* Applies the camel image as the background */
+    background-repeat: no-repeat;             /* Prevents the image from repeating */
+    background-size: cover;                   /* Scales the image to cover the entire div */
+    background-position: center;              /* Centers the image within the div */
+}
+
+
+/*
+Explanation:
+background-repeat: no-repeat: Ensures the image will not tile or repeat across the div. Only a single instance of the image will be shown.
+
+background-size: cover: This will scale the image to ensure that the entire div is covered, 
+but it might crop parts of the image to fill the area while maintaining its aspect ratio.
+
+background-position: center: Positions the image in the center of the div. 
+This is important if the image is being cropped, as it keeps the center of the image visible.
+
+Usage:
+This approach is ideal for making sure a background image fits a div without repeating, 
+while still maintaining its aspect ratio and keeping the most important part of the image (the center) visible. 
+It’s often used in full-width header images or image cards where visual consistency is key.
+*/

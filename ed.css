@@ -1,0 +1,25 @@
+div {
+    height: 200px;                                /* Sets the height of the div to 200px */
+    width: 500px;                                 /* Sets the width of the div to 500px */
+    background-image: url('images/bird.avif');    /* Sets the background image from the specified local path */
+    background-size: cover;                       /* Ensures the image covers the entire div, even if it stretches */
+    position: fixed;                              /* Fixes the div in a specific position relative to the viewport */
+    right: 0px;                                   /* Places the div 0px away from the right edge of the viewport */
+    top: 50px;                                    /* Places the div 50px down from the top of the viewport */
+}
+
+
+/*
+Key Points:
+height & width: The div is 200px tall and 500px wide.
+background-image: The local image 'images/bird.avif' is applied as the background of the div.
+background-size: cover: This scales the background image to cover the entire area of the div. 
+It maintains the aspect ratio but might crop parts of the image if it doesn’t match the div's dimensions exactly.
+position: fixed: This means the div will stay in the same place even when the page is scrolled.
+right: 0px: The div is aligned to the right edge of the viewport (0px from the right side).
+top: 50px: The div is positioned 50px down from the top of the viewport.
+
+Effects:
+The div will remain fixed in the top-right corner of the viewport, even when the user scrolls the page.
+The background image will stretch to fully cover the div without leaving any gaps, but parts of the image may be cropped to fit the dimensions.
+*/

@@ -1,0 +1,37 @@
+<!--
+Create a navbar with 4 optons in the form of anchor tags inide list items. Now, use flexbox to place them all spaced equally in a single line.
+Use flexbox to centre one div inside another div.
+Which has higher prioroty -align-items or align-self?
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="es.css">
+</head>
+<body>
+
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+
+        <div class="outer">
+            <di class="inner">
+            </di>
+        </div>
+</body>
+</html>
+
+<!--
+The align-self property takes precedence over the align-items property in CSS Flexbox.
+
+Explanation:
+align-items is a property applied to the flex container that defines the default alignment for all flex items along the cross axis.
+align-self is a property that can be applied to individual flex items, allowing us to override the align-items setting for that specific item.
+-->

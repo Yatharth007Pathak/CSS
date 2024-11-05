@@ -1,0 +1,63 @@
+div {
+    height: 100px;               /* Each div will have a height of 100px */
+    width: 100px;                /* Each div will have a width of 100px */
+    background-color: aqua;      /* Each div will have an aqua background */
+    border: 2px solid black;     /* Each div will have a black 2px border */
+    display: inline-block;       /* Allows the divs to be inline while respecting their width and height */
+}
+
+#box1 {
+    position: static;            /* Default positioning */
+}
+
+#box2 {
+    position: relative;          /* Positioned relative to its normal position */
+    top: 20px;                   /* Moves 20px down from its normal position */
+    left: 10px;                  /* Moves 10px to the right */
+}
+
+#box3 {
+    position: sticky;            /* Sticks to the top of the viewport when scrolling */
+    top: 0px;                    /* Sticks to the top of the container when scrolled to */
+    left: 30px;                  /* Keeps 30px distance from the left edge */
+}
+
+#box4 {
+    position: fixed;             /* Remains fixed relative to the viewport */
+    top: 0;                      /* Stays at the top of the viewport */
+}
+
+
+/*
+Positioning Breakdown
+
+#box1 (Static Positioning)
+Position: static, meaning it follows the normal document flow.
+Outcome: The element stays in its default position.
+
+#box2 (Relative Positioning)
+Position: relative offsets the element 20px down and 10px to the right from its original position.
+Outcome: It visually shifts but remains within the document flow.
+
+#box3 (Sticky Positioning)
+Position: sticky means the element behaves like relative until the scroll position reaches a specified threshold, 
+after which it "sticks" to the specified position.
+Top and Left: The element will stick 0px from the top and 30px from the left once the user scrolls past it.
+Outcome: It remains "sticky" at the top of the container when scrolling past its initial position, 
+giving the effect of a fixed position only after a certain scroll.
+
+#box4 (Fixed Positioning)
+Position: fixed locks the element to the viewport, so it doesn’t move even when the page is scrolled.
+Top: It stays fixed at the top of the viewport.
+Outcome: This element will always be at the top of the page, regardless of scrolling.
+
+
+Visual Impact
+#box1 stays in its normal place, following the document flow.
+#box2 is relatively positioned with a slight shift from its normal place.
+#box3 initially behaves like relative, but will "stick" to the top of the viewport when you scroll down past it.
+#box4 is fixed to the top of the screen and will always be visible as you scroll.
+
+
+The sticky position for #box3 is useful for elements like headers or menus that stay visible after a certain point in the scrolling.
+*/

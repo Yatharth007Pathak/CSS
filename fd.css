@@ -1,0 +1,41 @@
+div {
+    height: 100px;                      /* Sets the height of the div to 100 pixels */
+    width: 100px;                       /* Sets the width of the div to 100 pixels */
+    background-color: aquamarine;     /* Sets the initial background color to aquamarine */
+    border: 2px solid black;          /* Adds a solid black border around the div */
+    transition-property: all;           /* Applies transitions to all properties that change */
+    transition-duration: 2s;            /* Sets the duration of the transition to 2 seconds */
+}
+
+div:hover {
+    background-color: red;            /* Changes the background color to red on hover */
+    color: white;                     /* Changes text color to white on hover */
+    font-size: 20px;                    /* Increases the font size to 20 pixels on hover */
+}
+
+div:active {
+    background-color: darkcyan;       /* Changes the background color to dark cyan when the div is active (clicked) */
+    color: yellow;                    /* Changes text color to yellow when the div is active */
+}
+
+/*
+Explanation
+
+Base Styles:
+The div has a fixed height and width of 100 pixels, an aquamarine background color, and a solid black border. 
+The transition properties are set to apply changes smoothly.
+
+Transition Effects:
+transition-property: all; specifies that all properties that change (like background color, text color, and font size) should be transitioned.
+transition-duration: 2s; sets the transition duration to 2 seconds, meaning any change will occur over this period, creating a smooth effect.
+
+Hover Effect:
+When the user hovers over the div, the following changes occur smoothly over 2 seconds:
+The background color transitions to red.
+The text color changes to white.
+The font size increases to 20 pixels.
+
+Active Effect:
+When the user clicks (or holds down) the div, it changes to a dark cyan background and the text color shifts to yellow immediately, 
+without the transition effect, since this is the :active state.
+*/

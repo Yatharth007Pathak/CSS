@@ -1,0 +1,21 @@
+/*
+The z-index property in CSS controls the stacking order of elements that overlap one another. It specifies the position of an element along 
+the z-axis (which is the axis perpendicular to the screen), and it only works on elements that have a position value other than static 
+(i.e., elements with relative, absolute, fixed, or sticky positioning).
+
+z-index decides the stack level of elements. Overlapping elements with a larger z-index cover those with a smaller one.
+Syntax:
+element {
+  position: value;
+  z-index: value;
+}
+
+Values:
+auto (default): The stacking order is determined by the order of elements in the document.
+Positive integer: Higher values place the element in front of others with lower values.
+Negative integer: Lower values place the element behind others with higher values.
+
+Important Notes:
+Elements with a higher z-index value appear in front of elements with a lower value.
+z-index only affects elements that have a position value of relative, absolute, fixed, or sticky
+*/

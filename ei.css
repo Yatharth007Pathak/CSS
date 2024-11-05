@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#container {
+    width: 800px;                       /* Sets container width to 800px */
+    height: 200px;                      /* Sets container height to 200px */
+    display: flex;                      /* Enables flexbox layout for direct children */
+    flex-direction: row;                /* Positions items in a row, horizontally */
+    justify-content: flex-end;          /* Aligns items to the right end of the container */
+
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+}
+
+#box3 {
+    background-color: darkkhaki;
+}
+
+#box4 {
+    background-color: indianred;
+}
+
+#box5 {
+    background-color: slateblue;
+}

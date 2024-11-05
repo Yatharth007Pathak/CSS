@@ -1,0 +1,37 @@
+div {
+    height: 250px;                                                                 /* Sets the height of the div to 250px */
+    width: 400px;                                                                  /* Sets the width of the div to 400px */
+    background-color: aqua;                                                      /* Sets the background color to aqua */
+    border: 2px solid black;                                                     /* Adds a 2px solid black border */
+    display: inline-block;                                                         /* Makes the div an inline-block element */
+    margin-left: 200px;                                                            /* Adds 200px margin to the left */
+}
+
+#box1 {
+    background-image: url('images/sheep.avif');                                    /* Background image from a local path */
+    background-size: contain;                                                      /* Image scales to fit, maintaining aspect ratio */
+}
+
+#box2 {
+    background-image: url('https://wallpaperaccess.com/full/366127.jpg');          /* Image from an external URL */
+    background-size: contain;                                                      /* Image scales to fit */
+}
+
+/*
+Key Points:
+
+div: Defines the general styling for both #box1 and #box2. The height is set to 250px, width to 400px, with a background color of aqua 
+and a solid black border. Both elements are positioned using inline-block with a left margin of 200px for spacing.
+
+#box1: The local image (images/sheep.avif) is applied as a background. The background-size: 
+contain ensures the image fits within the container, keeping its aspect ratio. 
+If the image’s dimensions don't match the div's, there might be empty space around it.
+
+#box2: Uses an external image URL. The same background-size: contain ensures the external image fits within the div, 
+maintaining its original aspect ratio.
+
+Adjustments:
+Background Positioning: If the images are not centered, you might want to add background-position: center; to each box for better alignment.
+External Image Loading: The external URL (https://wallpaperaccess.com/full/366127.jpg) should work,
+but make sure it's accessible and loads properly. You can verify it by testing the URL in a browser or using a reliable image hosting service.
+*/

@@ -1,0 +1,41 @@
+.box1 {
+    position: absolute;                     /* Positions the element absolutely within the nearest positioned ancestor */
+    z-index: 1;                             /* Sets the stacking order, 1 is lower than 2 */
+    background-color: lightgreen;         /* Sets the background color to light green */
+    width: 200px;                           /* Width of the element is 200px */
+    height: 100px;                          /* Height of the element is 100px */
+}
+
+.box2 {
+    position: absolute;                     /* Absolutely positioned relative to its nearest positioned ancestor */
+    z-index: 2;                             /* Higher stacking order than .box1, so it will appear above it */
+    background-color: lightcoral;         /* Sets the background color to light coral */
+    width: 150px;                           /* Width of the element is 150px */
+    height: 75px;                           /* Height of the element is 75px */
+    left: 50px;                             /* Moves the element 50px to the right of its parent/containing element */
+    top: 50px;                              /* Moves the element 50px down from the top of its parent/containing element */
+}
+
+
+/*
+This CSS code defines two absolutely positioned boxes (.box1 and .box2) that overlap each other. 
+The z-index property determines which box appears on top, with .box2 having a higher z-index, so it will sit above .box1
+
+Visual Layout
+
+.box1 (Light Green Box)
+Position: Absolute, meaning it's taken out of the normal document flow and positioned relative to the nearest 
+positioned ancestor (or the viewport if no ancestor is positioned).
+Z-index: Set to 1, meaning it will appear below .box2.
+Size: 200px wide and 100px tall.
+
+.box2 (Light Coral Box)
+Position: Absolute, positioned 50px from the left and 50px from the top of the containing element or viewport.
+Z-index: Set to 2, so it stacks above .box1.
+Size: 150px wide and 75px tall, smaller than .box1.
+
+Overlap Behavior
+.box1 is placed at its default position according to the absolute positioning rules.
+.box2 is placed 50px to the right and 50px down, overlapping part of .box1 since it's smaller.
+Z-index: Since .box2 has a higher z-index, it will appear on top of .box1.
+*/

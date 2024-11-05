@@ -1,0 +1,90 @@
+
+/*
+In CSS, units define the measurements for various properties such as width, height, margin, padding, font-size, etc. 
+CSS offers a variety of units that can be broadly categorized into absolute units and relative units. 
+Understanding these units is essential for creating responsive and adaptable designs.
+
+
+1. Absolute Units
+Absolute units are fixed and do not change based on other elements or the viewport size. 
+These units are more precise but less flexible in responsive design.
+
+px (pixels): One pixel is a tiny dot on the screen. This is the most common unit for screen-based designs. 
+Pixels are fixed relative to the screen resolution. Example: width: 200px;
+
+cm (centimeters): Measurement in centimeters. Typically used for print media rather than screen media. Example: width: 5cm;
+
+mm (millimeters): Measurement in millimeters, useful for print. Example: width: 50mm;
+
+in (inches): Measurement in inches. One inch equals 96 pixels. Example: width: 2in;
+
+pt (points): Points are commonly used in typography. 1 point is equal to 1/72 of an inch. Example: font-size: 12pt;
+
+pc (picas): A typographical unit where 1 pica equals 12 points. Example: font-size: 3pc;
+
+
+2. Relative Units
+Relative units are more flexible and adapt based on the context, such as the size of the parent element or the viewport. 
+These units are ideal for responsive web design.
+
+% (percentage): Sets values relative to the parent element's size. This is widely used for flexible layouts.
+Example: width: 50%; (Sets the width to 50% of the parent element)
+
+em: Font size of the parent, in the case of typographicaal properties like font-size, 
+and font size of the element itself, in the case of other propreties like width.
+Relative to the font-size of the element’s parent. If the parent’s font-size is 16px, then 1em equals 16px.
+Example: padding: 2em; (2 times the parent font size)
+
+rem (root em): Relative to the root element’s (<html>) font-size. If the root font-size is 16px, then 1rem equals 16px, 
+regardless of the parent’s size.
+Example: font-size: 1.5rem; (1.5 times the root font size)
+
+vw (viewport width): Relative to 1% of the viewport’s width. The viewport is the visible area of the browser window.
+Example: width: 50vw; (50% of the viewport’s width)
+
+vh (viewport height): Relative to 1% of the viewport’s height.
+Example: height: 100vh; (100% of the viewport’s height)
+
+vmin: Relative to the smaller value of the viewport’s width or height.
+Example: font-size: 10vmin; (10% of the smaller side of the viewport)
+
+vmax: Relative to the larger value of the viewport’s width or height.
+Example: font-size: 10vmax; (10% of the larger side of the viewport)
+
+ch: Relative to the width of the "0" (zero) character of the current font. It is mostly used for defining text layouts.
+Example: width: 40ch; (40 characters wide)
+
+ex: Relative to the height of the lowercase "x" of the current font. Less commonly used.
+Example: line-height: 1.5ex;
+
+lh: Relative to the line height of the element. Useful for spacing that adapts to the line height.
+Example: margin-bottom: 2lh; (Twice the current line height)
+
+
+3. Time Units
+Used in animation and transition properties.
+
+s (seconds): Specifies time in seconds. Example: animation-duration: 2s; (The animation runs for 2 seconds)
+
+ms (milliseconds): Specifies time in milliseconds. Example: transition-duration: 500ms; (The transition lasts for 500 milliseconds)
+
+
+4. Angle Units
+Used in CSS transformations (like rotating elements) or gradients.
+
+deg (degrees): Represents degrees in a circle. A full circle is 360 degrees. Example: transform: rotate(45deg);
+
+rad (radians): Represents radians. A full circle is 2π radians or approximately 6.28319 radians. 
+Example: transform: rotate(1.57rad); (Equivalent to 90 degrees)
+
+grad (gradians): There are 400 gradians in a full circle. Example: transform: rotate(100grad);
+
+turn: Represents turns. A full circle is 1turn. Example: transform: rotate(0.25turn); (Equivalent to 90 degrees)
+
+
+Summary:
+Absolute units like px, cm, in are fixed and don't scale with the page.
+Relative units like %, em, rem, vw, vh are flexible and adjust according to the parent element or viewport size.
+Time units like s and ms are used for animations.
+Angle units like deg and rad are used for transformations.
+*/

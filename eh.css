@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+}
+
+div {
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid black
+}
+
+#container {
+    width: 800px;
+    height: 200px;
+    display: flex; /* Enables flexbox layout for the container */
+    flex-direction: column-reverse; /* Arranges items in a column from bottom to top */
+}
+
+#box1 {
+    background-color: aqua;
+}
+
+#box2 {
+    background-color: pink;
+}
+
+#box3 {
+    background-color: darkkhaki;
+}
+
+#box4 {
+    background-color: indianred;
+}
+
+#box5 {
+    background-color: slateblue;
+}
+
+/*
+Key Points:
+
+body: text-align: center; centers any inline or inline-block elements in the body.
+
+div: Each div has a height and width of 100px and a 2px black border.
+
+display: inline-block; allows each div to occupy only its defined width and height, making it more flexible within a layout.
+
+#container:
+Acts as a flex container with display: flex;, which makes it possible to arrange its children with flex properties.
+flex-direction: column-reverse; reverses the natural order of child items, displaying them from bottom to top.
+
+Result:
+The container holds five divs stacked vertically in reverse order (box5 at the top, box1 at the bottom), 
+with each div having a distinct background color.
+The container's layout is columnar, but each div within it aligns according to the column-reverse flex direction. 
+The body alignment centers the container itself, while each box within the container maintains its position due to flex alignment.
+*/

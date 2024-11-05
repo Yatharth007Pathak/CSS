@@ -1,0 +1,56 @@
+div {
+    height: 550px;
+    width: 350px;
+    background-color: aqua;      /* Sets background color to aqua */
+    border: 2px solid black;     /* Black border of 2px thickness */
+    display: inline-block;       /* Inline-block allows the divs to sit side by side while maintaining their width and height */
+}
+
+#box1 {
+    background-image: url("images/horse.avif");  /* Sets the background image */
+    background-size: cover;                      /* Ensures the image covers the entire div */
+}
+
+#box2 {
+    background-image: url("images/horse.avif");  /* Sets the background image */
+    background-size: contain;                    /* The image scales to fit within the div, maintaining its aspect ratio */
+}
+
+#box3 {
+    background-image: url("images/horse.avif");  /* Sets the background image */
+    background-size: contain;                    /* The image scales to fit within the div */
+    background-repeat: no-repeat;                /* Prevents the image from repeating if it doesn't fill the space */
+}
+
+#box4 {
+    background-image: url("images/horse.avif");  /* Sets the background image */
+    background-size: auto;                       /* The image will display in its original size */
+}
+
+
+/*
+Background Image Behaviors:
+
+#box1:
+background-size: cover: The image will cover the entire area of the div, possibly cutting off parts of the image to fit. 
+This maintains the aspect ratio and ensures no empty spaces.
+
+#box2:
+background-size: contain: The image will scale to fit inside the div, 
+but it might leave empty spaces if the image's aspect ratio doesn't match the div's dimensions.
+
+#box3:
+background-size: contain: Same behavior as #box2, but here, background-repeat: 
+no-repeat ensures that the image will not repeat itself if the div is larger than the image.
+
+#box4:
+background-size: auto: The image will display at its original size. If the image is smaller than the div, 
+it will not scale up to fit; if it's larger, it will overflow unless otherwise controlled.
+
+When to Use Each:
+background-size: cover: Great for full-background images where cropping isn't a concern.
+background-size: contain: Best when you want to display the entire image without cropping, even if that means some empty space.
+background-repeat: no-repeat: Used when you don’t want the image to tile or repeat.
+background-size: auto: Useful when you want to preserve the natural size of the image and don’t need it to scale.
+This approach allows for various ways to handle background images within the same-sized container.
+*/

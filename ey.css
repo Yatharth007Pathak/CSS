@@ -1,0 +1,30 @@
+body {
+    font-size: 18px;            /* Default font size for larger screens */
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Media Query for Mobile Devices */
+
+/* Apply styles to screens narrower than 480px */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;        /* Smaller font size for narrow screens */
+    }
+}
+
+/*
+Explanation
+
+body styling:
+Sets a default font size of 18px for larger screens.
+Uses the Arial font family and a 20px margin around the body for better readability on wider screens.
+
+Media Query (@media screen and (max-width: 480px)):
+Targets screens 480px or narrower (typically mobile devices).
+Reduces the font-size to 14px for improved readability on smaller screens, preventing the text from appearing too large.
+
+Summary
+This media query provides a simple way to ensure the text is readable across devices by adjusting the font size based on screen width. 
+It’s particularly useful for responsive web design to accommodate users on mobile devices.
+*/

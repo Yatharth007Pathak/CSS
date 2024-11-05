@@ -1,0 +1,38 @@
+.loader {
+    width: 200px;                                                /* Set the width of the loader */
+    height: 200px;                                               /* Set the height of the loader */
+    border-radius: 50%;                                          /* Make the loader circular */
+    border: 20px solid #FFE660;                                /* Set the border color and width */
+    border-top: 20px solid #4ECDC4;                            /* Change the top border color */
+    animation: spinAnimate 3s ease-in 0s infinite normal;        /* Apply the spin animation */
+}
+
+@keyframes spinAnimate {
+    from {
+        transform: rotate(0deg);                                 /* Start from 0 degrees */
+    }
+    to {
+        transform: rotate(360deg);                               /* Rotate to 360 degrees */
+    }
+}
+
+
+/*
+This CSS code creates a spinning loader animation, styled as a circular shape with a rotating border. Here’s how it works:
+
+Loader Styles:
+.loader: Sets a circular div with a width and height of 200px.
+border-radius: 50%: Makes the div circular.
+border: 20px solid #FFE660: Adds a 20px wide yellowish border to the entire circle.
+border-top: 20px solid #4ECDC4: Changes the color of the top border to a contrasting teal color, which gives the spinning effect when animated.
+animation: spinAnimate 3s ease-in 0s infinite normal;:
+3s: Sets the animation duration to 3 seconds.
+ease-in: Makes the animation start slowly and speed up.
+infinite: The animation loops indefinitely.
+
+Keyframes spinAnimate:
+from: Begins with no rotation (rotate(0deg)).
+to: Ends with a full 360-degree rotation (rotate(360deg)), completing a circular spin.
+
+This loader spins continuously, simulating a loading effect by rotating the colored top border against the rest of the circle.
+*/

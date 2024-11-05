@@ -1,0 +1,24 @@
+/* Base styles for the box */
+.box {
+    width: 100px; /* Original width */
+    height: 100px; /* Original height */
+    background-color: lightpink; /* Background color */
+    border: 2px solid darkred; /* Border for visibility */
+    transform: scale(1.5, 1.5); /* Scale to 150% in both width and height */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: darkred; /* Text color */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Margin around the box */
+}
+
+/*
+Explanation
+Base State: The .box class starts with a width and height of 100px, light pink background color, and a dark red border.
+Scale Effect: The transform: scale(1.5, 1.5); rule enlarges the box to 150% of its original size, affecting both width and height equally.
+
+When you open this file in a browser, you will see the box scaled up to 1.5 times its original size. 
+The scale() transformation can be adjusted as needed for different sizes.
+*/

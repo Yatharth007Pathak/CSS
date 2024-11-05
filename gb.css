@@ -1,0 +1,34 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: colorAnimate 2s ease-in 0s infinite normal;
+}
+
+@keyframes colorAnimate {
+    from {
+        left: 0px;
+        background-color: yellow;
+    }
+    to {
+        left: 600px;
+        background-color: red;
+    }
+}
+
+/*
+In this code, the div element animates from a starting position of left: 0px with a yellow background color 
+to an ending position of left: 600px with a red background color. Key elements of this animation include:
+
+Animation Setup: The animation shorthand property applies the animation named colorAnimate, setting its duration to 2s, 
+timing function to ease-in, delay to 0s, and iteration count to infinite, allowing it to repeat indefinitely.
+
+Keyframes: The @keyframes colorAnimate rule defines the animation's movement and color change. 
+It moves the div horizontally from left: 0px to left: 600px and changes its background color from yellow to red.
+
+This setup creates a looping animation where the div shifts across the screen while its color transitions from yellow to red over each cycle.
+*/

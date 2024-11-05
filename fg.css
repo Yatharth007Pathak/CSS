@@ -1,0 +1,21 @@
+.button {
+    background-color: lightblue;                /* Default background color */
+    border: none;                                 /* Remove default border */
+    color: white;                               /* Text color */
+    padding: 15px 30px;                           /* Padding around the text */
+    font-size: 16px;                              /* Font size */
+    cursor: pointer;                              /* Change cursor on hover */
+    transition: background-color 0.3s ease;       /* Transition effect */
+    border-radius: 5px;                           /* Rounded corners */
+}
+
+.button:hover {
+    background-color: royalblue;                 /* Change background color on hover */
+}
+
+/*
+Explanation
+Base State: The .button class has a light blue background, white text, and rounded corners with padding for a better appearance.
+Transition Effect: The transition property applies a smooth transition for the background color change over 0.3 seconds with an easing effect.
+Hover State: When the button is hovered over, the background color changes to royal blue.
+*/

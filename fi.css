@@ -1,0 +1,36 @@
+/*
+The transition property is shorthand for:
+transition: property | duration | timing-function | delay;
+*/
+
+/* Base styles for the box */
+.box {
+    width: 100px; /* Initial width */
+    height: 100px; /* Initial height */
+    background-color: lightblue; /* Initial background color */
+    transition: all 0.3s ease-in-out 1s; /* Transition for all properties */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: darkblue; /* Text color */
+    border: 2px solid darkblue; /* Border for better visibility */
+    margin: 20px; /* Margin around the box */
+}
+
+/* Styles for hover state */
+.box:hover {
+    background-color: lightcoral; /* Change background color on hover */
+    transform: scale(1.2); /* Scale the box up on hover */
+}
+
+/*
+Explanation
+
+Base State: The .box class starts with a width and height of 100px, a light blue background, and a dark blue border.
+
+Transition Effect: The transition: all 0.3s ease-in-out; rule ensures that any changes to the box 
+(such as background color and size) will animate over 0.3 seconds with an ease-in-out timing function, 1s of delay.
+
+Hover State: When the box is hovered over, the background color changes to light coral, and the box scales up to 120% of its size.
+*/

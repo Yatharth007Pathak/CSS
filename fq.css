@@ -1,0 +1,36 @@
+/* Base styles for the box */
+.box {
+    width: 100px; /* Width of the box */
+    height: 100px; /* Height of the box */
+    background-color: coral; /* Background color */
+    transform: translate(20px, 30px) rotate(30deg) scale(1.2); /* Initial transformations */
+    transition: transform 0.5s ease; /* Smooth transition for transformations */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Margin around the box */
+}
+
+/* Styles for hover state */
+.box:hover {
+    transform: translate(50px, 60px) rotate(0deg) scale(1); /* Transforms on hover */
+}
+
+/*
+Explanation
+
+Base State: The .box class starts with a width and height of 100px, a coral background color, and initial transformations 
+that translate it by 20px right and 30px down, rotate it by 30 degrees, and scale it to 120% of its original size.
+
+Transition Effect: The transition: transform 0.5s ease; rule ensures a smooth 0.5-second transition 
+for the transform property whenever it changes.
+
+Hover State: When the box is hovered over, the transformations change to translate it by 50px right and 60px down, 
+remove the rotation (0 degrees), and revert the scale to 100%.
+
+Open this file in a browser to see the smooth transition effect in action when you hover over the box. 
+The box will shift, rotate back to its original orientation, and return to its initial size with a gradual transformation effect.
+*/

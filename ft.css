@@ -1,0 +1,118 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Scale Transformations */
+  
+  /* Basic scaling (1.5 times larger) */
+  .box1 {
+    transform: scale(1.5);
+  }
+  
+  /* Scaling down to 0.5 times */
+  .box2 {
+    transform: scale(0.5);
+  }
+  
+  /* Scaling width more than height */
+  .box3 {
+    transform: scale(1.5, 1);
+  }
+  
+  /* Scaling height more than width */
+  .box4 {
+    transform: scale(1, 1.5);
+  }
+  
+  /* Double scaling (2 times larger) */
+  .box5 {
+    transform: scale(2);
+  }
+  
+  /* Scaling only in X direction */
+  .box6 {
+    transform: scaleX(1.5);
+  }
+  
+  /* Scaling only in Y direction */
+  .box7 {
+    transform: scaleY(1.5);
+  }
+  
+  /* Negative scaling in X direction (flips horizontally) */
+  .box8 {
+    transform: scaleX(-1);
+  }
+  
+  /* Negative scaling in Y direction (flips vertically) */
+  .box9 {
+    transform: scaleY(-1);
+  }
+  
+  /* Combined scaling and rotation */
+  .box10 {
+    transform: scale(1.3) rotate(30deg);
+  }
+
+/*
+This CSS applies various scaling transformations to .box elements within a .container flexbox. Each .box has a different 
+transformation applied, demonstrating how elements can be resized along the X and Y axes in various ways, and even flipped or rotated.
+
+Breakdown:
+
+Base Styling:
+The body centers .container in the viewport.
+The .container flexbox aligns .box items in a row with a gap.
+Each .box has a 100x100 size, rounded corners, centered text, and a blue background color.
+
+Scaling Transformations:
+
+Basic Scaling:
+.box1 is scaled up by 1.5 times in both directions, making it 50% larger.
+.box2 is scaled down to half its size with scale(0.5).
+
+Uneven Scaling:
+.box3 is scaled 1.5 times along the X-axis only.
+.box4 is scaled 1.5 times along the Y-axis only, elongating it vertically.
+
+Double Scaling:
+.box5 is scaled to double its original size with scale(2).
+
+Directional Scaling:
+.box6 applies scaleX(1.5), scaling only along the X-axis.
+.box7 uses scaleY(1.5), scaling only along the Y-axis.
+
+Negative Scaling (Flipping):
+.box8 uses scaleX(-1) to flip horizontally.
+.box9 applies scaleY(-1) to flip vertically.
+
+Combined Scaling and Rotation:
+.box10 combines scaling at 1.3 times with a 30-degree rotation, which enhances both its size and angle.
+
+This layout visually illustrates how scaling impacts size, shape, orientation, and direction.
+*/

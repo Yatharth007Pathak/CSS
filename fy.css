@@ -1,0 +1,56 @@
+/*
+CSS animations allow you to create smooth transitions between styles over a specified duration, making it easy to animate changes in 
+properties like position, size, color, and more. Animations can enhance user experience by providing visual feedback and engaging interactions.
+
+
+Basic Components of CSS Animations
+@keyframes Rule: Defines the animation and its keyframes (the starting and ending points along with any intermediate waypoints).
+animation Property: Applies the animation to an element.
+
+
+Basic Syntax
+
+1. Keyframes
+The @keyframes rule specifies the styles that will be applied at various points during the animation. You can define multiple keyframes.
+@keyframes animation-name {
+  from { Initial styles }
+  to { Final styles }
+}
+You can also use percentages to define multiple points in the animation
+@keyframes animation-name {
+  0% { Initial styles }
+  50% { Halfway styles}
+  100% { Final styles }
+}
+
+2. Applying the Animation
+The animation property is used to apply the keyframes to an element. Here’s a basic structure:
+selector {
+  animation: animation-name | duration | timing-function | delay | iteration-count | direction | fill-mode;
+}
+
+
+Animation Properties
+animation-name: The name of the @keyframes animation to apply.
+animation-duration: The length of time the animation takes to complete one cycle (e.g., 2s for 2 seconds).
+animation-timing-function: The speed curve of the animation (e.g., ease, linear, ease-in, ease-out, ease-in-out).
+animation-delay: The amount of time to wait before starting the animation.
+animation-iteration-count: How many times the animation should play (e.g., 1, infinite).
+animation-direction: Defines whether the animation should play forwards, backwards, or alternate between the two.
+animation-fill-mode: Defines how styles are applied before and after the animation executes (e.g., forwards, backwards, both, none).
+
+
+Animation Timing Functions
+Different timing functions create varied effects:
+linear: The animation progresses at a constant speed.
+ease: Starts slow, speeds up, then slows down.
+ease-in: Starts slow and speeds up.
+ease-out: Starts fast and slows down.
+ease-in-out: Starts and ends slowly.
+
+
+Conclusion
+CSS animations provide a versatile way to add dynamic effects to your web pages, enhancing interactivity and visual appeal. 
+By using the @keyframes rule and the animation property, you can create engaging animations 
+that respond to user interactions and improve overall user experience.
+*/

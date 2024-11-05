@@ -1,0 +1,44 @@
+body {
+    display: flex;                           /* Flexbox layout for centering */
+    justify-content: center;                  /* Horizontally centers the content */
+    align-items: center;                      /* Vertically centers the content */
+    height: 100vh;                            /* Makes body take full viewport height */
+    background-color: #f0f0f0;                /* Light gray background color */
+    margin: 0;                                /* Removes default margin */
+}
+
+.box {
+    width: 100px;                               /* Sets width of the box */
+    height: 100px;                              /* Sets height of the box */
+    background-color: lightblue;                /* Initial background color */
+    animation: rotate-and-change 2s ease-in-out infinite; /* Animation applied */
+  }
+  
+  @keyframes rotate-and-change {
+    0% {
+      transform: rotate(0deg);                  /* Initial rotation */
+      background-color: lightblue;              /* Initial color */
+    }
+    50% {
+      transform: rotate(180deg);                /* Rotate to 180 degrees halfway */
+      background-color: coral;                  /* Color change to coral */
+    }
+    100% {
+      transform: rotate(360deg);                /* Full rotation at 360 degrees */
+      background-color: lightblue;              /* Reset to original color */
+    }
+  }
+
+/*
+Explanation
+
+Box Styling:
+.box class sets up a 100x100 pixel div with a lightblue background.
+The animation property applies the rotate-and-change keyframes, 
+lasting 2s with an ease-in-out timing for smooth acceleration and deceleration, repeating infinite.
+
+Keyframes:
+0%: Starting point with no rotation (rotate(0deg)) and lightblue color.
+50%: At halfway, the box rotates to 180 degrees, changing its color to coral.
+100%: Completes a full 360-degree rotation, returning to the lightblue color.
+*/

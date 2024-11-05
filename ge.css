@@ -1,0 +1,75 @@
+/* Loader Container */
+.loader-container {
+    display: flex;                                                                             /* Use Flexbox for alignment */
+    justify-content: center;                                                                   /* Center child elements horizontally */
+    align-items: center;                                                                       /* Center child elements vertically */
+    height: 100vh;                                                                             /* Full height of the viewport */
+    background-color: #1a1a2e;                                                               /* Dark background color */
+}           
+
+/* Loader Styling */
+.loader {
+    width: 200px;                                                                              /* Set width of the loader */
+    height: 200px;                                                                             /* Set height of the loader */
+    border-radius: 50%;                                                                        /* Make it a circle */
+    border: 20px solid transparent;                                                            /* Set border width and make it transparent */
+    border-top: 20px solid #4ECDC4;                                                          /* Set top border color */
+    border-right: 20px solid #FFE660;                                                        /* Set right border color */
+    border-image: linear-gradient(45deg, #FFE660, #4ECDC4);                                /* Gradient border */
+    border-image-slice: 1;                                                                     /* Apply the gradient to the border */
+    position: relative;                                                                        /* Position relative for pseudo-elements */
+    animation: spinAnimate 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;                  /* Spin animation */
+    box-shadow: 0 0 20px rgba(78, 205, 196, 0.5), 0 0 40px rgba(78, 205, 196, 0.3);        /* Glow effect */
+}
+
+/* Inner Circle Glow */
+.loader::before {
+    content: '';                                                                               /* Empty content for pseudo-element */
+    position: absolute;                                                                        /* Position absolute within loader */
+    top: 50%;                                                                                  /* Center vertically */
+    left: 50%;                                                                                 /* Center horizontally */
+    width: 140px;                                                                              /* Set width of inner circle */
+    height: 140px;                                                                             /* Set height of inner circle */
+    background: radial-gradient(circle, rgba(78, 205, 196, 0.2), transparent);               /* Glow effect */
+    border-radius: 50%;                                                                        /* Make it a circle */
+    transform: translate(-50%, -50%);                                                          /* Center the inner circle */
+    box-shadow: inset 0 0 20px rgba(255, 230, 96, 0.2);                                      /* Inner shadow for glow */
+    animation: pulse 1.5s ease-in-out infinite;                                                /* Pulse animation */
+}
+
+/* Spin Animation */
+@keyframes spinAnimate {
+    0% { transform: rotate(0deg); }                                                             /* Start at 0 degrees */
+    100% { transform: rotate(360deg); }                                                         /* Rotate to 360 degrees */
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 1; }                         /* Scale normal */
+    50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.7; }                          /* Scale up and reduce opacity */
+}
+
+/*
+This CSS code enhances the loader animation by adding a glowing inner circle and modifying the loader's appearance and animation effects. 
+Here’s a breakdown of its components:
+
+1. Loader Container
+Flexbox Layout: Centers the loader both vertically and horizontally within the viewport.
+Background Color: Sets a dark background (#1a1a2e) for contrast against the loader.
+
+2. Loader Styling
+Border and Gradient: The loader has a border that transitions from yellow to teal, creating a visually appealing effect.
+Animation: The loader spins using a custom easing function (cubic-bezier), giving a more dynamic feel.
+Box Shadow: Adds a glowing effect to the loader, enhancing its visibility against the dark background.
+
+3. Inner Circle Glow
+Inner Glow: Creates a circular glow effect that scales and pulses, adding depth to the loader.
+Positioning: Centers the inner circle using absolute positioning and translation.
+Pulse Animation: The inner circle scales and changes opacity, creating a breathing effect.
+
+4. Spin Animation
+Rotation: Defines the loader's spinning animation from 0 to 360 degrees.
+
+5. Pulse Animation
+Breathing Effect: Changes the scale and opacity of the inner circle, making it appear to pulse in and out.
+*/

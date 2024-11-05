@@ -1,0 +1,23 @@
+   /* Base styles for the box */
+   .box {
+    width: 100px; /* Width of the box */
+    height: 100px; /* Height of the box */
+    background-color: lightcoral; /* Background color */
+    border: 2px solid darkred; /* Border for visibility */
+    transform: rotate(45deg); /* Rotate 45 degrees clockwise */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Margin around the box */
+}
+
+/*
+Explanation
+Base State: The .box class has a width and height of 100px, with a light coral background color and a dark red border.
+Rotation Effect: The transform: rotate(45deg); rule rotates the box 45 degrees clockwise, giving it a tilted appearance.
+
+When you open this file in a browser, you’ll see the box rotated by 45 degrees. This can be applied to any element for a simple rotation effect.
+*/

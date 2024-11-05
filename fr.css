@@ -1,0 +1,43 @@
+/* Perspective for 3D effect */
+.container {
+    perspective: 1000px; /* Distance from viewer to z=0 plane */
+    display: flex; /* Center container */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Base styles for the box */
+.box {
+    width: 100px; /* Width of the box */
+    height: 100px; /* Height of the box */
+    background-color: coral; /* Background color */
+    transform: rotateY(45deg); /* Initial Y-axis rotation */
+    transition: transform 0.5s ease; /* Smooth transition */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    border: 2px solid darkred; /* Border for visibility */
+}
+
+/* Hover state */
+.box:hover {
+    transform: rotateY(0deg); /* Revert rotation on hover */
+}
+
+/*
+Explanation
+
+Perspective: The .container class uses perspective: 1000px; to set the 3D depth effect, creating a sense of depth as the box rotates. 
+A larger value will create a shallower effect, while a smaller value will make the rotation effect more dramatic.
+
+Rotation Effect: The .box class starts with a 45-degree rotation on the Y-axis (rotateY(45deg);), giving it a 3D tilt.
+
+Hover State: When hovered, the box rotates back to rotateY(0deg);, facing forward.
+
+Opening this file in a browser will show a box with a 3D rotation effect, which animates smoothly to a front-facing position on hover. 
+The perspective setting provides a realistic depth to the rotation effect.
+*/

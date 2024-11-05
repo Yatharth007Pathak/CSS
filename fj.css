@@ -1,0 +1,32 @@
+ /* Base styles for the delayed box */
+ .delayed-box {
+    width: 100px; /* Width of the box */
+    height: 100px; /* Height of the box */
+    background-color: lightgreen; /* Initial background color */
+    transition: opacity 0.5s ease 1s; /* Opacity transition with 1s delay */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: darkgreen; /* Text color */
+    border: 2px solid darkgreen; /* Border for better visibility */
+    margin: 20px; /* Margin around the box */
+    opacity: 1; /* Initial opacity */
+}
+
+/* Styles for hover state */
+.delayed-box:hover {
+    opacity: 0.5; /* Change opacity on hover */
+}
+
+/*
+Explanation
+
+Base State: The .delayed-box class defines a square box with a width and height of 100px, 
+a light green background color, and a dark green border.
+
+Transition Effect: The transition: opacity 0.5s ease 1s; rule specifies that when the box's opacity changes, 
+it will take 0.5 seconds to complete, starting after a 1-second delay.
+
+Hover State: When the box is hovered over, its opacity changes to 0.5 after the initial delay, creating a fading effect.
+*/

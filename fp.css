@@ -1,0 +1,29 @@
+ /* Base styles for the box */
+ .box {
+    width: 100px; /* Initial width */
+    height: 100px; /* Initial height */
+    background-color: lightseagreen; /* Background color */
+    border: 2px solid darkslategray; /* Border for visibility */
+    transform: translate(500px, 300px) rotate(45deg) scale(1.5); /* Combined transformations */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Margin around the box */
+}
+
+/*
+Explanation
+
+Base State: The .box class starts with a width and height of 100px, a light sea green background, and a dark slate gray border.
+
+Combined Transformations:
+translate(500px, 300px): Moves the box 500 pixels to the right and 300 pixels down.
+rotate(45deg): Rotates the box 45 degrees clockwise.
+scale(1.5): Scales the box to 150% of its original size.
+
+When you open this file in a browser, you will see the box positioned, rotated, and scaled according to the combined transformations. 
+This example demonstrates how multiple transform functions can be combined for complex effects.
+*/

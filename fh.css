@@ -1,0 +1,33 @@
+/* Base styles for the box */
+.box {
+    width: 100px; /* Initial width */
+    height: 100px; /* Initial height */
+    background-color: lightgreen; /* Initial background color */
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.3s ease-in-out; /* Transition properties */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    font-size: 16px; /* Font size */
+    color: darkgreen; /* Text color */
+    border: 2px solid darkgreen; /* Border for better visibility */
+    margin: 20px; /* Margin around the box */
+}
+
+/* Styles for hover state */
+.box:hover {
+    width: 150px; /* Width on hover */
+    height: 150px; /* Height on hover */
+    background-color: limegreen; /* Background color on hover */
+}
+
+/*
+Explanation
+
+Base State: The .box class is set to 100px by 100px, with a light green background color and a dark green border.
+
+Transition Effect: The transition property specifies that changes to the width, height, and background color 
+will transition over different durations (0.5 seconds for width and height, 0.3 seconds for background color) and easing effects.
+
+Hover State: When the box is hovered over, it enlarges to 150px by 150px and changes the background color to lime green.
+*/

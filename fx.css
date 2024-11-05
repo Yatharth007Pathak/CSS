@@ -1,0 +1,82 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db; /* Blue color */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.5s; /* Smooth transition for the transformation */
+  }
+  
+  /* Hover Skew Translations */
+  
+  /* Skew right on hover */
+  .box1:hover {
+    transform: skewX(20deg);
+  }
+  
+  /* Skew left on hover */
+  .box2:hover {
+    transform: skewX(-20deg);
+  }
+  
+  /* Skew up on hover */
+  .box3:hover {
+    transform: skewY(20deg);
+  }
+  
+  /* Skew down on hover */
+  .box4:hover {
+    transform: skewY(-20deg);
+  }
+  
+  /* Skew diagonally on hover */
+  .box5:hover {
+    transform: skew(15deg, 15deg);
+  }
+  
+  /* Skew in reverse diagonally on hover */
+  .box6:hover {
+    transform: skew(-15deg, -15deg);
+  }
+  
+  /* Combine skew with translation on hover */
+  .box7:hover {
+    transform: skewX(15deg) translateX(20px);
+  }
+  
+  /* Combine skew with scaling on hover */
+  .box8:hover {
+    transform: skewY(15deg) scale(1.1);
+  }
+  
+  /* Combine skew with rotation on hover */
+  .box9:hover {
+    transform: skewY(20deg) rotate(15deg);
+  }
+  
+  /* Combine skew with a larger translation on hover */
+  .box10:hover {
+    transform: skewX(10deg) translate(30px, 30px);
+  }
+  

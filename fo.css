@@ -1,0 +1,25 @@
+/* Base styles for the box */
+.box {
+    width: 100px; /* Width of the box */
+    height: 100px; /* Height of the box */
+    background-color: lightcoral; /* Background color */
+    border: 2px solid darkred; /* Border for visibility */
+    transform: skew(20deg, 10deg); /* Skew by 20 degrees on X-axis, 10 degrees on Y-axis */
+    display: flex; /* Center content */
+    align-items: center; /* Vertical centering */
+    justify-content: center; /* Horizontal centering */
+    font-family: Arial, sans-serif; /* Font styling */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    margin: 20px; /* Margin around the box */
+}
+
+/*
+Explanation
+Base State: The .box class has a width and height of 100px, a light coral background color, and a dark red border.
+Skew Effect: The transform: skew(20deg, 10deg); rule skews the box by 20 degrees along the X-axis and 10 degrees along the Y-axis, 
+giving it a tilted, distorted appearance.
+
+You can open this file in a browser to see the skewed effect applied to the box. 
+This transformation is useful for creating dynamic, angled designs.
+*/

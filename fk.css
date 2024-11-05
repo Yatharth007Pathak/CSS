@@ -1,0 +1,35 @@
+/*
+The transform property in CSS allows you to apply various transformations to an element, such as translation (moving), rotation, 
+scaling, and skewing. These transformations can be applied in two-dimensional (2D) or three-dimensional (3D) space, 
+enhancing the visual appeal of web pages and user interfaces.
+CSS Transform is used to apply 2D and 3D transformations to an element.
+
+Basic Syntax
+selector {
+  transform: transformation-function(value);
+}
+
+
+Common Transformation Functions
+
+translate: Moves an element from its current position.
+2D Translation: transform: translate(x, y);
+3D Translation: transform: translate3d(x, y, z);
+
+rotate: Rotates an element around a specified point.
+2D Rotation: transform: rotate(angle);
+3D Rotation: transform: rotateX(angle) | rotateY(angle) | rotateZ(angle);
+
+scale: Resizes an element.
+2D Scaling: transform: scale(sx, sy);
+3D Scaling: transform: scale3d(sx, sy, sz);
+
+skew: Skews (distorts) an element along the X and Y axes.
+2D Skewing: transform: skew(x-angle, y-angle);
+
+Combining Transformations: You can combine multiple transformations by separating them with spaces
+
+
+The transform property in CSS is a powerful tool for creating dynamic, interactive designs. By combining various transformation functions, 
+you can achieve interesting effects that enhance user experience and improve the visual appeal of your web applications.
+*/

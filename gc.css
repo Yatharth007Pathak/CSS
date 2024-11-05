@@ -1,0 +1,41 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: cyan;
+    border: 2px solid black;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    animation: colorAnimate 4s ease-in 1s infinite normal;
+}
+
+@keyframes colorAnimate {
+    0% { left: 0px;
+         background-color: yellow;}
+    50% { left: 300px;
+          background-color: green;
+    }
+    100% { left: 600px;
+           background-color: red;}
+}
+
+/*
+This CSS code animates a div element by moving it horizontally and changing its background color in three phases. 
+Here’s an explanation of the animation steps and properties:
+
+Animation Properties:
+animation: colorAnimate 4s ease-in 1s infinite normal;: The animation is defined with:
+4s: The animation duration is 4 seconds.
+ease-in: The animation speed starts slower and accelerates.
+1s: The animation starts with a 1-second delay.
+infinite: The animation loops indefinitely.
+normal: Each animation cycle moves forward in the defined keyframe order.
+
+Keyframes for colorAnimate:
+0%: At the beginning, the div starts at left: 0px with a background-color of yellow.
+50%: Midway, the div moves to left: 300px and changes its background-color to green.
+100%: At the end, the div reaches left: 600px with a background-color of red.
+
+This setup produces a smooth transition where the div slides from 0px to 600px over 4 seconds 
+while changing colors from yellow to green to red, then resets and repeats continuously.
+*/

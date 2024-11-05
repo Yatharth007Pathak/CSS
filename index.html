@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling methods</title>                                        <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: green;
+            font-size: xx-large;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">                             <!-- External CSS-->
+</head>
+<body>
+    <h1 style="color: red;">Hare Krishna</h1>                           <!-- Inline CSS -->
+    <h2>Jai Shri Ram</h2>
+    <h3>Har Har Mahadev</h3>
+</body>
+</html>
+
+
+<!--
+Here’s a breakdown of each line in the provided HTML file:
+
+<!DOCTYPE html>
+This declaration defines the document type as HTML5. 
+It tells the browser that the document is an HTML file, allowing it to be interpreted and displayed correctly.
+
+<html lang="en">
+<html>: This tag represents the root element of an HTML document.
+lang="en": The lang attribute specifies the language of the document, in this case, English.
+
+<head>
+The <head> section contains metadata about the document, such as character encoding, links to stylesheets, and the document title. 
+This content is not displayed on the webpage.
+
+<meta charset="UTF-8">
+This <meta> tag specifies the character encoding for the document. 
+UTF-8 is a universal character set that includes most characters used in writing systems worldwide.
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This meta tag ensures that the webpage scales correctly on different devices (like mobile or desktop) 
+by setting the width of the viewport to the width of the device and ensuring a 1:1 scale.
+
+<title>Styling methods</title>
+The <title> tag sets the title of the webpage, which appears in the browser tab.
+
+<style>
+The <style> tag contains internal CSS to style elements within the HTML document.
+
+CSS inside <style> tag:
+h2 { color: green; }: This styles all <h2> elements to have green text.
+font-size: xx-large;: This sets the font size of all <h2> elements to be extra-large.
+
+</style>
+These closing tags mark the end of the <style> section.
+
+<link rel="stylesheet" href="styles.css">
+This <link> tag connects the HTML document to an external CSS file named styles.css. This allows for external styling.
+
+<body>
+The <body> section contains the visible content of the webpage, such as headings, paragraphs, and images.
+
+<h1 style="color: red;">Hare Krishna</h1>
+<h1>: This tag defines a top-level heading.
+style="color: red;": Inline CSS is applied here to make the text "Hare Krishna" red.
+
+<h2>Jai Shri Ram</h2>
+This second-level heading (h2) will have green text and an extra-large font size due to the CSS defined in the <style> block.
+
+<h3>Har Har Mahadev</h3>
+This third-level heading (h3) is displayed normally without any special inline or internal styling.
+
+</body> and </html>
+These closing tags mark the end of the <body> and <html> sections, respectively, completing the document structure.
+-->

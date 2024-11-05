@@ -1,0 +1,40 @@
+body {
+    display: flex;                           /* Flexbox layout for centering */
+    justify-content: center;                  /* Horizontally centers the content */
+    align-items: center;                      /* Vertically centers the content */
+    height: 100vh;                            /* Makes body take full viewport height */
+    background-color: #f0f0f0;                /* Light gray background color */
+    margin: 0;                                /* Removes default margin */
+}
+
+.fade-text {
+    opacity: 0;                               /* Initially hidden */
+    animation: fade 3s ease-in-out infinite;  /* Applies the fade animation */
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;                           /* Starts hidden */
+    }
+    50% {
+        opacity: 1;                           /* Fully visible at halfway point */
+    }
+    100% {
+        opacity: 0;                           /* Fades out to hidden */
+    }
+}
+
+/*
+Key Points
+
+Centering the Text:
+display: flex, along with justify-content: center and align-items: center, centers the text both horizontally and vertically on the screen.
+
+Animation:
+The .fade-text class applies the fade animation, which takes 3 seconds with an ease-in-out transition for smooth fading.
+infinite means the animation repeats continuously.
+
+Keyframes:
+0% and 100% have opacity: 0, making the text hidden at the start and end of each cycle.
+50% has opacity: 1, making the text fully visible in the middle of the cycle.
+*/

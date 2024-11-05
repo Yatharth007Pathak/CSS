@@ -1,0 +1,116 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #4CAF50;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  /* Rotation Transformations */
+  
+  /* Basic 45-degree rotation */
+  .box1 {
+    transform: rotate(45deg);
+  }
+  
+  /* 90-degree rotation */
+  .box2 {
+    transform: rotate(90deg);
+  }
+  
+  /* 180-degree rotation */
+  .box3 {
+    transform: rotate(180deg);
+  }
+  
+  /* 270-degree rotation */
+  .box4 {
+    transform: rotate(270deg);
+  }
+  
+  /* 360-degree rotation */
+  .box5 {
+    transform: rotate(360deg);
+  }
+  
+  /* Negative rotation (-45 degrees) */
+  .box6 {
+    transform: rotate(-45deg);
+  }
+  
+  /* Combined rotation and scale */
+  .box7 {
+    transform: rotate(45deg) scale(1.2);
+  }
+  
+  /* Rotate and skew */
+  .box8 {
+    transform: rotate(20deg) skew(10deg, 5deg);
+  }
+  
+  /* Rotate with 3D perspective */
+  .box9 {
+    transform: perspective(200px) rotateY(30deg);
+  }
+  
+  /* Rotate around X-axis */
+  .box10 {
+    transform: rotateX(30deg);
+  }
+  
+
+/*
+This CSS styling applies various transformations to a series of .box elements, each inside a .container flexbox, 
+to demonstrate different types of rotations and 3D effects.
+
+Key Elements:
+
+Body Styling:
+Centers the .container vertically and horizontally with display: flex;, filling the full viewport height.
+Uses a light background for contrast.
+
+Container and Box Setup:
+.container arranges the .box elements in a row with a gap between them.
+.box styles give each box a green background, centered white text, rounded corners, and a 100px square dimension.
+
+Rotation Transformations:
+
+Basic Rotation:
+.box1 to .box5 show rotations at various angles from 45° to 360°, demonstrating how each degree affects the box’s orientation.
+
+Negative Rotation:
+.box6 rotates -45 degrees, which applies a counterclockwise tilt.
+
+Rotation with Scale:
+.box7 combines a 45-degree rotation with a scale of 1.2, making the box slightly larger.
+
+Rotation with Skew:
+.box8 skews on the X and Y axes while rotating 20 degrees, giving an angled appearance.
+
+3D Perspective Rotation:
+.box9 uses perspective(200px) rotateY(30deg), creating a depth effect along the Y-axis.
+
+Rotation along X-axis:
+.box10 rotates on the X-axis by 30 degrees, tilting it forward.
+*/

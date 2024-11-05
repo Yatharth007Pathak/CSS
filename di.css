@@ -1,0 +1,22 @@
+div {
+    background-color: pink; /* Sets the background color of the div to pink */
+    display: inline; /* Displays the div as an inline element, meaning it will only take up as much width as its content */
+}
+
+button {
+    display: block; /* Displays the button as a block element, making it take up the full width of its parent container */
+}
+
+
+/*
+Visual Representation
+div Element:
+
+The div will have a pink background.
+It will behave like an inline element, meaning it will not start on a new line and will only take up the space required by its content. 
+Other inline elements (like text or other inline divs) can sit next to it.
+
+button Element:
+The button will be displayed as a block element, meaning it will start on a new line and take up the full width available to it. 
+This will cause any subsequent elements to appear below it.
+*/

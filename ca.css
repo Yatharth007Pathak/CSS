@@ -1,0 +1,7 @@
+div {
+    width: 400px;     /* Sets width to 400 pixels */
+    max-width: 600px; /* Ensures the width does not exceed 600 pixels */
+    min-width: 200px; /* Ensures the width is at least 200 pixels */
+    background-color: brown;
+  }
+  

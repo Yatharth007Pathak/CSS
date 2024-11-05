@@ -1,0 +1,38 @@
+div {
+    height: 100px; /* Sets the height of the div to 100 pixels */
+    width: 100px; /* Sets the width of the div to 100 pixels */
+    background-color: red; /* Sets the background color of the div to red */
+    border: 3px solid blue; /* Creates a solid blue border that is 3 pixels thick around the div */
+    margin-top: 40px; /* Adds 40 pixels of margin above the div */
+    margin-right: 60px; /* Adds 60 pixels of margin to the right of the div */
+    margin-bottom: 20px; /* Adds 20 pixels of margin below the div */
+    margin-left: 10px; /* Adds 10 pixels of margin to the left of the div */
+}
+
+/*
+Breakdown of Each Property:
+
+Dimensions:
+Height: The div will have a height of 100 pixels.
+Width: The div will have a width of 100 pixels.
+
+Background Color:
+The background color of the div is set to red.
+
+Border:
+The div has a 3-pixel solid blue border around it, giving it a defined outline.
+
+Margins:
+Top Margin: 40 pixels of space will be added above the div, separating it from any element above it.
+Right Margin: 60 pixels of space will be added to the right, creating space between this div and any adjacent element on its right.
+Bottom Margin: 20 pixels of space will be added below, separating it from any element below it.
+Left Margin: 10 pixels of space will be added to the left, creating space between this div and any adjacent element on its left.
+
+Visual Effect:
+The overall appearance will be a red square (100px by 100px) with a blue border. 
+The margins create a space around the div, resulting in the following layout:
+The top margin of 40 pixels creates space from the top.
+The right margin of 60 pixels adds space to the right side.
+The bottom margin of 20 pixels adds space below.
+The left margin of 10 pixels adds a small space to the left.
+*/

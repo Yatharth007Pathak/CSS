@@ -1,0 +1,53 @@
+#div1 {
+    height: 50px; /* Sets the height of div1 to 50 pixels */
+    background-color: lightgrey; /* Sets the background color of div1 to light grey */
+    border: 3px solid red; /* Creates a solid red border that is 3 pixels thick around div1 */
+}
+
+#div2 {
+    width: 200px; /* Sets the width of div2 to 200 pixels */
+    height: 100px; /* Sets the height of div2 to 100 pixels */
+    background-color: lightblue; /* Sets the background color of div2 to light blue */
+    margin-top: -20px; /* Moves div2 20 pixels upwards, overlapping any element above it */
+    margin-left: -10px; /* Moves div2 10 pixels to the left, overlapping any element to the left */
+    border: 2px solid blue; /* Creates a solid blue border that is 2 pixels thick around div2 */
+}
+
+#div3 {
+    height: 50px; /* Sets the height of div3 to 50 pixels */
+    background-color: lightgray; /* Sets the background color of div3 to light gray */
+    border: 3px solid red; /* Creates a solid red border that is 3 pixels thick around div3 */
+}
+
+/*
+Breakdown of Each div:
+
+#div1:
+Height: 50 pixels.
+Background Color: Light grey.
+Border: 3 pixels solid red.
+This div will appear as a small horizontal rectangle with a red border, providing a visual section that is 50 pixels tall.
+
+#div2:
+Width: 200 pixels.
+Height: 100 pixels.
+Background Color: Light blue.
+Margins:
+A negative top margin of 20 pixels pulls this div upwards, which may cause it to overlap with the element above (if any).
+A negative left margin of 10 pixels pulls this div to the left, causing it to overlap with any elements on its left side.
+Border: 2 pixels solid blue.
+This div will appear larger than the others and will be positioned closer to the top left of its container, 
+overlapping with any neighboring elements due to the negative margins.
+
+#div3:
+Height: 50 pixels.
+Background Color: Light gray.
+Border: 3 pixels solid red.
+Similar in height and border to #div1, this div will also serve as another section or block but may be positioned below #div2.
+
+Visual Effect:
+The layout will consist of three blocks, with #div1 and #div3 being similar in size and style, 
+while #div2 being larger and positioned in a way that it overlaps with #div1 due to the negative margins. 
+The arrangement will create a layered look, with the red borders of #div1 and #div3 clearly outlining their areas, 
+while the light blue #div2 may visually dominate the top left area, depending on its position relative to the others.
+*/

@@ -1,0 +1,7 @@
+div {
+    height: 400px;     /* Sets height to 400 pixels */
+    max-height: 600px; /* Ensures the height does not exceed 600 pixels */
+    min-height: 200px; /* Ensures the height is at least 200 pixels */
+    background-color: brown;
+  }
+  

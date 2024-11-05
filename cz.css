@@ -1,0 +1,22 @@
+div {
+    height: 100px; /* Sets the height of the div to 100 pixels */
+    width: 100px; /* Sets the width of the div to 100 pixels */
+    background-color: red; /* Sets the background color of the div to red */
+    border: 3px solid blue; /* Sets a solid blue border of 3 pixels around the div */
+    margin: 0 auto; /* Sets the top and bottom margins to 0, and left and right margins to auto, centering the div horizontally */
+}
+
+/*
+This CSS will create a small red square div with a blue border, centered on the page (or within its parent element).
+
+
+Here's a breakdown of each line of the CSS snippet you've provided:
+
+div {: This targets all <div> elements in the HTML document.
+height: 100px;: Specifies that the height of the div should be 100 pixels.
+width: 100px;: Specifies that the width of the div should be 100 pixels.
+background-color: red;: Sets the background color of the div to red, making it visually stand out.
+border: 3px solid blue;: Adds a border around the div that is 3 pixels thick, solid in style, and blue in color.
+margin: 0 auto;: This centers the div horizontally within its parent container. 
+The 0 sets the top and bottom margins to zero, while auto calculates equal margins on the left and right sides.
+*/

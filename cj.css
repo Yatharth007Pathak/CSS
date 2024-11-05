@@ -1,0 +1,48 @@
+h1 {
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    border-width: 3px;
+    border-style: dashed;
+    border-color: black;
+    text-align: center;
+}
+
+/*
+The h1 element is styled to be 200px wide and 50px tall with an aquamarine background and a 3px dashed black border. 
+The text inside the h1 will be centered horizontally. 
+This styling creates a distinct header with a clearly defined size, background color, and dashed border for visual emphasis.
+
+
+Here’s a detailed breakdown of the CSS rule applied to an h1 element:
+
+1. width: 200px;
+Property: width
+Sets the width of the h1 element to 200 pixels.
+The content inside the h1 will occupy this horizontal space.
+
+2. height: 50px;
+Property: height
+Sets the height of the h1 element to 50 pixels.
+The h1 will occupy this vertical space.
+
+3. background-color: aquamarine;
+Property: background-color
+Sets the background color of the h1 to aquamarine, which is a light greenish-blue color.
+
+4. border-width: 3px;
+Property: border-width
+Specifies the thickness of the border around the h1 to be 3 pixels.
+
+5. border-style: dashed;
+Property: border-style
+Defines the style of the border as dashed, meaning the border will appear as a series of dashes.
+
+6. border-color: black;
+Property: border-color
+Sets the color of the border to black.
+
+7. text-align: center;
+Property: text-align
+Aligns the text content of the h1 element to the center horizontally within its container.
+*/

@@ -1,0 +1,24 @@
+p {
+    border: 30px solid transparent;
+    border-image: url('images/border1.jpeg') 30 round;
+}
+
+/*
+The p element has a 30-pixel transparent border that is replaced by a border image sourced from 'images/OIP.jpeg'. 
+The image is sliced into 30-pixel sections and tiled (repeated) around the element's border using the round keyword. 
+This creates a visually distinct border around the paragraph, where the image wraps around all sides.
+
+
+Here’s a breakdown of the CSS rule applied to a p element:
+
+1. border: 30px solid transparent;
+Property: border
+Creates a 30-pixel-wide transparent border around the p element.
+The solid transparent ensures that the border is initially invisible, setting up the space for the image border.
+
+2. border-image: url('images/border1.jpeg') 30 round;
+Property: border-image
+Specifies the image (border1.jpeg from the images/ folder) to be used as the border.
+The 30 defines the slice size of the image, meaning 30 pixels from the edge of the image will be used for the border.
+The round value instructs the browser to tile (repeat) the image if needed to fill the border area, making it fit the full length of the sides.
+*/

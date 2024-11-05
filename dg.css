@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: white; /* Sets the text color of all elements to white */
+}
+
+#navbar {
+    height: 60px; /* Sets the height of the navbar */
+    background-color: #0f1111; /* Dark background color for the navbar */
+}
+
+button {
+    background-color: #f08804; /* Orange background color for all buttons */
+}
+
+#logo {
+    color: #f08804; /* Sets the logo color to orange */
+    font-size: 25px; /* Sets the logo font size to 25px */
+}
+
+a {
+    margin-right: 200px; /* Adds a 200px margin to the right of all anchor tags */
+    text-decoration: none; /* Removes the underline from anchor tags */
+}
+
+
+/*
+Explanation of Each Element
+
+Global Reset (*):
+The universal selector * applies to all elements. It resets the padding and margin of every element to 0, 
+and it sets the color of all text to white. This is useful for maintaining consistent spacing and color across the page.
+
+#navbar Styles:
+Height: The navbar will have a fixed height of 60px.
+Background Color: The background color of the navbar is a dark shade (#0f1111), which is close to black.
+
+button Styles:
+Background Color: All buttons will have an orange background (#f08804).
+
+#logo Styles:
+Color: The text inside the logo (likely an element with id="logo") will be orange (#f08804).
+Font Size: The logo's text size is set to 25px, making it larger than the rest of the text on the page.
+
+a Styles:
+Margin Right: A margin of 200px is applied to the right of all anchor (<a>) tags, 
+creating a significant amount of space between the anchor elements and the next elements.
+Text Decoration: The underline from anchor tags is removed.
+*/

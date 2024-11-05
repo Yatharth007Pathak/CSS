@@ -1,0 +1,25 @@
+/*
+The visibility property in CSS is used to control the visibility of an element on a webpage. 
+It determines whether an element is visible or hidden, but unlike the display property, it does not remove the element from the document flow. 
+This means that when an element is set to be invisible, it still occupies space in the layout.
+
+
+Common visibility Values:
+
+visible:
+The default value. The element is visible.
+
+hidden:
+The element is not visible, but it still takes up space in the layout. Other elements will not shift to fill the space.
+
+collapse (specific to table elements):
+This value applies only to table rows (<tr>) and table columns (<col>). 
+It makes the row or column invisible and collapses the space they occupy.
+
+
+Comparison with display Property:
+visibility: hidden;:
+The element is hidden but still takes up space in the layout.
+display: none;:
+The element is removed from the document flow and does not take up any space.
+*/

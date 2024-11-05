@@ -1,0 +1,40 @@
+div {
+    width: 100px;          /* Sets the width of the div to 100 pixels */
+    height: 100px;         /* Sets the height of the div to 100 pixels */
+    margin: 25px;          /* Adds 25 pixels of margin around the div */
+    padding: 25px;         /* Adds 25 pixels of padding inside the div, between the content and the border */
+    display: inline;       /* Displays the div as an inline element, meaning it will sit alongside other inline elements */
+}
+
+
+/*
+Visual Representation
+
+Width and Height:
+Each div will be 100 pixels wide and 100 pixels tall.
+
+Margin:
+The margin will create 25 pixels of space around each div, separating it from other elements.
+
+Padding:
+The padding will create 25 pixels of space inside the div, pushing the content away from the edges. 
+This means the actual content area (where text or other elements would go) is smaller than the overall size of the div.
+
+Display Inline:
+Since div elements are displayed as inline, they will not create a line break before or after them. 
+Multiple divs can sit next to each other horizontally if there is enough space available.
+
+
+Layout Explanation
+Each div will have a total width of 100px (width) + 25px (left margin) + 25px (right margin) = 150px
+and a total height of 100px (height) + 25px (top padding) + 25px (bottom padding) = 150px.
+If the container width allows, multiple divs will appear side by side due to the inline display property.
+If there's not enough space in the parent container, the divs will wrap to the next line, maintaining their inline nature.
+
+
+Important Note
+Inline Display Considerations:
+Using display: inline; for div can be counterintuitive since divs are typically block elements. 
+If you want to preserve the width and height while also allowing them to line up next to each other, consider using display: inline-block;. 
+This will maintain the specified dimensions while still allowing them to sit next to each other.
+*/

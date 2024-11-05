@@ -1,0 +1,49 @@
+/*
+box-sizing and Height:
+By default, the height property only affects the content area of an element. 
+However, if you set the box-sizing property to border-box, the padding and border are included in the element’s total height.
+*/
+
+div {
+    height: 300px;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    box-sizing: border-box; /* Includes padding and border in the height */
+}
+
+/*
+The div has a 300px height and 20px padding, with a 5px solid black border.
+By using box-sizing: border-box;, the total height of the div is 300px, 
+and this value includes the padding and border, making it easier to manage the overall size of the element.
+
+
+Here’s a breakdown of the CSS rule that applies styles to a div element with a focus on the box-sizing property:
+
+1. height: 300px;
+Property: height
+This sets the height of the div element to 300 pixels.
+Without box-sizing: border-box;, this would only account for the content area and exclude padding and border.
+
+2. padding: 20px;
+Property: padding
+Adds 20 pixels of internal spacing between the content and the border of the div.
+Without box-sizing: border-box;, this padding would increase the overall size of the div.
+
+3. background-color: aquamarine;
+Property: background-color
+This sets the background color of the div to aquamarine.
+The entire background of the div will be filled with this color, making the element visually distinct.
+
+4. border: 5px solid black;
+Property: border
+Adds a 5-pixel solid black border around the div.
+Without box-sizing: border-box;, the border would also add to the overall size of the element.
+
+5. box-sizing: border-box;
+Property: box-sizing
+Value: border-box
+This CSS property ensures that the padding and border are included in the height and width of the element.
+With box-sizing: border-box;, the div remains 300px in height despite the padding and border. Without it, 
+the total height would be 300px (content) + 20px (padding, top) + 20px (padding, bottom) + 5px (border, top) + 5px (border, bottom) = 350px.
+*/

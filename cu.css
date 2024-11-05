@@ -1,0 +1,39 @@
+div {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    border: 3px solid blue;
+    padding: 20px;
+    box-sizing: border-box; /* Padding is included in the width */
+  }
+  
+/*
+The box-sizing: border-box; rule allows the div to maintain its specified dimensions (200px by 200px), 
+including the padding and border within those dimensions.
+
+
+Breakdown of the CSS for the div element:
+
+height: 200px;: This sets the height of the div element to 200 pixels.
+
+width: 200px;: This sets the width of the div element to 200 pixels.
+
+background-color: red;: The background color of the div will be red.
+
+border: 3px solid blue;: This creates a solid blue border with a thickness of 3 pixels on all sides of the div.
+
+padding: 20px;: The padding adds 20 pixels of internal space (inside the border) between the content of the div and the edges of the div.
+
+box-sizing: border-box;:
+This property ensures that the padding and border are included in the total width and height of the element.
+Normally, the width and height are calculated excluding padding and border, but with box-sizing: border-box;, 
+the element's dimensions remain fixed at 200px (both height and width), despite the added padding and border.
+
+Without box-sizing: border-box;
+The total size would have been:
+Height: 200px (height) + 20px (padding-top) + 20px (padding-bottom) + 3px (border-top) + 3px (border-bottom) = 246px
+Width: 200px (width) + 20px (padding-left) + 20px (padding-right) + 3px (border-left) + 3px (border-right) = 246px
+
+With box-sizing: border-box;
+The total size remains 200px for both height and width, as the padding and border are included in this calculation.
+*/

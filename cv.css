@@ -1,0 +1,45 @@
+/*
+The margin property in CSS defines the space outside an element's border, separating it from surrounding elements. 
+Margins create space between the border of an element and neighboring elements, unlike padding, which is space inside the border.
+It controls the spacing between the current element and adjacent elements, helping to position them on the page.
+Syntax:
+element {
+  margin: value;
+}
+
+
+Accepted Values for margin:
+
+Length units:
+You can specify margin using units such as:
+Pixels (px)
+Em (em): Relative to the font size of the element.
+Rem (rem): Relative to the font size of the root element.
+
+Percentage (%):
+You can set margin as a percentage. The percentage is relative to the width of the containing (parent) element.
+
+auto:
+The value auto is often used to center elements horizontally. 
+It tells the browser to calculate the margins automatically to equally distribute space on both sides of the element.
+
+Negative values:
+Margins can take negative values, which pull elements closer together or overlap elements.
+
+Margins for Individual Sides, You can apply different margins to each side of an element using specific properties:
+margin-top: Sets the margin on the top of the element.
+margin-right: Sets the margin on the right of the element.
+margin-bottom: Sets the margin on the bottom of the element.
+margin-left: Sets the margin on the left of the element.
+
+
+Collapsing Margins:
+Margins on adjacent elements can collapse, meaning they overlap rather than add up. 
+This applies to vertically adjacent elements where the margin of the greater value will be used.
+Margins can also collapse, meaning the larger margin between two adjacent elements is used, rather than the sum of their margins.
+
+
+Difference Between Margin and Padding:
+Margin is the space outside an element, between its border and other elements. Margin controls the space outside an element’s border.
+Padding is the space inside an element, between its content and border. Padding controls the space inside an element’s border.
+*/

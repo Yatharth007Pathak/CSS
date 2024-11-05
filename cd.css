@@ -1,0 +1,84 @@
+/*
+The border property in CSS is used to define the borders around HTML elements. 
+You can control the width, style, and color of borders for all four sides of an element. 
+It’s a shorthand property that combines multiple border properties or can be used to set individual sides.
+
+1. Shorthand border Property
+The border shorthand property allows you to set the border width, style, and color in one line. The syntax is:
+border: <border-width> <border-style> <border-color>;
+
+border-width: Defines the thickness of the border (e.g., 1px, medium, thin, etc.).
+border-style: Specifies the style of the border (e.g., solid, dashed, dotted, none, etc.).
+border-color: Sets the color of the border.
+
+
+2. Individual Border Sides
+You can set borders individually for each side using the following properties:
+border-top
+border-right
+border-bottom
+border-left
+Each of these properties can be set with a width, style, and color.
+
+3. border-width
+The border-width property sets the width of the border. It can take the following values:
+Numeric values in px, em, rem, etc. (e.g., 1px, 5px).
+Keywords like thin, medium, thick.
+
+4. border-style
+The border-style property defines the visual style of the border. It can take the following values:
+solid: A single solid line.
+dashed: A dashed line.
+dotted: A dotted line.
+double: Two solid lines.
+groove: A 3D grooved border.
+ridge: A 3D ridged border.
+inset: Appears as if the element is embedded.
+outset: Appears as if the element is coming out of the page.
+none: No border.
+
+5. border-color
+The border-color property sets the color of the border. You can use color names, HEX codes, RGB, or HSL values.
+
+6. border-radius (for rounded corners)
+The border-radius property creates rounded corners for the borders of an element.
+
+7. border-image
+The border-image property allows you to use an image as the border of an element.
+*/
+
+
+div {
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    border: 5px solid red;
+}
+
+/*
+The div has a 400px width and 400px height, with an aquamarine background and a 5px solid red border. 
+This creates a square div with defined dimensions and a visually distinct border and background.
+
+
+Here’s a breakdown of the CSS rule applied to a div element:
+
+1. height: 400px;
+Property: height
+This sets the height of the div element to 400 pixels.
+The div will occupy 400px of vertical space.
+
+2. width: 400px;
+Property: width
+This sets the width of the div element to 400 pixels.
+The div will occupy 400px of horizontal space.
+
+3. background-color: aquamarine;
+Property: background-color
+This sets the background color of the div to aquamarine.
+The entire background of the div will be filled with this light greenish-blue color.
+
+4. border: 5px solid red;
+Property: border
+Adds a 5-pixel solid red border around the div.
+The red border surrounds the element, providing a clear visual boundary.
+*/

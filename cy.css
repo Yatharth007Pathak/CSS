@@ -1,0 +1,26 @@
+div {
+    height: 100px; /* Sets the height of the div to 100 pixels */
+    width: 100px; /* Sets the width of the div to 100 pixels */
+    background-color: red; /* Sets the background color of the div to red */
+    border: 3px solid blue; /* Creates a solid blue border that is 3 pixels thick around the div */
+    margin: 10%; /* Sets the margin around the div to 10% of the width of the parent element */
+}
+
+
+
+/*
+Here's a breakdown of the CSS snippet you've provided:
+
+div {: This selector targets all <div> elements in the document.
+height: 100px;: This property defines the height of the div as 100 pixels.
+width: 100px;: This property sets the width of the div as 100 pixels.
+background-color: red;: This property assigns a red background color to the div.
+border: 3px solid blue;: This property creates a solid blue border around the div, which is 3 pixels thick.
+margin: 10%;: This property adds a margin of 10% of the width of the parent element around the div. 
+The margin is applied equally on all sides (top, right, bottom, left).
+
+Visual Effect:
+The resulting div will be a red square, 100 pixels by 100 pixels, with a blue border. The margin will ensure that there is space around 
+the div that is 10% of the width of its parent container, allowing it to be visually separated from other elements on the page. 
+The actual space around the div may vary depending on the width of the parent element, which affects the 10% margin.
+*/

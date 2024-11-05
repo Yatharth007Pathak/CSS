@@ -1,0 +1,4 @@
+p {
+    border: 30px solid transparent;
+    border-image: url('images/border2.webp') 30 round;
+}

@@ -1,0 +1,70 @@
+#div1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin: 40px;
+}
+
+#div2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin-left: 30px; 
+    margin-top: 50px;
+}
+
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin-right: 20px; 
+    margin-bottom: 70px;
+}
+
+
+/*
+Breakdown of the CSS for #div1, #div2, and #div3:
+
+Common Properties for All Divs:
+height: 100px;: Each div has a height of 100 pixels.
+width: 100px;: Each div has a width of 100 pixels.
+background-color: red;: The background color of all divs is red.
+border: 3px solid yellow;: Each div has a solid yellow border with a thickness of 3 pixels.
+
+Margin Properties:
+
+#div1:
+margin: 40px;: This applies a uniform margin of 40 pixels on all sides (top, right, bottom, left).
+Total Dimensions:
+Total Height = 100px + 3px (border top) + 40px (margin top) + 40px (margin bottom) = 183px
+Total Width = 100px + 3px (border left) + 40px (margin left) + 40px (margin right) = 183px
+
+#div2:
+margin-left: 30px;: This adds a left margin of 30 pixels.
+margin-top: 50px;: This adds a top margin of 50 pixels.
+Total Dimensions:
+Total Height = 100px + 3px (border top) + 50px (margin top) + 0px (margin bottom) = 153px
+Total Width = 100px + 3px (border left) + 30px (margin left) + 0px (margin right) = 133px
+
+#div3:
+margin-right: 20px;: This adds a right margin of 20 pixels.
+margin-bottom: 70px;: This adds a bottom margin of 70 pixels.
+
+Total Dimensions:
+Total Height = 100px + 3px (border top) + 0px (margin top) + 70px (margin bottom) = 173px
+Total Width = 100px + 3px (border left) + 0px (margin left) + 20px (margin right) = 123px
+
+Summary of Total Dimensions:
+#div1: Total Height = 183px, Total Width = 183px
+#div2: Total Height = 153px, Total Width = 133px
+#div3: Total Height = 173px, Total Width = 123px
+
+Visual Representation:
+#div1: A red square with a yellow border, surrounded by 40 pixels of space on all sides.
+#div2: A red square with a yellow border, positioned with a 30-pixel left margin and a 50-pixel top margin.
+#div3: A red square with a yellow border, with a 20-pixel margin on the right and a 70-pixel margin at the bottom.
+This setup results in varying placements and total dimensions for each of the div elements, creating a visually distinct layout.
+*/

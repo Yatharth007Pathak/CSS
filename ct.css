@@ -1,0 +1,64 @@
+/* Single value for all sides */
+#div1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 20px;
+}
+  
+/* Different values for each side */
+#div2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 10px 20px 30px 40px; /* top right bottom left */
+}
+  
+/* Two values: vertical and horizontal */
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 10px 20px; /* 10px for top and bottom, 20px for left and right */
+}
+  
+/* Three values: top, horizontal, bottom */
+#div4 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 10px 20px 30px; /* top, horizontal (left and right), bottom */
+}
+
+/*
+Here's a detailed breakdown of the different padding syntax styles used in the div elements:
+
+1. Single Value for All Sides: #div1
+Padding Value: 20px is applied to all four sides (top, right, bottom, left).
+Effect: Equal padding of 20px on every side of the div.
+
+2. Different Values for Each Side: #div2
+Padding Values:
+10px for the top,
+20px for the right,
+30px for the bottom,
+40px for the left.
+Effect: Different padding on each side based on the values provided in the padding shorthand.
+
+3. Two Values: Vertical and Horizontal Padding: #div3
+Padding Values:
+10px for the top and bottom (vertical),
+20px for the left and right (horizontal).
+Effect: Uniform padding along the vertical axis and a different value for the horizontal axis.
+
+4. Three Values: Top, Horizontal, Bottom: #div4
+Padding Values:
+10px for the top,
+20px for both left and right (horizontal),
+30px for the bottom.
+Effect: The top, horizontal, and bottom sides each have distinct padding values, while left and right sides share the same padding.
+*/

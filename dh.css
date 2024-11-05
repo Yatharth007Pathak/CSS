@@ -1,0 +1,77 @@
+/*
+The display property in CSS is used to define how an element is displayed or laid out on a web page. It determines the layout behavior 
+of an element, affecting its visibility, the way it interacts with other elements, and how its child elements are arranged.
+
+The display property in CSS controls how an element is rendered on the webpage and its behavior in terms of layout. 
+It determines whether an element behaves as a block, inline element, or another specialized layout type. 
+This is one of the most important properties for controlling the structure and positioning of elements in CSS.
+
+
+Common values of the display property:
+
+block:
+Makes the element behave like a block element. The element takes up the full width available, forcing a line break after it.
+Block-level elements always start on a new line.
+Examples of block-level elements: <div>, <h1> to <h6>, <p>, <section>.
+
+inline:
+Makes the element behave like an inline element. The element only takes up as much width as necessary, and it doesn't force a line break.
+Inline elements do not force a new line, and other elements can appear next to them.
+Examples of inline elements: <span>, <a>, <strong>, <em>.
+
+inline-block:
+The element is displayed inline but behaves like a block element (meaning you can set height, width, padding, and margins).
+Other elements can appear next to it, without breaking the line. It combines characteristics of both block and inline. 
+The element behaves like an inline element, meaning it does not break the line, but it can have width and height set like a block element.
+
+none:
+The element is completely removed from the document layout, and it will not be displayed at all, 
+making it invisible and occupying no space on the page. Other elements will behave as if the element doesn’t exist.
+
+flex:
+The element becomes a flexible container, enabling flexbox layout for its child elements.
+Flexbox provides a powerful way to align and distribute space among items within a container. This is used for more complex layouts.
+
+grid:
+The element is transformed into a grid container, allowing you to create complex grid-based layouts with rows and columns for its children.
+
+list-item:
+Makes the element behave like a list item. Commonly used for <li> elements within <ul> or <ol>.
+
+inline-flex:
+Like flex, but the container behaves as an inline element, while its children are arranged using flexbox.
+
+table:
+The element behaves like a table (similar to an HTML <table>), and you can specify child elements such as rows and cells.
+Typically used for <table> elements, but can be applied to any element to mimic table behavior.
+
+table-row, table-cell, etc.:
+Used to make an element behave like a row (table-row) or a cell (table-cell) inside a table layout.
+
+inherit:
+The element will inherit the display property from its parent.
+
+
+Block vs. Inline Elements:
+
+Block:
+Takes up the entire width of its parent container.
+Starts on a new line.
+Can have width, height, padding, and margin applied.
+Example: <div>, <p>, <h1>.
+
+Inline:
+Only takes up as much width as needed for its content.
+Does not start on a new line.
+Does not accept width and height properties (though padding and margin can be applied in certain directions).
+Example: <span>, <a>, <strong>.
+
+
+Summary of Key display Values:
+block: Element behaves as a block-level element. Takes full space available in width.
+inline: Element behaves as an inline element. Takes only the space required by the element, no margin or padding.
+inline-block: Inline behavior but accepts width and height properties. Similar to inline but we can set margin and padding.
+none: Element is hidden. Used to remove element from document flow.
+flex: Element becomes a flex container.
+grid: Element becomes a grid container.
+*/

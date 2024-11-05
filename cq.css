@@ -1,0 +1,55 @@
+#div1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 40px;
+}
+
+#div2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding-left: 30px; 
+    padding-top: 50px;
+}
+
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding-right: 20px; 
+    padding-bottom: 70px;
+}
+
+
+/*
+Each div is styled with the same dimensions, background, and border but has different padding settings:
+#div1 has uniform padding on all sides.
+#div2 only has padding on the top and left sides.
+#div3 has padding only on the right and bottom sides, creating an asymmetric content layout.
+
+
+Here’s a breakdown of each div element and its specific padding properties:
+
+1. #div1
+Padding:
+40px on all sides (top, right, bottom, and left).
+The content inside the div will be spaced 40 pixels away from the border on all sides.
+
+2. #div2
+Padding:
+50px on the top.
+30px on the left.
+No padding on the right or bottom (default is 0).
+The content inside will be shifted 50px down from the top and 30px away from the left side.
+
+3. #div3
+Padding:
+20px on the right.
+70px on the bottom.
+No padding on the left or top (default is 0).
+The content inside the div will be shifted 20px away from the right and 70px up from the bottom.
+*/

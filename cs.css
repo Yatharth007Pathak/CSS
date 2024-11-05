@@ -1,0 +1,46 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid blue;
+    padding-top: 40px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+/*
+Here's a breakdown of the div element with individual padding values for each side:
+
+1. height: 100px;
+Property: height
+Sets the height of the div to 100 pixels.
+
+2. width: 100px;
+Property: width
+Sets the width of the div to 100 pixels.
+
+3. background-color: red;
+Property: background-color
+Sets the background color of the div to red.
+
+4. border: 3px solid blue;
+Property: border
+Adds a 3-pixel solid blue border around the div.
+
+5. padding-top: 40px;
+Property: padding-top
+Adds 40 pixels of padding to the top of the div.
+
+6. padding-right: 60px;
+Property: padding-right
+Adds 60 pixels of padding to the right side of the div.
+
+7. padding-bottom: 20px;
+Property: padding-bottom
+Adds 20 pixels of padding to the bottom of the div.
+
+8. padding-left: 10px;
+Property: padding-left
+Adds 10 pixels of padding to the left side of the div.
+*/

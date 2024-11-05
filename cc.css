@@ -1,0 +1,23 @@
+h1 {
+    height: 150px;
+    width: 150px;
+    background-color: red;
+}
+
+p {
+    height: 300px;
+    width: 300px;
+    background-color: hotpink;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    background-color: darkorange;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: blueviolet;
+}

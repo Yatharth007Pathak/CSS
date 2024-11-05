@@ -1,0 +1,13 @@
+div {
+    height: 100px; /* Sets the height of the div to 100px */
+    width: 100px; /* Sets the width of the div to 100px */
+    background-color: green; /* Sets the background color to green */
+    border-radius: 50%; /* Creates a circular shape by rounding the edges */
+}
+
+
+/*
+Visual Representation
+The div will be a green circle with a diameter of 100px.
+The border-radius: 50% makes the square shape into a perfect circle, as the height and width are equal.
+*/

@@ -1,0 +1,56 @@
+/* Single value for all sides */
+#div1 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin: 20px;
+}
+  
+/* Different values for each side */
+#div2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin: 10px 20px 30px 40px; /* top right bottom left */
+}
+  
+/* Two values: vertical and horizontal */
+#div3 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin: 10px 20px; /* 10px for top and bottom, 20px for left and right */
+}
+  
+/* Three values: top, horizontal, bottom */
+#div4 {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    margin: 10px 20px 30px; /* top, horizontal (left and right), bottom */
+}
+
+
+/*
+Breakdown of Each div Style:
+
+#div1:
+Margins: A single margin value of 20px applies to all four sides, providing equal spacing around the div.
+Layout: Each div will have a red background and a yellow border, with a consistent space of 20 pixels around it.
+
+#div2:
+Margins: Different margin values are specified for each side: 10px on top, 20px on the right, 30px on the bottom, and 40px on the left.
+Layout: This div will have more space on the left (40px) and bottom (30px) compared to the other sides.
+
+#div3:
+Margins: Two margin values are used: 10px for top and bottom, and 20px for left and right.
+Layout: This div will have a balanced space of 10 pixels above and below, and a bit more space of 20 pixels on the sides.
+
+#div4:
+Margins: Three values are provided: 10px for the top, 20px for the left and right, and 30px for the bottom.
+Layout: Similar to #div2, but with different top and bottom spacing.
+*/

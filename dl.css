@@ -1,0 +1,28 @@
+div {
+    width: 100px;          /* Each div will have a width of 100 pixels */
+    height: 100px;         /* Each div will have a height of 100 pixels */
+    margin: 25px;          /* Adds 25 pixels of margin around each div */
+    padding: 25px;         /* Adds 25 pixels of padding inside each div */
+    display: inline-block;  /* Allows the divs to sit inline while respecting their width and height */
+}
+
+#box2 {
+    display: none;         /* Hides the div with ID 'box2' */
+}
+
+/*
+Explanation
+
+General div Style:
+All div elements will be styled with a width and height of 100 pixels. 
+The margin adds space outside the div, and the padding adds space inside the div.
+The display: inline-block; property allows divs to be placed next to each other on the same line while still respecting their width and height.
+
+Specific ID Style:
+The #box2 selector targets a specific div with the ID box2 and sets its display to none, which means it will not be visible on the page. 
+This element will not occupy any space in the layout, effectively making it disappear.
+
+Visual Representation
+Box 1 and Box 3 will be displayed with the specified dimensions, margins, and padding.
+Box 2 will not be visible at all because of the display: none; style. It won't affect the layout of the surrounding divs.
+*/

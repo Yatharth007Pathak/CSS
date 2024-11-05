@@ -1,0 +1,47 @@
+/*
+box-sizing and Width:
+By default, the width property only affects the content area of an element. 
+If you set the box-sizing property to border-box, the padding and border are included in the element’s total width.
+*/
+
+div {
+    width: 400px;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    box-sizing: border-box; /* Includes padding and border in the width */
+}
+
+/*
+The div has a 400px width, 20px padding, aquamarine background, and a 5px solid black border.
+With box-sizing: border-box;, the total width remains 400px, accounting for the padding and border within that width, 
+ensuring better control over layout.
+
+
+Here’s a breakdown of the CSS rule that applies styles to a div element with a focus on the box-sizing property and width:
+
+1. width: 400px;
+Property: width
+This sets the width of the div element to 400 pixels.
+Without box-sizing: border-box;, this would only account for the content area and exclude padding and border from the width.
+
+2. padding: 20px;
+Property: padding
+Adds 20 pixels of internal spacing between the content and the border of the div.
+Without box-sizing: border-box;, this padding would add extra width (totaling 440px: 400px + 20px left + 20px right).
+
+3. background-color: aquamarine;
+Property: background-color
+This sets the background color of the div to aquamarine, making the entire div visually distinct.
+
+4. border: 5px solid black;
+Property: border
+Adds a 5-pixel solid black border around the div.
+Without box-sizing: border-box;, the border would increase the total width to 450px (400px + 5px left + 5px right).
+
+5. box-sizing: border-box;
+Property: box-sizing
+Value: border-box
+This ensures that the padding and border are included in the width of the element.
+With box-sizing: border-box;, the total width remains 400px (including the 20px padding and 5px border), instead of increasing the overall size.
+*/

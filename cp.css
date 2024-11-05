@@ -1,0 +1,38 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid yellow;
+    padding: 20px; /* 20 pixels of padding on all sides */
+}
+
+
+/*
+The div has a 100px width and 100px height, a red background, and a 3px solid yellow border. 
+The 20px padding increases the space inside the div around its content. 
+The actual space taken up by the element will be larger than 100px due to the padding and border, making it 166px by 166px overall.
+
+
+Here's a breakdown of the CSS rule applied to a div element:
+
+1. height: 100px;
+Property: height
+Sets the height of the div to 100 pixels.
+
+2. width: 100px;
+Property: width
+Sets the width of the div to 100 pixels.
+
+3. background-color: red;
+Property: background-color
+Sets the background color of the div to red.
+
+4. border: 3px solid yellow;
+Property: border
+Adds a 3-pixel solid yellow border around the div.
+
+5. padding: 20px;
+Property: padding
+Adds 20 pixels of padding to the inside of the div on all sides (top, right, bottom, and left).
+The padding adds space between the content inside the div and its border, creating extra space inside the element.
+*/

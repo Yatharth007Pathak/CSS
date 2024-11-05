@@ -1,0 +1,47 @@
+div {
+    width: 100px;          /* Sets the width of the div to 100 pixels */
+    height: 100px;         /* Sets the height of the div to 100 pixels */
+    margin: 25px;          /* Adds 25 pixels of margin around the div */
+    padding: 25px;         /* Adds 25 pixels of padding inside the div */
+    display: inline-block;  /* Allows the div to sit alongside other inline-block elements while respecting width and height */
+}
+
+
+/*
+Visual Representation
+
+Width and Height:
+Each div will still be 100 pixels wide and 100 pixels tall.
+
+Margin:
+The margin adds 25 pixels of space around each div, providing separation from other elements.
+
+Padding:
+The padding creates 25 pixels of space inside the div, pushing the content away from the edges.
+
+Display Inline-Block:
+Using display: inline-block; allows the divs to maintain their block characteristics while still aligning next to each other horizontally. 
+This means they respect their specified width and height, unlike regular inline elements.
+
+
+Layout Explanation
+Each div will occupy a total width of 100px (width) + 25px (left margin) + 25px (right margin) = 150px 
+and a total height of 100px (height) + 25px (top padding) + 25px (bottom padding) = 150px.
+The divs will line up horizontally as long as there is enough space in the parent container. 
+If the parent container's width is insufficient, they will wrap to the next line, maintaining their individual widths and heights.
+
+
+Benefits of Inline-Block
+
+Respect for Dimensions:
+Unlike display: inline;, which ignores width and height properties, inline-block maintains these properties, 
+allowing you to create more structured layouts.
+
+Vertical Alignment:
+You can control the vertical alignment of inline-block elements using the vertical-align property. 
+For example, vertical-align: top;, vertical-align: middle;, or vertical-align: bottom; can be applied based on your layout needs.
+
+Flexibility:
+You can mix inline-block elements with other inline elements, 
+making it easier to create complex layouts without needing additional wrappers or floats.
+*/

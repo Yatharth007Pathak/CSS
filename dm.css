@@ -1,0 +1,111 @@
+/* Block-level element */
+ #box1 {
+    display: block; /* Takes full width and starts on a new line */
+    background-color: skyblue;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Inline element */
+#box2 {
+    display: inline; /* Takes only the width of its content */
+    background-color: red;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Inline-block element */
+#box3 {
+    display: inline-block; /* Similar to inline, but allows width and height */
+    background-color: yellow;
+    padding: 10px;
+    margin: 5px;
+}
+
+/* Hidden element */
+#box4 {
+    display: none; /* Not displayed at all */
+}
+
+/* Flex container */
+#box5 {
+    display: flex; /* Enables flexbox layout */
+    background-color: blue;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Grid container */
+#box6 {
+    display: grid; /* Enables grid layout */
+    background-color: green;
+    padding: 10px;
+    margin: 5px 0;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* List item */
+#box7 {
+    display: list-item; /* Displays as a list item */
+    background-color: pink;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Table container */
+#box8 {
+    display: table; /* Displays as a table */
+    background-color: cyan;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+/* Table cell */
+#box9 {
+    display: table-cell; /* Displays as a cell within a table */
+    background-color: orange;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+
+
+/*
+Explanation of Each Display Type
+
+Block-Level Element (#box1):
+Takes up the full width of its parent container and starts on a new line.
+Commonly used for structural elements like headings, paragraphs, and divs.
+
+Inline Element (#box2):
+Only takes up as much width as its content, allowing other elements to sit beside it on the same line.
+Typically used for elements like <span> and <a>.
+
+Inline-Block Element (#box3):
+Similar to inline but respects width and height. Allows elements to be displayed inline with the ability to set dimensions.
+Useful for buttons or custom components that need specific dimensions but should appear in a line.
+
+Hidden Element (#box4):
+Not rendered at all on the page. Useful for conditionally showing elements with JavaScript.
+
+Flex Container (#box5):
+Enables flexbox layout, allowing items within it to be arranged flexibly. Supports alignment and distribution of space among items.
+Great for creating responsive layouts.
+
+Grid Container (#box6):
+Enables grid layout, allowing precise placement of items in rows and columns. 
+The grid-template-columns property defines the number of columns and their sizes.
+Excellent for creating complex, two-dimensional layouts.
+
+List Item (#box7):
+Displays as a list item within an unordered or ordered list. Commonly used in <li> elements.
+Supports list-specific styling.
+
+Table Container (#box8):
+Displays as a table, enabling child elements to be treated as table rows or cells.
+Useful for displaying tabular data.
+
+Table Cell (#box9):
+Displays as a cell within a table. Can contain other block or inline elements and maintains table formatting.
+Helps organize content in a tabular format.
+*/

@@ -1,0 +1,36 @@
+div {
+    width: 200px;
+    height: 50px;
+    background-color: aquamarine;
+    border: 6px double violet;
+    text-align: center;
+}
+
+/*
+The div has a 200px width and 50px height with an aquamarine background. It has a 6px thick double violet border, 
+and the text inside is centered. The double border style adds a decorative touch to the element, making it stand out visually.
+
+
+Here's a breakdown of the CSS rule applied to a div element:
+
+1. width: 200px;
+Property: width
+Sets the width of the div to 200 pixels.
+
+2. height: 50px;
+Property: height
+Sets the height of the div to 50 pixels.
+
+3. background-color: aquamarine;
+Property: background-color
+Defines the background color of the div as aquamarine, which is a light greenish-blue color.
+
+4. border: 6px double violet;
+Property: border
+Adds a 6-pixel thick double border with the color violet.
+The double border style creates two parallel lines around the element.
+
+5. text-align: center;
+Property: text-align
+Aligns the text inside the div to the center horizontally.
+*/

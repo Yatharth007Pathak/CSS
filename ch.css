@@ -1,0 +1,36 @@
+div {
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/*
+The div is a 400px by 400px square with an aquamarine background, a 2px solid black border, and 10px rounded corners. 
+The border-radius property softens the visual appearance by rounding the edges, making the div look smoother and more modern.
+
+
+Here’s a breakdown of the CSS rule applied to a div element with a focus on the border-radius property:
+
+1. height: 400px;
+Property: height
+Sets the height of the div to 400 pixels.
+
+2. width: 400px;
+Property: width
+Sets the width of the div to 400 pixels.
+
+3. background-color: aquamarine;
+Property: background-color
+The background color of the div is set to aquamarine, giving it a light greenish-blue appearance.
+
+4. border: 2px solid black;
+Property: border
+Adds a 2-pixel solid black border around the div, creating a sharp, well-defined boundary.
+
+5. border-radius: 10px;
+Property: border-radius
+Rounds the corners of the div by 10 pixels.
+This gives the div softer, rounded corners instead of sharp 90-degree edges.
+*/

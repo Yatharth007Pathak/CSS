@@ -1,0 +1,42 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: firebrick;
+    border: 6px solid blue;
+    text-align: center;
+    border-radius: 50%;
+}
+
+
+/*
+The div is a 100px by 100px square with a firebrick background and a 6px solid blue border. 
+The border-radius: 50% makes the div a circle, and any text inside the div will be centered horizontally. 
+The circular shape with contrasting firebrick and blue creates a bold and visually striking design.
+
+
+Here's a breakdown of the CSS rule applied to a div element:
+
+1. width: 100px;
+Property: width
+Sets the width of the div to 100 pixels.
+
+2. height: 100px;
+Property: height
+Sets the height of the div to 100 pixels.
+
+3. background-color: firebrick;
+Property: background-color
+Sets the background color to firebrick, which is a dark reddish color.
+
+4. border: 6px solid blue;
+Property: border
+Adds a 6-pixel solid blue border around the div.
+
+5. text-align: center;
+Property: text-align
+Aligns the text inside the div to the center horizontally.
+
+6. border-radius: 50%;
+Property: border-radius
+Rounds the corners of the div to 50%, which transforms the div into a perfect circle (since the height and width are equal).
+*/

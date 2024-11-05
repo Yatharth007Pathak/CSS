@@ -1,0 +1,42 @@
+/*
+Margins on adjacent elements can collapse, meaning they overlap rather than add up. 
+This applies to vertically adjacent elements where the margin of the greater value will be used.
+*/
+
+div {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border: 3px solid yellow;
+    margin-bottom: 20px;
+}
+  
+  p {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border: 3px solid red;
+    margin-top: 10px;
+}
+
+
+/*
+Explanation of Each Element
+
+div Styles:
+Height & Width: The div has a fixed height and width of 100 pixels.
+Background Color: The background color is blue.
+Border: It has a solid yellow border that is 3 pixels thick.
+Margin: A margin of 20 pixels is applied to the bottom, which creates space below the div and separates it from any subsequent content.
+
+p Styles:
+Height & Width: The paragraph element also has a fixed height and width of 100 pixels.
+Background Color: The background color is green.
+Border: It has a solid red border that is 3 pixels thick.
+Margin: A margin of 10 pixels is applied to the top, which creates space above the p element, separating it from any preceding content.
+
+Resulting Layout
+The blue div will appear at the top, with a yellow border and a bottom margin of 20 pixels.
+The green p element will appear below the div, with a top margin of 10 pixels and a red border.
+This layout allows the div and p elements to maintain clear separation and visually distinct backgrounds and borders.
+*/  

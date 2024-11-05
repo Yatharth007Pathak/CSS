@@ -1,0 +1,38 @@
+div {
+    width: 100px;           /* Each div will have a width of 100 pixels */
+    height: 100px;          /* Each div will have a height of 100 pixels */
+    margin: 25px;           /* Adds 25 pixels of margin around each div */
+    padding: 25px;          /* Adds 25 pixels of padding inside each div */
+    display: inline-block;  /* Allows the divs to sit inline while respecting their width and height */
+}
+
+#box2 {
+    visibility: hidden;     /* The element is hidden but still occupies space in the layout */
+}
+
+
+/*
+Explanation
+
+Common Styles for All Divs (div):
+Width and Height: Each div is set to 100 pixels in both width and height, creating a square shape.
+Margin: A margin of 25 pixels is applied around each div, creating space between the divs.
+Padding: Padding of 25 pixels is added inside each div, providing space between the content (if any) and the div's border.
+Display: The inline-block property allows divs to sit next to each other while respecting their defined dimensions. 
+This is different from block, which would make each div start on a new line.
+
+Specific Styles for #box2:
+Visibility: The visibility: hidden; property hides #box2 from view but keeps it in the document flow. 
+This means it will still take up space as if it were visible, so the surrounding layout won't change, but it won't be rendered on the screen.
+
+
+Visual Outcome
+Box 1 and Box 3 will be displayed as visible squares with their respective background colors and will be spaced apart due to the margin.
+Box 2 will not be visible, but the space it would occupy will remain, affecting the positioning of the surrounding elements.
+
+
+Key Points
+The visibility: hidden; property is different from display: none;. If you use display: none; instead, 
+the element will be completely removed from the document flow, and other elements will move into its place.
+The combination of padding, margin, and inline-block allows for precise control over layout and spacing.
+*/

@@ -1,0 +1,37 @@
+div {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border: 3px solid blue;
+    padding: 5%; /*5% of the parent element’s width */
+}
+
+/*
+The div has a 100px by 100px size, a red background, and a 3px blue border. The padding is 5% of the parent container’s width, 
+meaning the exact padding size will change depending on the width of the parent element, making the layout more responsive.
+
+
+Here’s a breakdown of the div element with percentage-based padding:
+
+1. height: 100px;
+Property: height
+Sets the height of the div to 100 pixels.
+
+2. width: 100px;
+Property: width
+Sets the width of the div to 100 pixels.
+
+3. background-color: red;
+Property: background-color
+Sets the background color of the div to red.
+
+4. border: 3px solid blue;
+Property: border
+Adds a 3-pixel solid blue border around the div.
+
+5. padding: 5%;
+Property: padding
+The padding is set to 5% of the parent element’s width.
+Since padding is defined as a percentage, it scales based on the width of the div's parent container, not its own width. 
+For example, if the parent element is 500px wide, the padding would be 5% of 500px = 25px on each side.
+*/

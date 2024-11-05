@@ -1,0 +1,24 @@
+div {
+    height: 100px; /* Sets the height of the div to 100 pixels */
+    width: 100px; /* Sets the width of the div to 100 pixels */
+    background-color: red; /* Sets the background color of the div to red */
+    border: 3px solid blue; /* Creates a solid blue border that is 3 pixels thick around the div */
+    margin: -10px; /* Applies a negative margin of 10 pixels on all sides, pulling the element closer to its neighboring elements */
+}
+
+/*
+Breakdown:
+div {: This selector targets all <div> elements in the document.
+height: 100px;: This property defines the height of the div as 100 pixels.
+width: 100px;: This property sets the width of the div as 100 pixels.
+background-color: red;: This property assigns a red background color to the div.
+border: 3px solid blue;: This property creates a solid blue border around the div, which is 3 pixels thick.
+margin: -10px;: This property applies a negative margin of 10 pixels on all sides (top, right, bottom, left). This means the div will overlap
+ with neighboring elements or be pulled closer to them, reducing the space around the div by 10 pixels on each side.
+
+Visual Effect:
+The resulting div will appear as a red square, 100 pixels by 100 pixels, with a solid blue border around it. 
+The negative margin will reduce the space between the div and its neighboring elements by 10 pixels, causing it to overlap with them. 
+This can be useful for achieving specific layouts or for correcting spacing issues, 
+but it can also lead to unintended overlaps and visual clutter if not managed carefully.
+*/
